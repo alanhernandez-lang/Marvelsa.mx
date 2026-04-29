@@ -789,6 +789,13 @@ body:not([class*="theme-"]) {
   margin: 0;
 }
 
+/* ── NARROW CONTAINER ──────────────────────── */
+.container-narrow {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media (max-width: 992px) {
   .nos-why-cards-grid {
     grid-template-columns: repeat(2, 1fr);

@@ -110,7 +110,7 @@ export const renderNosotros = () => {
 
       <!-- ¿POR QUÉ ELEGIR MARVELSA? -->
       <section class="nos-why-choose" style="padding:clamp(60px,10vw,120px) 0;">
-        <div class="container">
+        <div class="container-narrow">
           <div class="nos-why-choose-header reveal-up">
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
               <h2 class="mvh-section-title" style="margin-bottom:15px;text-align:center;">¿Por qué elegir <em>Marvelsa</em>?</h2>
@@ -175,7 +175,7 @@ export const renderNosotros = () => {
 
       <!-- PHILOSOPHY BANNER -->
       <section class="nos-philosophy" style="padding:clamp(60px,10vw,120px) 0;">
-        <div class="container">
+        <div class="container-narrow">
           <div class="nos-philosophy-card reveal-up">
             <span class="mvh-eyebrow nos-philosophy-eyebrow">Nuestra Filosofía</span>
             <h2 class="nos-philosophy-quote" style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;line-height:1.4;margin-bottom:20px;">
