@@ -44,8 +44,9 @@ export const renderHome = () => {
             <span class="mvh-eyebrow">Nuestra Esencia</span>
             <h2 class="mvh-section-title">Impulsamos tu <em>Crecimiento</em></h2>
             <p style="font-size:1.15rem;color:rgba(0,0,0,0.7);line-height:1.8;margin-bottom:25px;">
-              Somos el aliado estratégico que México necesita. Llevamos maquinaria, refacciones y soluciones
-              de alta gama a cada rincón del país, asegurando que nuestros distribuidores siempre tengan lo mejor.
+              Somos el aliado estratégico de distribuidores y negocios en México. Llevamos hasta ti la más amplia oferta en maquinaria, refacciones y soluciones para el campo, la construcción y la industria. Con el respaldo técnico de nuestro equipo y disponibilidad de productos, hacemos más fácil tu día a día y el de tus clientes.
+En Marvelsa creemos que la calidad profesional no debe ser un lujo: por eso acercamos productos de alto desempeño a precios justos, ofreciendo a nuestros distribuidores y sus clientes el valor real que se merecen
+
             </p>
             <div style="display:flex;gap:15px;flex-wrap:wrap;">
               <button class="mvh-btn-teal" onclick="window.location.hash='#/nosotros'">Nuestra Historia</button>
@@ -73,7 +74,7 @@ export const renderHome = () => {
       { img: imgCobertura, title: 'Cobertura En Todo México', desc: 'Contamos con la infraestructura y logística para llevar nuestros productos a cualquier parte de la República, garantizando disponibilidad y cercanía con cada distribuidor..', delay: '.1s' },
       { img: imgExperiencia, title: 'Experiencia Del Cliente', desc: 'Somos pioneros en la industria con un portal exclusivo para distribuidores, diseñado para comprar en pocos clics, planear inventarios y tomar el control de su negocio.', delay: '.2s' },
       { img: imgServicio, title: 'Servicio Postventa Personalizado', desc: 'Respaldamos cada compra con un servicio postventa que atiende garantías, reclamos y solicitudes de refacciones de manera rápida y efectiva.', delay: '.3s' },
-      { img: imgMexico, title: '+10,000 SKUs', desc: 'Más de 10,000 productos disponibles para mantener tu negocio actualizado, competitivo y listo para responder a las necesidades del mercado.', delay: '.4s' },
+      { img: imgMexico, title: '+20,000 SKUs', desc: 'Más de 20,000 productos disponibles para mantener tu negocio actualizado, competitivo y listo para responder a las necesidades del mercado.', delay: '.4s' },
     ].map(f => `
             <div class="feature-card reveal-up" style="transition-delay:${f.delay}">
               <div class="feature-icon-wrapper"><img loading="lazy" src="${f.img}" alt="${f.title}"></div>
