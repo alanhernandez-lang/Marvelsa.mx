@@ -1,0 +1,67 @@
+:root {
+  /* --- Colors (Official Marvelsa Palette) --- */
+  --primary: #005E5E; /* Institutional Teal */
+  --primary-light: #007a7a;
+  --primary-dark: #004545;
+  
+  --secondary: #1a1a1a; /* Deep Charcoal */
+  --accent: #C5A02D;    /* Gold / Premium Accent */
+  
+  --bg-dark: #f0f4f4; /* Subtle off-white for depth */
+  --bg-body: #f5f7f7; /* Page background */
+  --bg-light: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.8); /* Used for glass effect */
+  
+  --text-main: #1a1a1a;
+  --text-muted: #555555;
+  
+  /* --- Typography --- */
+  --font-main: 'Apparat Black', 'Apparat', Arial, sans-serif;
+  --font-serif: 'Apparat Black', 'Apparat', Arial, sans-serif;
+  
+  /* --- Spacing --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+  
+  /* --- Effects --- */
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --radius: 12px;
+  --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-dark); /* Changed to light background */
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}

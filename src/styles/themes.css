@@ -1,0 +1,79 @@
+/* src/styles/themes.css */
+
+/* --- TEMA INSTITUCIONAL (MARVELSA) --- */
+:root {
+  --primary: #005e5e;
+  /* Teal Corporativo */
+  --secondary: #1a1a1a;
+  --accent: #C5A02D;
+  /* Gold Extracted */
+  --bg-body: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --font-brand: 'Montserrat', sans-serif;
+}
+
+/* --- TEMA KAWASHIMA (Rendimiento/Industrial) --- */
+.theme-kawashima {
+  --primary: #e31e24;
+  /* Rojo Kawashima */
+  --primary-dark: #b1161a;
+  --secondary: #222222;
+  --accent: #ffffff;
+  --bg-body: #ffffff;
+  --text-main: #111111;
+  --text-muted: #666666;
+  --font-brand: 'Outfit', sans-serif;
+}
+
+/* --- TEMA GOLDEN TREE (Agrícola/Premium) --- */
+.theme-goldentree {
+  --primary: #2d5a27;
+  /* Verde Bosque */
+  --primary-dark: #1e3d1a;
+  --secondary: #f4f1ea;
+  /* Crema institucional */
+  --accent: #d4af37;
+  --bg-body: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #555555;
+  --font-brand: 'Playfair Display', serif;
+}
+
+/* --- TEMA POWERWORLD (Energía/Tecnología) --- */
+.theme-powerworld {
+  --primary: #0046be;
+  /* Azul Eléctrico */
+  --primary-dark: #002d7a;
+  --secondary: #121212;
+  --accent: #00d4ff;
+  --bg-body: #0a0a0a;
+  --text-main: #ffffff;
+  --text-muted: #999999;
+  --font-brand: 'Outfit', sans-serif;
+}
+
+/* --- TEMA TOYAMA (Versatilidad/Confianza) --- */
+.theme-toyama {
+  --primary: #f26522;
+  /* Naranja Toyama */
+  --primary-dark: #c14d18;
+  --secondary: #333333;
+  --accent: #ffffff;
+  --bg-body: #ffffff;
+  --text-main: #1a1a1a;
+  --text-muted: #444444;
+  --font-brand: 'Outfit', sans-serif;
+}
+
+/* --- TEMA MARVELSA PRO (Logística) --- */
+.theme-marvelsapro {
+  --primary: #5c5c5c;
+  --primary-dark: #333333;
+  --secondary: #000000;
+  --accent: #c9a050;
+  --bg-body: #f9f9f9;
+  --text-main: #1a1a1a;
+  --text-muted: #666666;
+  --font-brand: 'Playfair Display', serif;
+}

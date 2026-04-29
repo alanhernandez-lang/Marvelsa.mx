@@ -1,0 +1,507 @@
+/* ================================================
+   MARVELSA — RESPONSIVE STYLESHEET
+   Breakpoints:
+     sm  → max 480px
+     md  → max 768px
+     lg  → max 1024px
+   ================================================ */
+
+/* ── HAMBURGER BUTTON ─────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 100%;
+  height: 2.5px;
+  background: var(--primary);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+/* Hamburger → X animation */
+.nav-hamburger.open span:nth-child(1) { transform: translateY(8.75px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-8.75px) rotate(-45deg); }
+
+/* ── SHARED RESPONSIVE CLASSES ────────────────── */
+
+/* Grid helpers — used instead of inline styles */
+.split-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.split-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+}
+
+.split-banner-text {
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.split-banner-img {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.split-banner-img::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, var(--overlay-color, #000) 0%, transparent 40%);
+}
+
+/* ── LG  (max 1024px) ─────────────────────────── */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/* ── MD  (max 768px) ──────────────────────────── */
+@media (max-width: 768px) {
+
+  /* ─ GLOBAL ─ */
+  body {
+    padding-top: 64px;  /* match new navbar height */
+  }
+
+  .container {
+    padding: 0 16px !important;
+  }
+
+  section {
+    padding: 48px 0 !important;
+  }
+
+  /* ─ NAVBAR ─ */
+  .pill-navbar {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 12px 20px !important;
+    background: white !important;
+    box-shadow: 0 2px 20px rgba(0,0,0,.08) !important;
+    border-radius: 0 !important;
+    gap: 0 !important;
+  }
+
+  .nav-hamburger {
+    display: flex;
+  }
+
+  /* Nav panel — hidden by default, slides down when open */
+  .nav-main-pill {
+    display: none !important;
+    position: fixed !important;
+    top: 64px !important;
+    left: 0 !important;
+    right: 0 !important;
+    flex-direction: column !important;
+    border-radius: 0 0 24px 24px !important;
+    padding: 12px 16px 20px !important;
+    gap: 4px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1) !important;
+    z-index: 999 !important;
+    background: var(--primary) !important;
+    animation: slideDown 0.25s ease;
+  }
+
+  .nav-main-pill.open {
+    display: flex !important;
+  }
+
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .nav-link {
+    padding: 10px 16px !important;
+    font-size: 0.9rem !important;
+    border-radius: 12px !important;
+    width: 100%;
+  }
+
+  /* Dropdown on mobile — always visible when parent nav is open */
+  .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: rgba(255,255,255,.12) !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 12px !important;
+    margin: 4px 0 !important;
+    padding: 8px !important;
+  }
+
+  .dropdown-menu li {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .nav-brand-logo {
+    filter: brightness(10) !important; /* logos go white on dark bg */
+    max-height: 32px !important;
+  }
+
+  .nav-cta-pill {
+    display: none !important;
+  }
+
+  /* ─ HERO CAROUSEL ─ */
+  .hero-carousel {
+    height: 240px !important;
+    min-height: 240px !important;
+    margin: 12px 12px 40px !important;
+    border-radius: 16px !important;
+  }
+
+  .carousel-slide {
+    background-size: cover !important;
+  }
+
+  /* ─ MARQUEE ─ */
+  .mvh-mqitem-pill {
+    font-size: 0.72rem !important;
+    padding: 6px 12px !important;
+  }
+
+  /* ─ INTRO SECTION ─ */
+  .mvh-intro-inner {
+    flex-direction: column !important;
+    padding: 0 16px !important;
+    gap: 32px !important;
+  }
+
+  /* ─ FEATURES GRID ─ */
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    padding: 0 16px !important;
+  }
+
+  .feature-card {
+    padding: 24px 16px !important;
+  }
+
+  /* ─ BRANDS GRID ─ */
+  .mvh-brands-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding: 0 16px !important;
+  }
+
+  .mvh-brands-grid > .brand-banner {
+    grid-column: span 1 !important;
+  }
+
+  /* ─ BLOG ─ */
+  .mvh-blog {
+    padding: 48px 16px !important;
+  }
+
+  /* ─ SECTION HEADERS ─ */
+  .mvh-section-title {
+    font-size: 1.8rem !important;
+    line-height: 1.2;
+  }
+
+  .mvh-section-sub {
+    font-size: 0.9rem;
+  }
+
+  /* ─ CTA BANNER ─ */
+  .mvh-cta .glass-panel-premium {
+    margin: 0 12px !important;
+    padding: 48px 24px !important;
+    border-radius: 28px !important;
+  }
+
+  /* ─ NOSOTROS SPLIT ─ */
+  .nosotros-split-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* ─ SPLIT-2 (inline grid helper) ─ */
+  .split-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ─ WHY GRID ─ */
+  .why-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ─ SPLIT BANNER (distributor sections) ─ */
+  .split-banner {
+    grid-template-columns: 1fr !important;
+    min-height: unset !important;
+  }
+
+  .split-banner-text {
+    padding: 48px 24px !important;
+  }
+
+  .split-banner-img {
+    height: 250px;
+    filter: brightness(0.5) !important;
+  }
+
+  /* ─ BRAND HERO STATS ─ */
+  .kaw-hero-stats,
+  .par-hero-stats,
+  .gt-hero-stats,
+  .ph-hero-stats,
+  .tak-hero-stats {
+    flex-direction: column !important;
+    gap: 24px !important;
+    align-items: center !important;
+  }
+
+  .kaw-hero-stats > div,
+  .par-hero-stats > div,
+  .gt-hero-stats > div,
+  .ph-hero-stats > div,
+  .tak-hero-stats > div {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  /* ─ BRAND HERO CONTENT ─ */
+  .kaw-hero-content,
+  .par-hero-content,
+  .gt-hero-content,
+  .ph-hero-content,
+  .tak-hero-content {
+    padding: 20px !important;
+    text-align: center !important;
+  }
+
+  .kaw-hero-title,
+  .par-hero-title,
+  .gt-hero-title,
+  .ph-hero-title,
+  .tak-hero-title {
+    font-size: clamp(3rem, 14vw, 6rem) !important;
+  }
+
+  .kaw-hero-cta,
+  .par-hero-cta,
+  .gt-hero-cta,
+  .ph-hero-cta,
+  .tak-hero-cta {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  .kaw-btn-primary, .kaw-btn-outline,
+  .par-btn-primary, .par-btn-outline,
+  .gt-btn-primary,  .gt-btn-outline,
+  .ph-btn-primary,  .ph-btn-outline,
+  .tak-btn-primary, .tak-btn-outline {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* ─ BRAND INTRO ─ */
+  .kaw-intro-inner,
+  .par-intro-inner,
+  .gt-intro-inner,
+  .ph-intro-inner,
+  .tak-intro-inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    padding: 0 20px !important;
+  }
+
+  /* ─ BRAND CATEGORY GRIDS ─ */
+  .kaw-cat-grid,
+  .par-cat-grid,
+  .gt-cat-grid,
+  .ph-cat-grid,
+  .tak-cat-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2px !important;
+  }
+
+  .kaw-cat-card,
+  .par-cat-card,
+  .gt-cat-card,
+  .ph-cat-card,
+  .tak-cat-card {
+    height: 300px !important;
+  }
+
+  /* ─ BRAND PRODUCTS GRID ─ */
+  .kaw-prod-grid,
+  .par-prod-grid,
+  .gt-prod-grid,
+  .ph-prod-grid,
+  .tak-prod-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    padding: 0 16px !important;
+  }
+
+  /* ─ "WHY CHOOSE" CARDS (brand-specific) ─ */
+  .why-cards-3col {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  /* ─ KAWASHIMA DISTRIBUTOR SPLIT ─ */
+  .kaw-distributor-split {
+    grid-template-columns: 1fr !important;
+    min-height: unset !important;
+  }
+
+  .kaw-distributor-split > div:last-child {
+    height: 250px;
+  }
+
+  /* ─ BRAND SECTION HEADERS ─ */
+  .kaw-section-title,
+  .par-section-title,
+  .gt-section-title,
+  .ph-section-title,
+  .tak-section-title {
+    font-size: clamp(1.8rem, 7vw, 3rem) !important;
+  }
+
+  /* ─ TIMELINE ─ */
+  .timeline-container {
+    padding: 0 16px !important;
+  }
+
+  .timeline-content {
+    padding: 20px !important;
+  }
+
+  .timeline-item::before,
+  .timeline-inverted::before {
+    display: none;
+  }
+
+  /* ─ CONTACT MAP IFRAME ─ */
+  .glass-panel-premium iframe {
+    border-radius: 20px;
+  }
+
+  /* ─ CONTACT FORM ─ */
+  #distributor-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  #distributor-form button[type="submit"] {
+    grid-column: span 1 !important;
+  }
+
+  /* ─ PHILOSOPHY / CTA BANNERS ─ */
+  .kaw-cta-inner,
+  .par-cta-inner,
+  .gt-cta-inner,
+  .ph-cta-inner,
+  .tak-cta-inner {
+    padding: 60px 24px !important;
+  }
+
+  /* ─ FOOTER ─ */
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+    padding: 48px 24px !important;
+  }
+
+  .footer-bottom .container {
+    padding: 20px 16px !important;
+  }
+
+  /* ─ BACK TO TOP ─ */
+  .back-to-top {
+    bottom: 16px !important;
+    right: 16px !important;
+  }
+
+  /* ─ LEGAL MODALS ─ */
+  .mvh-modal-content {
+    padding: 24px !important;
+    border-radius: 20px !important;
+  }
+}
+
+/* ── SM  (max 480px) ──────────────────────────── */
+@media (max-width: 480px) {
+
+  /* Features go to single column */
+  .features-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Product cards go single column */
+  .kaw-prod-grid,
+  .par-prod-grid,
+  .gt-prod-grid,
+  .ph-prod-grid,
+  .tak-prod-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Section titles even smaller */
+  .mvh-section-title {
+    font-size: 1.5rem !important;
+  }
+
+  /* Nav logo size */
+  .nav-logo img {
+    height: 32px !important;
+  }
+
+  /* Carousel smaller on tiny screens */
+  .hero-carousel {
+    height: 200px !important;
+  }
+
+  /* Stats wrap tight */
+  .kaw-hero-stats > div,
+  .par-hero-stats > div {
+    width: 100%;
+  }
+}
