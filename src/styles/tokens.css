@@ -16,8 +16,8 @@
   --text-muted: #555555;
   
   /* --- Typography --- */
-  --font-main: 'Apparat Black', 'Apparat', Arial, sans-serif;
-  --font-serif: 'Apparat Black', 'Apparat', Arial, sans-serif;
+  --font-main: 'Archivo', Arial, sans-serif;
+  --font-serif: 'Archivo Black', Arial, sans-serif;
   
   /* --- Spacing --- */
   --space-xs: 0.5rem;

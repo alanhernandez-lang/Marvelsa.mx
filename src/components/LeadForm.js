@@ -29,6 +29,7 @@ export const renderLeadForm = (containerId) => {
 
   const form = document.getElementById('distributor-form');
   const feedback = document.getElementById('form-feedback');
+  const FORMSPREE_ID = 'xjglbarz';
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -36,41 +37,37 @@ export const renderLeadForm = (containerId) => {
     // UI Feedback: Loading state
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerText;
-    submitBtn.innerText = 'PROCESANDO...';
+    submitBtn.innerText = 'ENVIANDO...';
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
     // Collect data
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
     
-    // Prepare Email Content (Professional Plain-Text Formatting)
-    const subject = encodeURIComponent(`🚀 Nueva Solicitud de Distribuidor: ${data.name}`);
-    const body = encodeURIComponent(
-      `=======================================\n` +
-      `   NUEVA SOLICITUD DE DISTRIBUIDOR\n` +
-      `=======================================\n\n` +
-      `DETALLES DEL PROSPECTO:\n` +
-      `---------------------------------------\n` +
-      `👤 Nombre:    ${data.name}\n` +
-      `🏢 Empresa:   ${data.company}\n` +
-      `📍 Ubicación: ${data.city}\n` +
-      `📞 Teléfono:  ${data.phone}\n\n` +
-      `---------------------------------------\n` +
-      `Enviado desde el Portal Marvelsa (Nosotros)\n` +
-      `Fecha: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}\n` +
-      `=======================================`
-    );
+    try {
+      const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
 
-    // Simulate Network latency and then redirect/show success
-    setTimeout(() => {
-      // Trigger Email Client
-      window.location.href = `mailto:alan.hernandez@marvelsa.com?subject=${subject}&body=${body}`;
-      
-      trackLeadConversion();
-      form.style.display = 'none';
-      feedback.style.display = 'block';
-      feedback.classList.add('animate-scale');
-    }, 1000);
+      if (response.ok) {
+        trackLeadConversion();
+        form.style.display = 'none';
+        feedback.style.display = 'block';
+        feedback.classList.add('animate-scale');
+      } else {
+        const data = await response.json();
+        throw new Error(data.error || 'Error al enviar el formulario');
+      }
+    } catch (error) {
+      console.error('Form error:', error);
+      alert('Hubo un error al enviar tu solicitud. Por favor intenta de nuevo.');
+      submitBtn.innerText = originalBtnText;
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+    }
   });
 };

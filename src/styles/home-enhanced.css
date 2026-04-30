@@ -152,14 +152,14 @@ body:not([class*="theme-"]) {
 
 /* Icon wrapper — circular gradient badge */
 .feature-icon-wrapper {
-  width: 90px !important;
-  height: 90px !important;
+  width: 110px !important;
+  height: 110px !important;
   border-radius: 50% !important;
   background: linear-gradient(135deg, rgba(0,94,94,0.08), rgba(0,180,180,0.04)) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  margin: 0 auto 28px !important;
+  margin: 0 auto 32px !important;
   position: relative;
   transition: all 0.5s ease;
 }
@@ -186,8 +186,8 @@ body:not([class*="theme-"]) {
 }
 
 .feature-icon-wrapper img {
-  width: 48px !important;
-  height: 48px !important;
+  width: 64px !important;
+  height: 64px !important;
   object-fit: contain;
   transition: transform 0.4s ease;
 }
@@ -455,14 +455,14 @@ body:not([class*="theme-"]) {
   }
 
   .feature-icon-wrapper {
-    width: 72px !important;
-    height: 72px !important;
-    margin-bottom: 20px !important;
+    width: 88px !important;
+    height: 88px !important;
+    margin-bottom: 24px !important;
   }
 
   .feature-icon-wrapper img {
-    width: 38px !important;
-    height: 38px !important;
+    width: 48px !important;
+    height: 48px !important;
   }
 }
 
@@ -762,11 +762,16 @@ body:not([class*="theme-"]) {
 }
 
 .nos-why-card-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 24px;
   color: #008080; /* Corporate Teal */
   transition: transform 0.4s ease;
+}
+
+.nos-why-card-icon svg {
+  width: 44px;
+  height: 44px;
 }
 
 .nos-why-card:hover .nos-why-card-icon {
@@ -862,9 +867,9 @@ body:not([class*="theme-"]) {
 }
 
 .contacto-info-icon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 24px;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 28px;
   background: linear-gradient(135deg, rgba(0,94,94,0.08), rgba(0,180,180,0.04));
   border-radius: 50%;
   display: flex;
@@ -1100,10 +1105,10 @@ section:has(> .glass-panel-premium > iframe) > div.reveal-up:hover {
   }
 
   .contacto-info-icon {
-    width: 64px;
-    height: 64px;
-    font-size: 1.6rem;
-    margin-bottom: 18px;
+    width: 88px;
+    height: 88px;
+    font-size: 1.8rem;
+    margin-bottom: 24px;
   }
 
   #contact-form-anchor {

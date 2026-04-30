@@ -2286,9 +2286,9 @@ body.theme-kawashima {
 }
 
 .kaw-feature-icon {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
   background: linear-gradient(135deg, var(--kaw-red-dark), var(--kaw-red));
   border-radius: 12px;
   display: flex;
@@ -2296,6 +2296,11 @@ body.theme-kawashima {
   justify-content: center;
   color: white;
   box-shadow: 0 5px 20px var(--kaw-red-glow);
+}
+
+.kaw-feature-icon svg {
+  width: 32px;
+  height: 32px;
 }
 
 .kaw-feature-text h4 {
@@ -2421,10 +2426,10 @@ body.theme-kawashima {
 }
 
 .kaw-cat-icon {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   background: linear-gradient(135deg, var(--kaw-red-dark), var(--kaw-red));
-  border-radius: 14px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2432,6 +2437,11 @@ body.theme-kawashima {
   color: white;
   box-shadow: 0 0 25px var(--kaw-red-glow);
   transition: all 0.4s ease;
+}
+
+.kaw-cat-icon svg {
+  width: 36px;
+  height: 36px;
 }
 
 .kaw-cat-card:hover .kaw-cat-icon {
@@ -6863,17 +6873,21 @@ body.theme-takashi .cta-link {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
   color: #1a1a1a;
-  line-height: 1.05;
+  line-height: 1.2;
   letter-spacing: -2px;
   margin-bottom: 20px;
 }
 
 .mvh-section-title em {
-  font-style: normal;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
   background: linear-gradient(135deg, #00b4b4, #008080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  display: inline-block;
+  padding-bottom: 0.1em;
+  line-height: 1;
 }
 
 .mvh-section-sub {
