@@ -186,8 +186,8 @@ body:not([class*="theme-"]) {
 }
 
 .feature-icon-wrapper img {
-  width: 64px !important;
-  height: 64px !important;
+  width: 90% !important;
+  height: 90% !important;
   object-fit: contain;
   transition: transform 0.4s ease;
 }
@@ -461,8 +461,8 @@ body:not([class*="theme-"]) {
   }
 
   .feature-icon-wrapper img {
-    width: 48px !important;
-    height: 48px !important;
+    width: 90% !important;
+    height: 90% !important;
   }
 }
 
