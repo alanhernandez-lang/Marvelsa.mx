@@ -4399,16 +4399,16 @@ body.theme-goldentree .cta-link {
    POWERHUNT UNIVERSE — ELECTRIC ORANGE POWER
    ============================================ */
 :root {
-  --ph-blue: #005BB5;
-  --ph-blue-dark: #003F82;
-  --ph-blue-glow: rgba(0, 91, 181, 0.4);
-  --ph-blue-light: #2B8BEB;
-  --ph-black: #F4F6F8;
-  --ph-dark: #E2E8F0;
-  --ph-card: #FFFFFF;
-  --ph-border: rgba(0, 91, 181, 0.2);
-  --ph-text: #0F172A;
-  --ph-muted: #475569;
+  --ph-blue: #2563EB;
+  --ph-blue-dark: #1E40AF;
+  --ph-blue-glow: rgba(37, 99, 235, 0.4);
+  --ph-blue-light: #60A5FA;
+  --ph-black: #0F172A; /* Deep Navy/Gray */
+  --ph-dark: #1E293B;  /* Industrial Gray */
+  --ph-card: #1E293B;
+  --ph-border: rgba(37, 99, 235, 0.2);
+  --ph-text: #F8FAFC;
+  --ph-muted: #94A3B8;
 }
 
 body.theme-powerhunt {
