@@ -85,6 +85,15 @@ const initProductCarousels = () => {
 
 const renderKawashima = () => {
   document.getElementById('app').innerHTML = `
+    <svg width="0" height="0" style="position:absolute;">
+      <filter id="remove-white" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values="1 0 0 0 0
+                                             0 1 0 0 0
+                                             0 0 1 0 0
+                                             -1.5 -1.5 -1.5 4.5 -1.5" />
+      </filter>
+    </svg>
+
     <div id="nav-container"></div>
     <main>
       <section class="kaw-hero">
@@ -93,20 +102,22 @@ const renderKawashima = () => {
         <div class="kaw-hero-grid"></div>
         <div id="kaw-particles"></div>
         <div class="kaw-hero-content">
-          <div class="kaw-badge">⚡ Maquinaria Profesional • México</div>
-          <h1 class="kaw-hero-title">KAWASHIMA</h1>
-          <p class="kaw-hero-slogan">El Trabajo Real Necesita Herramientas Reales</p>
-          <div class="kaw-hero-divider"></div>
-          <div class="kaw-hero-stats">
-            <div class="kaw-stat"><span class="kaw-stat-number">30+</span><span class="kaw-stat-label">Años de potencia</span></div>
-            <div class="kaw-stat" style="border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08);padding:0 60px;">
-              <span class="kaw-stat-number">5K+</span><span class="kaw-stat-label">Distribuidores activos</span>
-            </div>
-            <div class="kaw-stat"><span class="kaw-stat-number">100%</span><span class="kaw-stat-label">Refacciones disponibles</span></div>
+          <div class="kaw-hero-badge" style="display:inline-flex;align-items:center;gap:10px;background:rgba(204,17,17,0.1);border:1px solid rgba(204,17,17,0.3);padding:8px 20px;border-radius:100px;margin-bottom:30px;">
+            <span style="color:#CC1111;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;">⚡ Maquinaria Profesional • México</span>
           </div>
-          <div class="kaw-hero-cta">
-            <button class="kaw-btn-primary" onclick="window.renderContacto(true)">Ser Distribuidor</button>
-            <button class="kaw-btn-outline" onclick="document.getElementById('kaw-cats').scrollIntoView({behavior:'smooth'})">Ver Catálogo</button>
+          <h1 class="kaw-hero-title">KAWASHIMA</h1>
+          <p class="kaw-hero-slogan">EL TRABAJO REAL NECESITA HERRAMIENTAS REALES</p>
+          <div class="kaw-hero-line"></div>
+          <div class="kaw-hero-stats">
+            <div class="kaw-stat-item"><h3>30+</h3><p>Años de potencia</p></div>
+            <div class="kaw-stat-divider"></div>
+            <div class="kaw-stat-item"><h3>5K+</h3><p>Distribuidores activos</p></div>
+            <div class="kaw-stat-divider"></div>
+            <div class="kaw-stat-item"><h3>100%</h3><p>Refacciones disponibles</p></div>
+          </div>
+          <div class="kaw-hero-actions">
+            <a href="#contacto" class="kaw-btn-primary">Ser distribuidor</a>
+            <a href="#productos" class="kaw-btn-secondary">Ver catálogo</a>
           </div>
         </div>
       </section>
@@ -118,18 +129,13 @@ const renderKawashima = () => {
         </div>
       </div>
 
-      <!-- INTRO -->
-      <section class="kaw-intro" id="kaw-intro">
-        <div class="kaw-intro-inner">
-          <div class="kaw-intro-left">
-            <span class="kaw-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="kaw-intro-title">Fabricados para el<br>campo <em>mexicano</em></h2>
-            <p class="kaw-intro-text">
-              Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque.
-              Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo,
-              refacciones disponibles y servicio en todo México.<br><br>
-              En Kawashima trabajamos contigo, para que nada detenga tu esfuerzo.
-            </p>
+      <!-- INTRO SECTION -->
+      <section class="kaw-intro" style="background:var(--kaw-black);padding:120px 0;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center;">
+          <div>
+            <span class="kaw-section-eyebrow">Poder y Durabilidad</span>
+            <h2 class="kaw-section-title">Ingeniería para el<br>uso rudo cotidiano</h2>
+            <p class="kaw-intro-text">Kawashima es sinónimo de resistencia. Cada equipo está diseñado bajo estándares de calidad industrial, ofreciendo una combinación inigualable de potencia motorizada y facilidad de mantenimiento. No solo vendemos máquinas, entregamos el respaldo que tu negocio necesita.</p>
           </div>
           <div class="kaw-intro-features">
             ${[
@@ -155,32 +161,29 @@ const renderKawashima = () => {
         </div>
       </section>
 
-      <hr class="kaw-sep">
-
-      <!-- CATEGORIES -->
-      <section class="kaw-categories" id="kaw-cats">
-        <div class="kaw-section-header">
-          <span class="kaw-section-eyebrow">Líneas de producto</span>
-          <h2 class="kaw-section-title">Un universo de<br><em>soluciones</em></h2>
-          <p class="kaw-section-sub">Cada línea está diseñada con propósito específico para maximizar tu productividad.</p>
-        </div>
-        <div class="kaw-cat-grid">
-          ${[
+      <!-- CATEGORIES GRID -->
+      <section class="kaw-categories" style="background:var(--kaw-dark);padding:120px 0;">
+        <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
+          <div style="text-align:center;margin-bottom:80px;">
+            <span class="kaw-section-eyebrow">Categorías de Potencia</span>
+            <h2 class="kaw-section-title">Soluciones Especializadas</h2>
+          </div>
+          <div class="kaw-cat-grid">
+            ${[
       { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Aspersores a motor, manuales y eléctricos que brindan potencia, autonomía y eficiencia para todo tipo de cultivos.' },
       { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para fuerza constante, cortes limpios y larga durabilidad.' },
       { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad.' },
     ].map(cat => `
-            <div class="kaw-cat-card">
-              <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
-              <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.4) 40%,transparent 100%);"></div>
-              <div class="kaw-cat-content" style="justify-content:flex-end;padding:40px 25px;text-align:center;">
-                <div class="kaw-cat-name" style="text-transform:uppercase;font-size:2.2rem;font-weight:900;letter-spacing:2px;margin-bottom:10px;color:white;-webkit-text-stroke:1.2px #CC1111;paint-order:stroke fill;">${cat.name}</div>
-                <div style="height:4.5rem;display:flex;align-items:flex-start;justify-content:center;">
-                  <p style="color:rgba(255,255,255,.9);font-size:0.85rem;line-height:1.4;margin:0;max-width:320px;">${cat.desc}</p>
+              <div class="kaw-cat-card">
+                <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
+                <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.4) 40%,transparent 100%);"></div>
+                <div class="kaw-cat-content">
+                  <h3>${cat.name}</h3>
+                  <p>${cat.desc}</p>
                 </div>
               </div>
-            </div>
-          `).join('')}
+            `).join('')}
+          </div>
         </div>
       </section>
 
@@ -194,11 +197,9 @@ const renderKawashima = () => {
         <div class="kaw-prod-grid">
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-                <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3" style="filter:invert(1);mix-blend-mode:screen;">
-              </div>
+              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3" style="filter:url(#remove-white);">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Aspersión</span>
@@ -210,11 +211,9 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-                <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3" style="filter:invert(1);mix-blend-mode:screen;">
-              </div>
+              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3" style="filter:url(#remove-white);">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Agrícola</span>
@@ -226,11 +225,9 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-                <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3" style="filter:invert(1);mix-blend-mode:screen;">
-              </div>
+              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3" style="filter:url(#remove-white);">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Jardín</span>
@@ -242,10 +239,8 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
-                <img loading="lazy" src="${imgAK20LE_1}" class="active" alt="Aspersor 20LE - 1" style="filter:invert(1);mix-blend-mode:screen;">
-                <img loading="lazy" src="${imgAK20LE_2}" alt="Aspersor 20LE - 2" style="filter:invert(1);mix-blend-mode:screen;">
-              </div>
+              <img loading="lazy" src="${imgAK20LE_1}" class="active" alt="Aspersor 20LE - 1" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgAK20LE_2}" alt="Aspersor 20LE - 2" style="filter:url(#remove-white);">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Aspersión</span>
