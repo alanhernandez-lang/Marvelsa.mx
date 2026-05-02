@@ -194,9 +194,11 @@ const renderKawashima = () => {
         <div class="kaw-prod-grid">
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1">
-              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2">
-              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3">
+              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+                <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1" style="filter:invert(1);mix-blend-mode:screen;">
+                <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2" style="filter:invert(1);mix-blend-mode:screen;">
+                <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3" style="filter:invert(1);mix-blend-mode:screen;">
+              </div>
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Aspersión</span>
@@ -208,9 +210,11 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1">
-              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2">
-              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3">
+              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+                <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1" style="filter:invert(1);mix-blend-mode:screen;">
+                <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2" style="filter:invert(1);mix-blend-mode:screen;">
+                <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3" style="filter:invert(1);mix-blend-mode:screen;">
+              </div>
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Agrícola</span>
@@ -222,9 +226,11 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1">
-              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2">
-              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3">
+              <div class="kaw-img-cleaner" style="filter:invert(1);width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+                <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1" style="filter:invert(1);mix-blend-mode:screen;">
+                <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2" style="filter:invert(1);mix-blend-mode:screen;">
+                <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3" style="filter:invert(1);mix-blend-mode:screen;">
+              </div>
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Jardín</span>
