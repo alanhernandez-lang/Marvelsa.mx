@@ -7,7 +7,8 @@ import {
   bannerKawashima, bannerGoldenTree, bannerPowerHunt, bannerTakashi, bannerParazzini,
   bgKawashimaFondo, bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo,
   imgKawAgricola, imgKawBosque, imgKawJardin,
-  imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2, pdfAK20LE,
+  imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
+  imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
 } from '../assets/images.js';
 
 /* ─── shared helpers ─── */
@@ -190,6 +191,20 @@ const renderKawashima = () => {
           <p class="kaw-section-sub">Ingeniería que no falla cuando más la necesitas.</p>
         </div>
         <div class="kaw-prod-grid">
+          <div class="kaw-prod-card">
+            <div class="kaw-prod-img-wrap product-carousel">
+              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1">
+              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2">
+              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3">
+              <div class="carousel-dots"></div>
+            </div>
+            <span class="kaw-prod-tag">Agrícola</span>
+            <div class="kaw-prod-name">Motobomba MTK 26</div>
+            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Potencia compacta para trasvase de agua</div>
+            <a href="${pdfMTK26}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
+              Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+            </a>
+          </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
               <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1">
