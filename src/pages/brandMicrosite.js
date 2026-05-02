@@ -9,6 +9,7 @@ import {
   imgKawAgricola, imgKawBosque, imgKawJardin,
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
+  imgDKM26KN_1, imgDKM26KN_2, imgDKM26KN_3,
 } from '../assets/images.js';
 
 /* ─── shared helpers ─── */
@@ -220,7 +221,12 @@ const renderKawashima = () => {
             </a>
           </div>
           <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap"><img loading="lazy" src="${bannerKawashima}" alt="DKM26KN"></div>
+            <div class="kaw-prod-img-wrap product-carousel">
+              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1">
+              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2">
+              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3">
+              <div class="carousel-dots"></div>
+            </div>
             <span class="kaw-prod-tag">Jardín</span>
             <div class="kaw-prod-name">Desbrozadora DKM26KN</div>
             <div class="kaw-prod-spec" style="min-height:2.8rem;">1 HP / 26cc — Tipo D<br>Ligera y versátil para todo terreno</div>
