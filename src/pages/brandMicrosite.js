@@ -193,24 +193,29 @@ const renderKawashima = () => {
         <div class="kaw-prod-grid">
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motosierra Telescopica MTK 26 - 1">
-              <img loading="lazy" src="${imgMTK26_2}" alt="Motosierra Telescopica MTK 26 - 2">
-              <img loading="lazy" src="${imgMTK26_3}" alt="Motosierra Telescopica MTK 26 - 3">
+              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1">
+              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2">
+              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3">
               <div class="carousel-dots"></div>
             </div>
-            <span class="kaw-prod-tag">Bosque</span>
-            <div class="kaw-prod-name">Motosierra Telescopica MTK 26</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Potencia compacta para trasvase de agua</div>
-            <a href="${pdfMTK26}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
+            <span class="kaw-prod-tag">Aspersión</span>
+            <div class="kaw-prod-name">Aspersor AK 26</div>
+            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Alta eficiencia en cultivos extensos</div>
+            <a href="https://drive.google.com/file/d/1_cz69JEq-QHj_dGuKpY0JnxQCsl6uIK1/view?usp=drive_link" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
               Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </a>
           </div>
           <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap"><img loading="lazy" src="${bannerKawashima}" alt="MAKO 58"></div>
-            <span class="kaw-prod-tag">Bosque</span>
-            <div class="kaw-prod-name">Motosierra MAKO 58</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Barra 18 Plg / 45cm<br>Corte profesional de alta potencia</div>
-            <a href="#" class="kaw-prod-cta" style="text-decoration:none;">
+            <div class="kaw-prod-img-wrap product-carousel">
+              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1">
+              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2">
+              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3">
+              <div class="carousel-dots"></div>
+            </div>
+            <span class="kaw-prod-tag">Agrícola</span>
+            <div class="kaw-prod-name">Motobomba MTK 26</div>
+            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Potencia compacta para trasvase de agua</div>
+            <a href="${pdfMTK26}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
               Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </a>
           </div>
