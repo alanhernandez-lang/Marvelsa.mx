@@ -22,6 +22,7 @@ export { default as img30Anos }           from './images/30-anos.jpg';
 export { default as logoMarvelsa }        from './images/marvelsa-logo.png';
 
 export { default as bgKawashimaFondo }    from './images/KawashimaFondo.png';
+export { default as bgKawashimaFondoNew } from './images/Fondo Kawashima.png';
 export { default as bgParazziniFondo }    from './images/ParazziniFondo.png';
 export { default as bgGoldenTreeFondo }   from './images/GoldenTreeFondo.png';
 export { default as bgPowerHuntFondo }    from './images/PowerHuntFondo.png';
