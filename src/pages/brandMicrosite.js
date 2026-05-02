@@ -85,15 +85,6 @@ const initProductCarousels = () => {
 
 const renderKawashima = () => {
   document.getElementById('app').innerHTML = `
-    <svg width="0" height="0" style="position:absolute;">
-      <filter id="remove-white" color-interpolation-filters="sRGB">
-        <feColorMatrix type="matrix" values="1 0 0 0 0
-                                             0 1 0 0 0
-                                             0 0 1 0 0
-                                             -1.5 -1.5 -1.5 4.5 -1.5" />
-      </filter>
-    </svg>
-
     <div id="nav-container"></div>
     <main>
       <section class="kaw-hero">
@@ -197,9 +188,9 @@ const renderKawashima = () => {
         <div class="kaw-prod-grid">
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1">
+              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2">
+              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Aspersión</span>
@@ -211,9 +202,9 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1">
+              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2">
+              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Agrícola</span>
@@ -225,9 +216,9 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1">
+              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2">
+              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Jardín</span>
@@ -239,8 +230,8 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK20LE_1}" class="active" alt="Aspersor 20LE - 1" style="filter:url(#remove-white);">
-              <img loading="lazy" src="${imgAK20LE_2}" alt="Aspersor 20LE - 2" style="filter:url(#remove-white);">
+              <img loading="lazy" src="${imgAK20LE_1}" class="active" alt="Aspersor 20LE - 1">
+              <img loading="lazy" src="${imgAK20LE_2}" alt="Aspersor 20LE - 2">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Aspersión</span>
