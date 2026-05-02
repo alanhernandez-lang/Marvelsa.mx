@@ -41,3 +41,4 @@ export { default as imgMTK26_1 }           from './images/MTK26.png';
 export { default as imgMTK26_2 }           from './images/MTK26-2.png';
 export { default as imgMTK26_3 }           from './images/MTK26-3.png';
 export { default as pdfMTK26 }             from './pdfs/ka_2025_ficha_comercial_MTK26.pdf';
+export { default as pdfAK20LE }           from './pdfs/ka_2025_ficha_comercial_AK20LE.pdf';
