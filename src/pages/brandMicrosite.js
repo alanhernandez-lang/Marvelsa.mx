@@ -108,7 +108,6 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-hero-actions">
             <a href="#contacto" class="kaw-btn-primary">Ser distribuidor</a>
-            <a href="#productos" class="kaw-btn-secondary">Ver catálogo</a>
           </div>
         </div>
       </section>
@@ -400,7 +399,6 @@ const renderGenericBrand = (brandId) => {
           </div>
           <div class="${p}-hero-cta">
             <button class="${p}-btn-primary" onclick="window.renderContacto(true)">Ser Distribuidor</button>
-            <button class="${p}-btn-outline" onclick="document.getElementById('${p}-cats').scrollIntoView({behavior:'smooth'})">Ver Catálogo</button>
           </div>
         </div>
       </section>
