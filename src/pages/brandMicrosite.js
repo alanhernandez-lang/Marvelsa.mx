@@ -93,29 +93,20 @@ const renderKawashima = () => {
         <div class="kaw-hero-grid"></div>
         <div id="kaw-particles"></div>
         <div class="kaw-hero-content">
-          <div class="kaw-badge">⚡ MAQUINARIA PROFESIONAL • MÉXICO</div>
+          <div class="kaw-badge">⚡ Maquinaria Profesional • México</div>
           <h1 class="kaw-hero-title">KAWASHIMA</h1>
-          <p class="kaw-hero-slogan">EL TRABAJO REAL NECESITA HERRAMIENTAS REALES</p>
+          <p class="kaw-hero-slogan">El Trabajo Real Necesita Herramientas Reales</p>
           <div class="kaw-hero-divider"></div>
-          
           <div class="kaw-hero-stats">
-            <div class="kaw-stat">
-              <span class="kaw-stat-number">30+</span>
-              <span class="kaw-stat-label">Años de potencia</span>
+            <div class="kaw-stat"><span class="kaw-stat-number">30+</span><span class="kaw-stat-label">Años de potencia</span></div>
+            <div class="kaw-stat" style="border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08);padding:0 60px;">
+              <span class="kaw-stat-number">5K+</span><span class="kaw-stat-label">Distribuidores activos</span>
             </div>
-            <div class="kaw-stat">
-              <span class="kaw-stat-number">5K+</span>
-              <span class="kaw-stat-label">Distribuidores activos</span>
-            </div>
-            <div class="kaw-stat">
-              <span class="kaw-stat-number">100%</span>
-              <span class="kaw-stat-label">Refacciones disponibles</span>
-            </div>
+            <div class="kaw-stat"><span class="kaw-stat-number">100%</span><span class="kaw-stat-label">Refacciones disponibles</span></div>
           </div>
-
           <div class="kaw-hero-cta">
-            <button class="kaw-btn-primary" onclick="window.renderContacto(true)">Ser distribuidor</button>
-            <button class="kaw-btn-outline" onclick="document.getElementById('productos').scrollIntoView({behavior:'smooth'})">Ver catálogo</button>
+            <button class="kaw-btn-primary" onclick="window.renderContacto(true)">Ser Distribuidor</button>
+            <button class="kaw-btn-outline" onclick="document.getElementById('kaw-cats').scrollIntoView({behavior:'smooth'})">Ver Catálogo</button>
           </div>
         </div>
       </section>
@@ -127,68 +118,67 @@ const renderKawashima = () => {
         </div>
       </div>
 
-      <!-- INTRO SECTION -->
-      <section class="kaw-intro" style="background:var(--kaw-black);padding:120px 0;">
-        <div style="max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center;">
-          <div>
-            <span class="kaw-section-eyebrow">NUESTRA ESENCIA</span>
-            <h2 class="kaw-section-title" style="font-size:clamp(3rem,6vw,5rem);line-height:1;">Fabricados<br>para el<br>campo <span style="color:var(--kaw-red);">mexicano</span></h2>
-            <p class="kaw-intro-text">Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque. Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo, refacciones disponibles y servicio en todo México.</p>
-            <p class="kaw-intro-text" style="margin-top:20px;">En Kawashima trabajamos contigo, para que nada detenga tu esfuerzo.</p>
+      <!-- INTRO -->
+      <section class="kaw-intro" id="kaw-intro">
+        <div class="kaw-intro-inner">
+          <div class="kaw-intro-left">
+            <span class="kaw-intro-eyebrow">Nuestra Esencia</span>
+            <h2 class="kaw-intro-title">Fabricados para el<br>campo <em>mexicano</em></h2>
+            <p class="kaw-intro-text">
+              Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque.
+              Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo,
+              refacciones disponibles y servicio en todo México.<br><br>
+              En Kawashima trabajamos contigo, para que nada detenga tu esfuerzo.
+            </p>
           </div>
           <div class="kaw-intro-features">
             ${[
-      { icon: 'wrench', title: 'Herramientas profesionales', desc: 'Equipos diseñados para uso rudo, con tecnología que garantiza durabilidad en cualquier jornada.' },
-      { icon: 'tag', title: 'Precio justo', desc: 'Calidad de alto desempeño a un costo accesible para potenciar tu inversión.' },
-      { icon: 'headset', title: 'Soporte en México', desc: 'Red nacional de centros de servicio y refacciones siempre al alcance de tu mano.' },
-    ].map((f, i) => {
-      const icons = {
-        wrench: '<path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>',
-        tag: '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 5a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>',
-        headset: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'
-      };
-      return `
-                <div class="kaw-feature-item" style="transition-delay:${i * 0.15 + 0.1}s">
-                  <div class="kaw-feature-icon">
-                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">${icons[f.icon]}</svg>
-                  </div>
-                  <div class="kaw-feature-text"><h4>${f.title}</h4><p>${f.desc}</p></div>
+    { icon: 'wrench', title: 'Herramientas profesionales', desc: 'Equipos diseñados para uso rudo, con tecnología que garantiza durabilidad en cualquier jornada.' },
+    { icon: 'tag', title: 'Precio justo', desc: 'Calidad de alto desempeño a un costo accesible para potenciar tu inversión.' },
+    { icon: 'headset', title: 'Soporte en México', desc: 'Red nacional de centros de servicio y refacciones siempre al alcance de tu mano.' },
+  ].map((f, i) => `
+              <div class="kaw-feature-item" style="transition-delay:${i * 0.15 + 0.1}s">
+                <div class="kaw-feature-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
                 </div>
-              `;
-    }).join('')}
-          </div>
-        </div>
-      </section>
-
-      <!-- CATEGORIES GRID -->
-      <section class="kaw-categories" style="background:var(--kaw-dark);padding:120px 0;">
-        <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
-          <div style="text-align:center;margin-bottom:80px;">
-            <span class="kaw-section-eyebrow">LÍNEAS DE PRODUCTO</span>
-            <h2 class="kaw-section-title">Un universo de <em>soluciones</em></h2>
-            <p class="kaw-section-sub">Cada línea está diseñada con propósito específico para maximizar tu productividad.</p>
-          </div>
-          <div class="kaw-cat-grid">
-            ${[
-      { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Aspersores a motor, manuales y eléctricos que brindan potencia, autonomía y eficiencia para todo tipo de cultivos.' },
-      { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para fuerza constante, cortes limpios y larga durabilidad.' },
-      { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad.' },
-    ].map(cat => `
-              <div class="kaw-cat-card">
-                <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
-                <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);"></div>
-                <div class="kaw-cat-content" style="text-align:center;bottom:50%;transform:translateY(50%);">
-                  <h3 class="kaw-cat-name" style="font-size:2.5rem;margin-bottom:15px;text-shadow:0 0 20px rgba(0,0,0,0.5);">${cat.name}</h3>
-                  <p style="color:rgba(255,255,255,0.9);font-size:0.9rem;max-width:280px;margin:0 auto;line-height:1.5;text-shadow:0 2px 4px rgba(0,0,0,0.8);">${cat.desc}</p>
-                </div>
+                <div class="kaw-feature-text"><h4>${f.title}</h4><p>${f.desc}</p></div>
               </div>
             `).join('')}
           </div>
         </div>
       </section>
 
+      <hr class="kaw-sep">
+
+      <!-- CATEGORIES -->
+      <section class="kaw-categories" id="kaw-cats">
+        <div class="kaw-section-header">
+          <span class="kaw-section-eyebrow">Líneas de producto</span>
+          <h2 class="kaw-section-title">Un universo de<br><em>soluciones</em></h2>
+          <p class="kaw-section-sub">Cada línea está diseñada con propósito específico para maximizar tu productividad.</p>
+        </div>
+        <div class="kaw-cat-grid">
+          ${[
+    { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Aspersores a motor, manuales y eléctricos que brindan potencia, autonomía y eficiencia para todo tipo de cultivos.' },
+    { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para fuerza constante, cortes limpios y larga durabilidad.' },
+    { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad.' },
+  ].map(cat => `
+            <div class="kaw-cat-card">
+              <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
+              <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.4) 40%,transparent 100%);"></div>
+              <div class="kaw-cat-content" style="justify-content:flex-end;padding:40px 25px;text-align:center;">
+                <div class="kaw-cat-name" style="text-transform:uppercase;font-size:2.2rem;font-weight:900;letter-spacing:2px;margin-bottom:10px;color:white;-webkit-text-stroke:1.2px #CC1111;paint-order:stroke fill;">${cat.name}</div>
+                <div style="height:4.5rem;display:flex;align-items:flex-start;justify-content:center;">
+                  <p style="color:rgba(255,255,255,.9);font-size:0.85rem;line-height:1.4;margin:0;max-width:320px;">${cat.desc}</p>
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
       <!-- FEATURED PRODUCTS -->
-      <section class="kaw-products" id="productos">
+      <section class="kaw-products">
         <div class="kaw-section-header">
           <span class="kaw-section-eyebrow">Top Productos</span>
           <h2 class="kaw-section-title">Equipos destacados</h2>
@@ -262,10 +252,10 @@ const renderKawashima = () => {
           </div>
           <div class="why-grid">
             ${[
-      { title: 'Relación Calidad–Precio', text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.' },
-      { title: 'Durabilidad en Productos', text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.' },
-      { title: 'Refacciones en todos los equipos', text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.' },
-    ].map(card => `
+    { title: 'Relación Calidad–Precio', text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.' },
+    { title: 'Durabilidad en Productos', text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.' },
+    { title: 'Refacciones en todos los equipos', text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.' },
+  ].map(card => `
               <div class="kaw-why-card glass-panel" style="text-align:center;padding:60px 35px;border-radius:24px;position:relative;overflow:visible;">
                 <div class="kaw-card-icon-wrap" style="width:100px;height:100px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:-110px auto 30px;box-shadow:0 15px 35px rgba(0,0,0,.2);position:relative;z-index:2;">
                   <svg viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="#CC1111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
@@ -355,7 +345,7 @@ const brandConfig = {
   powerhunt: {
     css: 'ph', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
     badge: '⚡ Energía Industrial • México', title: 'POWER HUNT', slogan: 'Energía que Nunca se Detiene',
-    accentColor: '#2563EB',
+    accentColor: '#005BB5',
     stats: [{ n: '25+', l: 'Años de potencia' }, { n: '4K+', l: 'Equipos instalados', mid: true }, { n: '24/7', l: 'Soporte técnico' }],
     marquee: ['Generadores', 'Plantas de Luz', 'Motobombas', 'Soldadoras', 'Compresores', 'Energía Confiable'],
     introCopy: 'PowerHunt es la marca de generadores eléctricos y soluciones de energía para la industria, el campo y la construcción. Máquinas robustas diseñadas para operar en las condiciones más exigentes, donde la energía nunca puede faltar.',
@@ -401,15 +391,15 @@ const renderGenericBrand = (brandId) => {
           <div class="${p}-hero-divider"></div>
           <div class="${p}-hero-stats">
             ${cfg.stats.map(s => `
-              <div class="${p}-stat">
+              <div ${s.mid ? `style="border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08);padding:0 60px;"` : ''}>
                 <span class="${p}-stat-number">${s.n}</span>
                 <span class="${p}-stat-label">${s.l}</span>
               </div>
             `).join('')}
           </div>
           <div class="${p}-hero-cta">
-            <button class="${p}-btn-primary" onclick="window.renderContacto(true)">Ser distribuidor</button>
-            <button class="${p}-btn-outline" onclick="document.getElementById('${p}-cats').scrollIntoView({behavior:'smooth'})">Ver catálogo</button>
+            <button class="${p}-btn-primary" onclick="window.renderContacto(true)">Ser Distribuidor</button>
+            <button class="${p}-btn-outline" onclick="document.getElementById('${p}-cats').scrollIntoView({behavior:'smooth'})">Ver Catálogo</button>
           </div>
         </div>
       </section>
@@ -542,7 +532,7 @@ const renderGenericBrand = (brandId) => {
   `;
 
   renderNavbar('nav-container');
-  makeParticles(`${p}-particles`, `rgba(${p === 'par' ? '26,122,74' : p === 'gt' ? '200,155,42' : p === 'ph' ? '37,99,235' : '255,102,0'},1)`);
+  makeParticles(`${p}-particles`, `rgba(${p === 'par' ? '26,122,74' : p === 'gt' ? '200,155,42' : p === 'ph' ? '0,91,181' : '255,102,0'},1)`);
   const obs = makeSectionObserver(`.${p}-cat-card, .${p}-prod-card, .${p}-feature-item`);
   document.querySelectorAll(`.${p}-categories, .${p}-products, .${p}-intro`).forEach(s => obs.observe(s));
 };
