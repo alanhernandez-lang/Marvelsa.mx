@@ -164,8 +164,9 @@ const renderKawashima = () => {
       <section class="kaw-categories" style="background:var(--kaw-dark);padding:120px 0;">
         <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
           <div style="text-align:center;margin-bottom:80px;">
-            <span class="kaw-section-eyebrow">Categorías de Potencia</span>
-            <h2 class="kaw-section-title">Soluciones Especializadas</h2>
+            <span class="kaw-section-eyebrow">LÍNEAS DE PRODUCTO</span>
+            <h2 class="kaw-section-title">Un universo de <em>soluciones</em></h2>
+            <p class="kaw-section-sub">Cada línea está diseñada con propósito específico para maximizar tu productividad.</p>
           </div>
           <div class="kaw-cat-grid">
             ${[
@@ -175,10 +176,10 @@ const renderKawashima = () => {
     ].map(cat => `
               <div class="kaw-cat-card">
                 <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
-                <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.4) 40%,transparent 100%);"></div>
-                <div class="kaw-cat-content">
-                  <h3>${cat.name}</h3>
-                  <p>${cat.desc}</p>
+                <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.3) 100%);"></div>
+                <div class="kaw-cat-content" style="text-align:center;bottom:50%;transform:translateY(50%);">
+                  <h3 class="kaw-cat-name" style="font-size:2.5rem;margin-bottom:15px;text-shadow:0 0 20px rgba(0,0,0,0.5);">${cat.name}</h3>
+                  <p style="color:rgba(255,255,255,0.9);font-size:0.9rem;max-width:280px;margin:0 auto;line-height:1.5;text-shadow:0 2px 4px rgba(0,0,0,0.8);">${cat.desc}</p>
                 </div>
               </div>
             `).join('')}
