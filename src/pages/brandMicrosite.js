@@ -286,20 +286,6 @@ const renderKawashima = () => {
         </div>
       </section>
 
-      <!-- FINAL CTA -->
-      <hr class="kaw-sep">
-      <section class="kaw-cta-banner">
-        <div class="kaw-cta-inner">
-          <div class="kaw-badge" style="opacity:1;animation:none;">Distribuidores</div>
-          <h2>¿Listo para unirte al<br>universo <em>Kawashima</em>?</h2>
-          <p>Únete a nuestra red de más de 5,000 distribuidores en todo México. Precios preferenciales, soporte técnico y catálogo completo.</p>
-          <div class="kaw-hero-cta" style="opacity:1;animation:none;">
-            <button class="kaw-btn-primary" onclick="window.renderContacto(true)">Quiero ser distribuidor</button>
-            <button class="kaw-btn-outline" onclick="window.renderHome()">Ver todas las marcas</button>
-          </div>
-        </div>
-      </section>
-
       ${getFooterHTML()}
     </main>
   `;
@@ -515,19 +501,6 @@ const renderGenericBrand = (brandId) => {
           </button>
         </div>
         <div class="split-banner-img" style="--overlay-color:var(--${p}-black);background-image:url('${cfg.banner}');background-size:cover;background-position:center;filter:brightness(0.55) saturate(0.7);">
-        </div>
-      </section>
-
-      <hr class="${p}-sep">
-      <section class="${p}-cta-banner">
-        <div class="${p}-cta-inner">
-          <div class="${p}-badge" style="opacity:1;animation:none;">Distribuidores</div>
-          <h2>¿Listo para crecer con<br><em>${cfg.title}</em>?</h2>
-          <p>Herramientas profesionales con soporte técnico para quienes hacen del trabajo su pasión.</p>
-          <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
-            <button class="${p}-btn-primary" onclick="window.renderContacto(true)">Contactar a ${cfg.title}</button>
-            <button class="${p}-btn-outline" onclick="window.renderHome()">Ver todas las marcas</button>
-          </div>
         </div>
       </section>
 
