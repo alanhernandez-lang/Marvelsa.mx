@@ -123,7 +123,7 @@ const renderKawashima = () => {
         <div class="kaw-intro-inner">
           <div class="kaw-intro-left">
             <span class="kaw-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="kaw-intro-title">Fabricados para el<br>campo <em>mexicano</em></h2>
+            <h2 class="kaw-intro-title">Fabricados para el<br>campo <span style="color:var(--kaw-red);">mexicano</span></h2>
             <p class="kaw-intro-text">
               Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque.
               Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo,
@@ -418,12 +418,16 @@ const renderGenericBrand = (brandId) => {
             <p class="${p}-intro-text">${cfg.introCopy}</p>
           </div>
           <div class="${p}-features">
-            ${['Calidad', 'Diseño', 'Soporte'].map((f, i) => `
+            ${[
+    { title: 'Calidad', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
+    { title: 'Diseño', path: 'M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z' },
+    { title: 'Soporte', path: 'M21 10c0-4.97-4.03-9-9-9s-9 4.03-9 9M7 15h10m2 0a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2M5 15a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2' }
+  ].map((f, i) => `
               <div class="${p}-feature-item" style="transition-delay:${i * 0.15 + 0.1}s">
                 <div class="${p}-feature-icon">
-                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="${f.path}"/></svg>
                 </div>
-                <div class="${p}-feature-text"><h4>${f} Comprobado</h4><p>Herramientas que garantizan resultados profesionales en cada jornada de trabajo.</p></div>
+                <div class="${p}-feature-text"><h4>${f.title} Comprobada</h4><p>Herramientas que garantizan resultados profesionales en cada jornada de trabajo.</p></div>
               </div>
             `).join('')}
           </div>
