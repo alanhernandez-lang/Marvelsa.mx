@@ -131,9 +131,10 @@ const renderKawashima = () => {
       <section class="kaw-intro" style="background:var(--kaw-black);padding:120px 0;">
         <div style="max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center;">
           <div>
-            <span class="kaw-section-eyebrow">Poder y Durabilidad</span>
-            <h2 class="kaw-section-title">Ingeniería para el<br>uso rudo cotidiano</h2>
-            <p class="kaw-intro-text">Kawashima es sinónimo de resistencia. Cada equipo está diseñado bajo estándares de calidad industrial, ofreciendo una combinación inigualable de potencia motorizada y facilidad de mantenimiento. No solo vendemos máquinas, entregamos el respaldo que tu negocio necesita.</p>
+            <span class="kaw-section-eyebrow">NUESTRA ESENCIA</span>
+            <h2 class="kaw-section-title" style="font-size:clamp(3rem,6vw,5rem);line-height:1;">Fabricados<br>para el<br>campo <span style="color:var(--kaw-red);">mexicano</span></h2>
+            <p class="kaw-intro-text">Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque. Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo, refacciones disponibles y servicio en todo México.</p>
+            <p class="kaw-intro-text" style="margin-top:20px;">En Kawashima trabajamos contigo, para que nada detenga tu esfuerzo.</p>
           </div>
           <div class="kaw-intro-features">
             ${[
