@@ -135,7 +135,7 @@ const renderKawashima = () => {
             ${[
     { icon: 'wrench', title: 'Herramientas profesionales', desc: 'Equipos diseñados para uso rudo, con tecnología que garantiza durabilidad en cualquier jornada.', path: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z' },
     { icon: 'tag', title: 'Precio justo', desc: 'Calidad de alto desempeño a un costo accesible para potenciar tu inversión.', path: 'M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7h.01' },
-    { icon: 'headset', title: 'Soporte en México', desc: 'Red nacional de centros de servicio y refacciones siempre al alcance de tu mano.', path: 'M21 10c0-4.97-4.03-9-9-9s-9 4.03-9 9M7 15h10m2 0a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2M5 15a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2' },
+    { icon: 'headset', title: 'Soporte en México', desc: 'Red nacional de centros de servicio y refacciones siempre al alcance de tu mano.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4' },
   ].map((f, i) => `
               <div class="kaw-feature-item" style="transition-delay:${i * 0.15 + 0.1}s">
                 <div class="kaw-feature-icon">
@@ -252,13 +252,13 @@ const renderKawashima = () => {
           </div>
           <div class="why-grid">
             ${[
-    { title: 'Relación Calidad–Precio', text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.' },
-    { title: 'Durabilidad en Productos', text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.' },
-    { title: 'Refacciones en todos los equipos', text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.' },
+    { title: 'Relación Calidad–Precio', text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.', path: 'M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11 0-11 5 0 1.8 0 3 2 4.5V20h4v-2h2v2h4v-3.5c2-1.5 2-2.7 2-4.5 0-2.5-2.2-5-5-5z M9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z' },
+    { title: 'Durabilidad en Productos', text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
+    { title: 'Refacciones en todos los equipos', text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.', path: 'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z' },
   ].map(card => `
               <div class="kaw-why-card glass-panel" style="text-align:center;padding:60px 35px;border-radius:24px;position:relative;overflow:visible;">
                 <div class="kaw-card-icon-wrap" style="width:100px;height:100px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:-110px auto 30px;box-shadow:0 15px 35px rgba(0,0,0,.2);position:relative;z-index:2;">
-                  <svg viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="#CC1111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                  <svg viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="#CC1111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="${card.path}"/></svg>
                 </div>
                 <h3 style="font-size:1.1rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
                 <p style="color:var(--kaw-muted);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
