@@ -93,20 +93,29 @@ const renderKawashima = () => {
         <div class="kaw-hero-grid"></div>
         <div id="kaw-particles"></div>
         <div class="kaw-hero-content">
-          <div class="kaw-hero-badge" style="display:inline-flex;align-items:center;gap:10px;background:rgba(204,17,17,0.1);border:1px solid rgba(204,17,17,0.3);padding:8px 20px;border-radius:100px;margin-bottom:30px;">
-            <span style="color:#CC1111;font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;">⚡ Maquinaria Profesional • México</span>
-          </div>
+          <div class="kaw-badge">⚡ MAQUINARIA PROFESIONAL • MÉXICO</div>
           <h1 class="kaw-hero-title">KAWASHIMA</h1>
           <p class="kaw-hero-slogan">EL TRABAJO REAL NECESITA HERRAMIENTAS REALES</p>
-          <div class="kaw-hero-line"></div>
+          <div class="kaw-hero-divider"></div>
+          
           <div class="kaw-hero-stats">
-            <div class="kaw-stat-item"><h3>30+</h3><p>Años de potencia</p></div>
-            <div class="kaw-stat-divider"></div>
-            <div class="kaw-stat-item"><h3>5K+</h3><p>Distribuidores activos</p></div>
-            <div class="kaw-stat-divider"></div>
-            <div class="kaw-stat-item"><h3>100%</h3><p>Refacciones disponibles</p></div>
+            <div class="kaw-stat">
+              <span class="kaw-stat-number">30+</span>
+              <span class="kaw-stat-label">Años de potencia</span>
+            </div>
+            <div class="kaw-stat">
+              <span class="kaw-stat-number">5K+</span>
+              <span class="kaw-stat-label">Distribuidores activos</span>
+            </div>
+            <div class="kaw-stat">
+              <span class="kaw-stat-number">100%</span>
+              <span class="kaw-stat-label">Refacciones disponibles</span>
+            </div>
           </div>
-          <div class="kaw-hero-actions">
+
+          <div class="kaw-hero-cta">
+            <button class="kaw-btn-primary" onclick="window.renderContacto(true)">Ser distribuidor</button>
+            <button class="kaw-btn-outline" onclick="document.getElementById('productos').scrollIntoView({behavior:'smooth'})">Ver catálogo</button>
           </div>
         </div>
       </section>
@@ -177,7 +186,7 @@ const renderKawashima = () => {
       </section>
 
       <!-- FEATURED PRODUCTS -->
-      <section class="kaw-products">
+      <section class="kaw-products" id="productos">
         <div class="kaw-section-header">
           <span class="kaw-section-eyebrow">Top Productos</span>
           <h2 class="kaw-section-title">Equipos destacados</h2>
@@ -390,13 +399,15 @@ const renderGenericBrand = (brandId) => {
           <div class="${p}-hero-divider"></div>
           <div class="${p}-hero-stats">
             ${cfg.stats.map(s => `
-              <div ${s.mid ? `style="border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08);padding:0 60px;"` : ''}>
+              <div class="${p}-stat">
                 <span class="${p}-stat-number">${s.n}</span>
                 <span class="${p}-stat-label">${s.l}</span>
               </div>
             `).join('')}
           </div>
           <div class="${p}-hero-cta">
+            <button class="${p}-btn-primary" onclick="window.renderContacto(true)">Ser distribuidor</button>
+            <button class="${p}-btn-outline" onclick="document.getElementById('${p}-cats').scrollIntoView({behavior:'smooth'})">Ver catálogo</button>
           </div>
         </div>
       </section>
