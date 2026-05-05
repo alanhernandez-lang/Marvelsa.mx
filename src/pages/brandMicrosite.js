@@ -252,13 +252,41 @@ const renderKawashima = () => {
           </div>
           <div class="why-grid">
             ${[
-    { title: 'Relación Calidad–Precio', text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.', path: 'M19 5c-1.5 0-2.8 1.4-3 2-3.5-1.5-11 0-11 5 0 1.8 0 3 2 4.5V20h4v-2h2v2h4v-3.5c2-1.5 2-2.7 2-4.5 0-2.5-2.2-5-5-5z M9 11a1 1 0 1 1 0-2 1 1 0 0 1 0 2z' },
-    { title: 'Durabilidad en Productos', text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
-    { title: 'Refacciones en todos los equipos', text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.', path: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1V15a2 2 0 0 1-2-2 2 2 0 0 1 2-2v-.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2v.09a1.65 1.65 0 0 0-1.6 1.6z' },
+    { 
+      title: 'Relación Calidad–Precio', 
+      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.', 
+      svgPaths: `
+        <path d="M11 11c0-2.5-1.5-4-4-4a4 4 0 0 0-4 4v3a2 2 0 0 0 2 2h1v1h2v-1h1v1h2v-1h1a2 2 0 0 0 2-2z" />
+        <path d="M3 11h1" />
+        <circle cx="7" cy="3" r="2" />
+        <path d="M7 1v4 M6 2.5h2" />
+        <path d="M14 6l5-2v5c0 4-2.5 6.5-5 8-2.5-1.5-5-4-5-8V4l5 2z" />
+      `
+    },
+    { 
+      title: 'Durabilidad en Productos', 
+      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.', 
+      svgPaths: `
+        <path d="M12 7V4a2 2 0 0 0-2-2L7 7v5h5a2 2 0 0 0 2-2l1-3H12z M4 12h3V7H4v5z" />
+        <path d="M12 12l1.5 4h4.5l-3.5 3 1.5 4.5-4-3-4 3 1.5-4.5-3.5-3h4.5z" />
+        <path d="M5 14l1 2h3l-2 2 1 3-3-2-3 2 1-3-2-2h3z" />
+        <path d="M19 14l1 2h3l-2 2 1 3-3-2-3 2 1-3-2-2h3z" />
+      `
+    },
+    { 
+      title: 'Refacciones en todos los equipos', 
+      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.', 
+      svgPaths: `
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1V15a2 2 0 0 1-2-2 2 2 0 0 1 2-2v-.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2v.09a1.65 1.65 0 0 0-1.6 1.6z" />
+        <path d="M14.5 9.5L9.5 14.5M16 8l1.5-1.5a2 2 0 0 0-2.8-2.8L13.2 5M10.8 19l-1.5 1.5a2 2 0 0 1-2.8-2.8L8 16" />
+      `
+    },
   ].map(card => `
               <div class="kaw-why-card glass-panel" style="text-align:center;padding:60px 35px;border-radius:24px;position:relative;overflow:visible;">
                 <div class="kaw-card-icon-wrap" style="width:100px;height:100px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:-110px auto 30px;box-shadow:0 15px 35px rgba(0,0,0,.2);position:relative;z-index:2;">
-                  <svg viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="#CC1111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="${card.path}"/></svg>
+                  <svg viewBox="0 0 24 24" width="50" height="50" fill="none" stroke="#CC1111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    ${card.svgPaths}
+                  </svg>
                 </div>
                 <h3 style="font-size:1.1rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
                 <p style="color:var(--kaw-muted);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
