@@ -132,31 +132,31 @@ export const renderNosotros = () => {
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
               <div class="nos-why-cards-grid">
                 ${[
-                  {
-                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="12" r="3"/></svg>',
-                    title: 'Cobertura en todo México',
-                    desc: 'Contamos con la infraestructura y logística para llevar nuestros productos a cualquier parte de la República, garantizando disponibilidad y cercanía con cada distribuidor.',
-                    delay: ''
-                  },
-                  {
-                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><line x1="2" y1="8" x2="22" y2="8"/><rect x="5" y="11" width="4" height="3" rx="0.5"/><rect x="11" y="11" width="4" height="3" rx="0.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="17" x2="12" y2="20"/></svg>',
-                    title: 'Prioridad: experiencia de cliente',
-                    desc: 'Somos pioneros in la industria con un portal exclusivo para distribuidores, diseñado para comprar en pocos clics, planear inventarios y tomar el control de su negocio.',
-                    delay: '0.1s'
-                  },
-                  {
-                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h8M8 6h8"/></svg>',
-                    title: 'Servicio postventa personalizado',
-                    desc: 'Respaldamos cada compra con un servicio postventa que atiende garantías, reclamos y solicitudes de refacciones de manera rápida y efectiva.',
-                    delay: '0.2s'
-                  },
-                  {
-                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3m18 0v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-9 6-9-6"/></svg>',
-                    title: '+10,000 SKU en inventario',
-                    desc: 'Más de 10,000 productos disponibles para mantener tu negocio actualizado, competitivo y listo para responder a las necesidades del mercado.',
-                    delay: '0.3s'
-                  },
-                ].map(c => `
+      {
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="12" r="3"/></svg>',
+        title: 'Cobertura en todo México',
+        desc: 'Contamos con la infraestructura y logística para llevar nuestros productos a cualquier parte de la República, garantizando disponibilidad y cercanía con cada distribuidor.',
+        delay: ''
+      },
+      {
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><line x1="2" y1="8" x2="22" y2="8"/><rect x="5" y="11" width="4" height="3" rx="0.5"/><rect x="11" y="11" width="4" height="3" rx="0.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="17" x2="12" y2="20"/></svg>',
+        title: 'Prioridad: experiencia de cliente',
+        desc: 'Somos pioneros in la industria con un portal exclusivo para distribuidores, diseñado para comprar en pocos clics, planear inventarios y tomar el control de su negocio.',
+        delay: '0.1s'
+      },
+      {
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h8M8 6h8"/></svg>',
+        title: 'Servicio postventa personalizado',
+        desc: 'Respaldamos cada compra con un servicio postventa que atiende garantías, reclamos y solicitudes de refacciones de manera rápida y efectiva.',
+        delay: '0.2s'
+      },
+      {
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3m18 0v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-9 6-9-6"/></svg>',
+        title: '+10,000 SKU en inventario',
+        desc: 'Más de 10,000 productos disponibles para mantener tu negocio actualizado, competitivo y listo para responder a las necesidades del mercado.',
+        delay: '0.3s'
+      },
+    ].map(c => `
                   <div class="nos-why-card reveal-up" ${c.delay ? `style="transition-delay:${c.delay}"` : ''}>
                     <div class="nos-why-card-icon">${c.icon}</div>
                     <h3 class="nos-why-card-title">${c.title}</h3>
@@ -175,13 +175,13 @@ export const renderNosotros = () => {
              </p>
              <div class="nos-why-cards-grid">
                 ${[
-                  { icon: '🧭', title: 'Experiencia comprobada', desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores.', delay: '' },
-                  { icon: '⚙️', title: 'Marcas líderes', desc: 'Representamos fabricantes reconocidos por su innovación y desempeño.', delay: '0.1s' },
-                  { icon: '🚚', title: 'Cobertura nacional', desc: 'Entregamos a todo México con eficiencia y respaldo logístico.', delay: '0.2s' },
-                  { icon: '💻', title: 'Portal exclusivo para distribuidores', desc: 'Compra, planifica y controla tu negocio con facilidad.', delay: '0.3s' },
-                  { icon: '🧰', title: 'Soporte técnico y postventa real', desc: 'Soluciones rápidas, atención cercana y respaldo garantizado.', delay: '0.4s' },
-                  { icon: '💡', title: 'Valor justo', desc: 'Productos de calidad profesional a precios que permiten competir y crecer.', delay: '0.5s' }
-                ].map(c => `
+      { icon: '🧭', title: 'Experiencia comprobada', desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores.', delay: '' },
+      { icon: '⚙️', title: 'Marcas líderes', desc: 'Representamos fabricantes reconocidos por su innovación y desempeño.', delay: '0.1s' },
+      { icon: '🚚', title: 'Cobertura nacional', desc: 'Entregamos a todo México con eficiencia y respaldo logístico.', delay: '0.2s' },
+      { icon: '💻', title: 'Portal exclusivo para distribuidores', desc: 'Compra, planifica y controla tu negocio con facilidad.', delay: '0.3s' },
+      { icon: '🧰', title: 'Soporte técnico y postventa real', desc: 'Soluciones rápidas, atención cercana y respaldo garantizado.', delay: '0.4s' },
+      { icon: '💡', title: 'Valor justo', desc: 'Productos de calidad profesional a precios que permiten competir y crecer.', delay: '0.5s' }
+    ].map(c => `
                   <div class="nos-why-card reveal-up" ${c.delay ? `style="transition-delay:${c.delay}"` : ''}>
                     <div class="nos-why-card-icon" style="font-size:2.5rem; margin-bottom:15px;">${c.icon}</div>
                     <h3 class="nos-why-card-title">${c.title}</h3>
@@ -207,15 +207,6 @@ export const renderNosotros = () => {
               Somos más que una comercializadora: somos el respaldo que impulsa tu negocio.
             </p>
           </div>
-        </div>
-      </section>
-
-      <!-- MARVELSA SUMMARY SECTION -->
-      <section style="background:#333; padding:80px 0; color:#fff; text-align:center;">
-        <div class="container-narrow reveal-up">
-          <p style="font-size:1.15rem; line-height:2; margin:0; opacity:0.9; max-width:900px; margin:0 auto;">
-            MARVELSA es una empresa generadora de bienestar económico tanto para nuestros proveedores, colaboradores, clientes así como usuario final, a través de la comercialización de productos de calidad, a precios competitivos y con el mejor servicio del mercado para la industria agrícola, forestal, jardinería y construcción.
-          </p>
         </div>
       </section>
 
