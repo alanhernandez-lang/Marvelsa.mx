@@ -309,9 +309,9 @@ const renderKawashima = () => {
             Forma parte de una marca que está transformando el acceso a herramientas profesionales en México.
             Maquinaria de alta demanda, soporte constante y respaldo comercial para que tu negocio crezca con nosotros.
           </p>
-          <button class="kaw-btn-primary" onclick="window.renderContacto(true)" style="border-radius:100px;padding:20px 40px;font-size:1rem;">
+          <a href="https://forms.gle/ZnBSdJCScRHuZLnY6" target="_blank" rel="noopener" class="kaw-btn-primary" style="text-decoration:none;border-radius:100px;padding:20px 40px;font-size:1rem;display:inline-block;">
             Conviértete en distribuidor Kawashima
-          </button>
+          </a>
         </div>
         <div class="split-banner-img" style="--overlay-color:var(--kaw-black);background-image:url('${bannerKawashima}');background-size:contain;background-repeat:no-repeat;background-position:center;background-color:#0a0a0a;">
         </div>
