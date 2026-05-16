@@ -5,6 +5,9 @@ import { getFooterHTML } from '../components/Footer.js';
 import { img30Anos, imgNosotrosFull } from '../assets/images.js';
 import { activateRevealObserver } from '../core/reveal.js';
 
+const marqueeItems = ['Distribuidores Autorizados', 'Cobertura Nacional', 'Atención B2B', 'Soporte Técnico'];
+const marqueeHTML  = Array(8).fill(marqueeItems.map(t => `<span class="mvh-mqitem-pill">${t}</span>`).join('')).join('');
+
 const stats = [
   { value: '+30', label: 'Años de historia', delay: '' },
   { value: '20K+', label: 'SKUs disponibles', delay: '0.1s' },
@@ -26,6 +29,15 @@ export const renderNosotros = () => {
     <div id="nav-container"></div>
     <main style="background:var(--bg-body);min-height:100vh;overflow-x:hidden;">
 
+      <!-- HERO CAROUSEL -->
+      <section style="padding-top:20px;">
+        <div id="nosotros-carousel-container"></div>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="mvh-marquee" style="margin-top:-20px;position:relative;z-index:10;">
+        <div class="mvh-marquee-track">${marqueeHTML}</div>
+      </div>
 
 
       <!-- STATS -->
@@ -192,6 +204,6 @@ export const renderNosotros = () => {
   `;
 
   renderNavbar('nav-container');
-
+  renderHeroCarousel('nosotros-carousel-container');
   activateRevealObserver({ includeTimeline: true });
 };
