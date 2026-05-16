@@ -250,50 +250,37 @@ const renderKawashima = () => {
             <span class="kaw-section-eyebrow">Nuestra diferencia</span>
             <h2 class="kaw-section-title">¿Por qué elegir<br>Kawashima?</h2>
           </div>
-          <div class="why-grid">
+          <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:30px;">
             ${[
-    { 
-      title: 'Relación Calidad–Precio', 
-      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.', 
-      icon: `
-        <line x1="12" y1="3" x2="12" y2="21"/>
-        <path d="M5 8h14"/>
-        <path d="M5 8c0 3.31 2.69 6 6 6s6-2.69 6-6"/>
-        <path d="M3 21h18"/>
-        <circle cx="12" cy="6" r="2"/>
-        <path d="M8 13.5C8 16 9.8 18 12 18s4-2 4-4.5"/>
-      `
-    },
-    { 
-      title: 'Durabilidad en Productos', 
-      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.', 
-      icon: `
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        <line x1="12" y1="7" x2="12" y2="11"/>
-        <line x1="10" y1="9" x2="14" y2="9"/>
-      `
-    },
-    { 
-      title: 'Refacciones en todos los equipos', 
-      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.', 
-      icon: `
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-      `
-    },
-
-  ].map(card => `
-              <div class="kaw-why-card" style="background:rgba(255,255,255,0.03);text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid rgba(255,255,255,0.06);transition:all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);box-shadow:0 20px 40px rgba(0,0,0,0.2);">
-                <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--kaw-red);border-radius:32px 32px 0 0;opacity:0.8;"></div>
-                <div class="kaw-card-icon-wrap" style="width:90px;height:90px;background:white;border-radius:24px;display:flex;align-items:center;justify-content:center;margin:-105px auto 30px;box-shadow:0 20px 40px rgba(204,17,17,0.3);position:relative;z-index:2;transform:rotate(-5deg);">
-                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="#CC1111" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                    ${card.icon}
-                  </svg>
+              { 
+                num: '01',
+                title: 'Relación Calidad–Precio', 
+                text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.',
+                svg: `<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M5 5h14M7 21h10M8 5v14a4 4 0 0 0 8 0V5"/></svg>`
+              },
+              { 
+                num: '02',
+                title: 'Durabilidad en Productos', 
+                text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.',
+                svg: `<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>`
+              },
+              { 
+                num: '03',
+                title: 'Refacciones en todos los equipos', 
+                text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.',
+                svg: `<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1V13a2 2 0 0 1-2-2 2 2 0 0 1 2-2v-.09a1.65 1.65 0 0 0 1-1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2v.09a1.65 1.65 0 0 0-1.6 1.6z"/></svg>`
+              },
+            ].map(card => `
+              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:24px;overflow:hidden;transition:all 0.4s ease;">
+                <div style="background:linear-gradient(135deg, #900 0%, #CC1111 100%);padding:40px;position:relative;overflow:hidden;display:flex;justify-content:center;">
+                  <div style="position:absolute;top:-10px;right:-10px;font-size:6rem;font-weight:900;color:rgba(255,255,255,0.05);line-height:1;pointer-events:none;">${card.num}</div>
+                  <div style="position:relative;z-index:1;">${card.svg}</div>
                 </div>
-                <h3 style="font-size:1.15rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
-                <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
+                <div style="padding:40px;text-align:center;">
+                  <h3 style="font-size:1.1rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
+                  <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
+                </div>
               </div>
-
             `).join('')}
           </div>
         </div>
