@@ -269,26 +269,7 @@ const renderKawashima = () => {
                 </div>
                 <h3 style="font-size:1.15rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
                 <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
-              </div>
-
             `).join('')}
-          </div>
-        </div>
-      </section>
-
-      <!-- BLOG/GUIDE PREVIEW -->
-      <section style="background:#f9f9f9; padding:80px 0;">
-        <div class="container-narrow reveal-up" style="display:flex; align-items:center; gap:60px;">
-          <div style="flex:1;">
-            <span class="kaw-section-eyebrow">Consejo del Experto</span>
-            <h2 class="kaw-section-title" style="margin-bottom:25px; color:#111;">Cómo elegir la desbrozadora Kawashima ideal</h2>
-            <p style="color:#666; font-size:1.1rem; line-height:1.8; margin-bottom:30px;">
-              Elegir la herramienta correcta marca la diferencia entre un trabajo pesado y uno bien hecho. Descubre nuestra guía completa para identificar el equipo que mejor se adapta a tus necesidades.
-            </p>
-            <button onclick="window.renderBlogArticle('desbrozadora-kawashima')" class="kaw-btn-primary" style="border-radius:100px; padding:15px 35px;">Leer Guía Completa</button>
-          </div>
-          <div style="flex:1; border-radius:30px; overflow:hidden; box-shadow:0 25px 50px -12px rgba(0,0,0,0.15);">
-             <img src="${imgKawJardin}" alt="Mantenimiento de Jardín" style="width:100%; height:100%; object-fit:cover;">
           </div>
         </div>
       </section>
