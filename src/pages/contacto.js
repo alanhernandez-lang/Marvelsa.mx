@@ -20,10 +20,7 @@ export const renderContacto = (shouldScroll = false) => {
     <div id="nav-container"></div>
     <main style="background:var(--bg-body);min-height:100vh;overflow-x:hidden;">
 
-      <!-- HERO CAROUSEL -->
-      <section style="padding-top:20px;">
-        <div id="contacto-carousel-container"></div>
-      </section>
+
 
       <!-- MARQUEE -->
       <div class="mvh-marquee" style="margin-top:-20px;position:relative;z-index:10;">
@@ -77,7 +74,7 @@ export const renderContacto = (shouldScroll = false) => {
   `;
 
   renderNavbar('nav-container');
-  renderHeroCarousel('contacto-carousel-container');
+
   renderLeadForm('contact-form-container');
 
   if (shouldScroll) {

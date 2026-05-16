@@ -26,10 +26,7 @@ export const renderNosotros = () => {
     <div id="nav-container"></div>
     <main style="background:var(--bg-body);min-height:100vh;overflow-x:hidden;">
 
-      <!-- HERO CAROUSEL -->
-      <section style="padding-top:20px;">
-        <div id="nosotros-carousel-container"></div>
-      </section>
+
 
       <!-- STATS -->
       <section class="nos-stats">
@@ -195,6 +192,6 @@ export const renderNosotros = () => {
   `;
 
   renderNavbar('nav-container');
-  renderHeroCarousel('nosotros-carousel-container');
+
   activateRevealObserver({ includeTimeline: true });
 };
