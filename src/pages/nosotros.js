@@ -6,7 +6,7 @@ import { img30Anos, imgNosotrosFull } from '../assets/images.js';
 import { activateRevealObserver } from '../core/reveal.js';
 
 const marqueeItems = ['Distribuidores Autorizados', 'Cobertura Nacional', 'Atención B2B', 'Soporte Técnico'];
-const marqueeHTML  = Array(8).fill(marqueeItems.map(t => `<span class="mvh-mqitem-pill">${t}</span>`).join('')).join('');
+const marqueeHTML = Array(8).fill(marqueeItems.map(t => `<span class="mvh-mqitem-pill">${t}</span>`).join('')).join('');
 
 const stats = [
   { value: '+30', label: 'Años de historia', delay: '' },
@@ -59,14 +59,13 @@ export const renderNosotros = () => {
         <div class="container nosotros-split-grid">
           <div class="reveal-left" style="display:flex;">
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;width:100%;display:flex;flex-direction:column;justify-content:center;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
-              <span class="mvh-eyebrow" style="margin-bottom:15px;">Trayectoria</span>
-              <h2 class="mvh-section-title" style="margin-bottom:30px;">30 Años <em>Impulsando</em> al Distribuidor</h2>
-              <p style="font-size:1.15rem;line-height:1.8;color:rgba(0,0,0,.7);margin-bottom:30px;">
-                En Comercializadora Marvelsa conectamos a los distribuidores con las mejores marcas del mundo en
-                maquinaria, refacciones y soluciones para los sectores agrícola, ferretero, construcción, forestal y jardín.
-                Nuestra misión: que cada negocio crezca con productos confiables, precios justos y el respaldo técnico que
-                hace la diferencia.
-              </p>
+                <span class="mvh-eyebrow" style="margin-bottom:15px;">¿Quiénes somos?</span>
+                <h2 class="mvh-section-title" style="margin-bottom:30px;">Más de 30 años <em>impulsando</em> a quienes mueven a México</h2>
+                <p style="font-size:1.15rem;line-height:1.8;color:rgba(0,0,0,.7);margin-bottom:30px;">
+                  Somos el aliado estratégico de distribuidores y negocios en México. Llevamos hasta ti la más amplia oferta en maquinaria, refacciones y soluciones para el campo, la construcción y la industria. Con el respaldo técnico de nuestro equipo y disponibilidad de productos, hacemos más fácil tu día a día y el de tus clientes.
+                  <br><br>
+                  En Marvelsa creemos que la calidad profesional no debe ser un lujo: por eso acercamos productos de alto desempeño a precios justos, ofreciendo a nuestros distribuidores y sus clientes el valor real que se merecen.
+                </p>
             </div>
           </div>
           <div class="reveal-right" style="display:flex;justify-content:center;">
@@ -88,9 +87,13 @@ export const renderNosotros = () => {
           <div class="reveal-right" style="display:flex;">
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;width:100%;display:flex;flex-direction:column;justify-content:center;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
               <h2 class="mvh-section-title" style="margin-bottom:30px;text-align:center;">Nuestra <em>Historia</em></h2>
-              <p style="font-size:1.1rem;line-height:1.8;color:rgba(0,0,0,.7);margin-bottom:20px;">Nacimos con una idea sencilla: acercar productos de calidad profesional al alcance de todos los distribuidores del país. <br> 
-              Con el tiempo, esa idea se convirtió en una red sólida de aliados comerciales que confían en nuestro compromiso, rapidez y respaldo. <br> 
-              Hoy, Comercializadora Marvelsa es referente nacional por su capacidad de distribución, su servicio posventa y su portafolio de marcas líderes que marcan la diferencia en cada proyecto.</p>
+              <p style="font-size:1.1rem;line-height:1.8;color:rgba(0,0,0,.7);margin-bottom:20px;">
+                Nacimos con una idea sencilla: acercar productos de calidad profesional al alcance de todos los distribuidores del país. 
+                <br><br>
+                Con el tiempo, esa idea se convirtió en una red sólida de aliados comerciales que confían en nuestro compromiso, rapidez y respaldo. 
+                <br><br>
+                Hoy, Comercializadora Marvelsa es referente nacional por su capacidad de distribución, su servicio posventa y su portafolio de marcas líderes que marcan la diferencia en cada proyecto.
+              </p>
             </div>
           </div>
         </div>
@@ -113,18 +116,14 @@ export const renderNosotros = () => {
                 </div>
               </div>
             `).join('')}
-          </div>
-        </div>
-      </section>
-
-      <!-- ¿POR QUÉ ELEGIR MARVELSA? -->
+          </div>      <!-- SERVICIOS ESTRATÉGICOS -->
       <section class="nos-why-choose" style="padding:clamp(60px,10vw,120px) 0;">
         <div class="container-narrow">
           <div class="nos-why-choose-header reveal-up">
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
-              <h2 class="mvh-section-title" style="margin-bottom:15px;text-align:center;">¿Por qué elegir <em>Marvelsa</em>?</h2>
+              <h2 class="mvh-section-title" style="margin-bottom:15px;text-align:center;">Servicios <em>Estratégicos</em></h2>
               <p style="font-size:1.1rem;line-height:1.8;color:rgba(0,0,0,.6);text-align:left;">
-                Más que un proveedor, somos un aliado de negocio que entiende tus retos y te acompaña en cada paso.
+                Nuestros pilares fundamentales para potenciar tu negocio.
               </p>
             </div>
           </div>
@@ -133,44 +132,31 @@ export const renderNosotros = () => {
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
               <div class="nos-why-cards-grid">
                 ${[
-      {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-3 3h6l-3-3z"/><path d="M8 18h8v2H8z"/><circle cx="12" cy="9" r="5"/><path d="M12 4v1"/><path d="M8.5 5.5l.7.7"/><path d="M7 9h1"/><path d="M15.5 5.5l-.7.7"/><path d="M17 9h-1"/><polyline points="10 9 12 11 14 8"/></svg>',
-        title: 'Experiencia Comprobada',
-        desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores.',
-        delay: ''
-      },
-      {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/><circle cx="12" cy="12" r="3"/></svg>',
-        title: 'Marcas Líderes',
-        desc: 'Representamos fabricantes reconocidos por su innovación y desempeño.',
-        delay: '0.1s'
-      },
-      {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="8"/><path d="M12 2a8 8 0 0 1 0 16 8 8 0 0 1 0-16"/><path d="M2 12h20"/><ellipse cx="12" cy="10" rx="3" ry="8"/><path d="M12 18v3"/><path d="M9 21h6"/></svg>',
-        title: 'Cobertura Nacional',
-        desc: 'Entregamos a todo México con eficiencia y respaldo logístico.',
-        delay: '0.2s'
-      },
-      {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><line x1="2" y1="8" x2="22" y2="8"/><rect x="5" y="11" width="4" height="3" rx="0.5"/><rect x="11" y="11" width="4" height="3" rx="0.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="17" x2="12" y2="20"/></svg>',
-        title: 'Portal Exclusivo',
-        desc: 'Compra, planifica y controla tu negocio con facilidad.',
-        delay: '0.3s'
-      },
-      {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3V11z"/><path d="M21 11h-2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2V11z"/><path d="M3 11V9a9 9 0 0 1 18 0v2"/><path d="M7 18c0 2 2.5 3 5 3s5-1 5-3"/><circle cx="12" cy="5" r="0.5" fill="currentColor"/></svg>',
-        title: 'Soporte Técnico y Postventa',
-        desc: 'Soluciones rápidas, atención cercana y respaldo garantizado.',
-        delay: '0.4s'
-      },
-      {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="15"/><circle cx="12" cy="3" r="1.5"/><line x1="5" y1="10" x2="12" y2="7"/><line x1="19" y1="10" x2="12" y2="7"/><rect x="3" y="10" width="4" height="6" rx="1"/><rect x="17" y="10" width="4" height="6" rx="1"/><path d="M12 15v4"/><path d="M8 19h8"/><path d="M6 16v3"/><path d="M18 16v3"/></svg>',
-        title: 'Valor Justo',
-        desc: 'Productos de calidad profesional a precios que permiten competir y crecer.',
-        delay: '0.5s'
-      },
-    ].map(c => `
-
+                  {
+                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="12" r="3"/></svg>',
+                    title: 'Cobertura en todo México',
+                    desc: 'Contamos con la infraestructura y logística para llevar nuestros productos a cualquier parte de la República, garantizando disponibilidad y cercanía con cada distribuidor.',
+                    delay: ''
+                  },
+                  {
+                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><line x1="2" y1="8" x2="22" y2="8"/><rect x="5" y="11" width="4" height="3" rx="0.5"/><rect x="11" y="11" width="4" height="3" rx="0.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="17" x2="12" y2="20"/></svg>',
+                    title: 'Prioridad: experiencia de cliente',
+                    desc: 'Somos pioneros in la industria con un portal exclusivo para distribuidores, diseñado para comprar en pocos clics, planear inventarios y tomar el control de su negocio.',
+                    delay: '0.1s'
+                  },
+                  {
+                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h8M8 6h8"/></svg>',
+                    title: 'Servicio postventa personalizado',
+                    desc: 'Respaldamos cada compra con un servicio postventa que atiende garantías, reclamos y solicitudes de refacciones de manera rápida y efectiva.',
+                    delay: '0.2s'
+                  },
+                  {
+                    icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v3m18 0v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-9 6-9-6"/></svg>',
+                    title: '+10,000 SKU en inventario',
+                    desc: 'Más de 10,000 productos disponibles para mantener tu negocio actualizado, competitivo y listo para responder a las necesidades del mercado.',
+                    delay: '0.3s'
+                  },
+                ].map(c => `
                   <div class="nos-why-card reveal-up" ${c.delay ? `style="transition-delay:${c.delay}"` : ''}>
                     <div class="nos-why-card-icon">${c.icon}</div>
                     <h3 class="nos-why-card-title">${c.title}</h3>
@@ -179,6 +165,30 @@ export const renderNosotros = () => {
                 `).join('')}
               </div>
             </div>
+          </div>
+
+          <!-- ¿POR QUÉ ELEGIR MARVELSA? -->
+          <div class="reveal-up" style="margin-top:80px; text-align:center;">
+             <h2 class="mvh-section-title" style="margin-bottom:15px;">¿Por qué elegir <em>Marvelsa</em>?</h2>
+             <p style="font-size:1.1rem;line-height:1.8;color:rgba(0,0,0,.6);margin-bottom:50px;">
+                Más que un proveedor, somos un aliado de negocio que entiende tus retos y te acompaña en cada paso.
+             </p>
+             <div class="nos-why-cards-grid">
+                ${[
+                  { icon: '🧭', title: 'Experiencia comprobada', desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores.', delay: '' },
+                  { icon: '⚙️', title: 'Marcas líderes', desc: 'Representamos fabricantes reconocidos por su innovación y desempeño.', delay: '0.1s' },
+                  { icon: '🚚', title: 'Cobertura nacional', desc: 'Entregamos a todo México con eficiencia y respaldo logístico.', delay: '0.2s' },
+                  { icon: '💻', title: 'Portal exclusivo para distribuidores', desc: 'Compra, planifica y controla tu negocio con facilidad.', delay: '0.3s' },
+                  { icon: '🧰', title: 'Soporte técnico y postventa real', desc: 'Soluciones rápidas, atención cercana y respaldo garantizado.', delay: '0.4s' },
+                  { icon: '💡', title: 'Valor justo', desc: 'Productos de calidad profesional a precios que permiten competir y crecer.', delay: '0.5s' }
+                ].map(c => `
+                  <div class="nos-why-card reveal-up" ${c.delay ? `style="transition-delay:${c.delay}"` : ''}>
+                    <div class="nos-why-card-icon" style="font-size:2.5rem; margin-bottom:15px;">${c.icon}</div>
+                    <h3 class="nos-why-card-title">${c.title}</h3>
+                    <p class="nos-why-card-desc">${c.desc}</p>
+                  </div>
+                `).join('')}
+             </div>
           </div>
         </div>
       </section>
@@ -191,14 +201,21 @@ export const renderNosotros = () => {
             <h2 class="nos-philosophy-quote" style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;line-height:1.4;margin-bottom:20px;color:white;">
               Nuestra filosofía
             </h2>
-
             <p class="nos-philosophy-text" style="font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,.8);text-align:left;">
-
-              En Marvelsa creemos que el crecimiento solo es real cuando se comparte.<br>
-              Por eso, cada producto, servicio y proceso está pensado para fortalecer a nuestros distribuidores, ayudarlos a expandirse y ofrecer siempre lo mejor a sus clientes.<br>
+              En Marvelsa creemos que el crecimiento solo es real cuando se comparte.<br><br>
+              Por eso, cada producto, servicio y proceso está pensado para fortalecer a nuestros distribuidores, ayudarlos a expandirse y ofrecer siempre lo mejor a sus clientes.<br><br>
               Somos más que una comercializadora: somos el respaldo que impulsa tu negocio.
             </p>
           </div>
+        </div>
+      </section>
+
+      <!-- MARVELSA SUMMARY SECTION -->
+      <section style="background:#333; padding:80px 0; color:#fff; text-align:center;">
+        <div class="container-narrow reveal-up">
+          <p style="font-size:1.15rem; line-height:2; margin:0; opacity:0.9; max-width:900px; margin:0 auto;">
+            MARVELSA es una empresa generadora de bienestar económico tanto para nuestros proveedores, colaboradores, clientes así como usuario final, a través de la comercialización de productos de calidad, a precios competitivos y con el mejor servicio del mercado para la industria agrícola, forestal, jardinería y construcción.
+          </p>
         </div>
       </section>
 

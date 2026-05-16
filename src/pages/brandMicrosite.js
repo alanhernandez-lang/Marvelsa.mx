@@ -123,11 +123,9 @@ const renderKawashima = () => {
         <div class="kaw-intro-inner">
           <div class="kaw-intro-left">
             <span class="kaw-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="kaw-intro-title">Fabricados para el<br>campo <span style="color:var(--kaw-red);">mexicano</span></h2>
+            <h2 class="kaw-intro-title">Herramientas profesionales,<br>precio justo y soporte en México.</h2>
             <p class="kaw-intro-text">
-              Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque.
-              Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo,
-              refacciones disponibles y servicio en todo México.<br><br>
+              Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque. Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo, refacciones disponibles y servicio en todo México.<br><br>
               En Kawashima trabajamos contigo, para que nada detenga tu esfuerzo.
             </p>
           </div>
@@ -159,9 +157,9 @@ const renderKawashima = () => {
         </div>
         <div class="kaw-cat-grid">
           ${[
-    { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Aspersores a motor, manuales y eléctricos que brindan potencia, autonomía y eficiencia para todo tipo de cultivos.' },
-    { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para fuerza constante, cortes limpios y larga durabilidad.' },
-    { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad.' },
+    { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para ofrecer fuerza constante, cortes limpios y larga durabilidad.' },
+    { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Nuestra oferta en aspersores a motor, manuales y eléctricos brindan potencia, autonomía y eficiencia para todo tipo de cultivos. Equipos confiables que te permiten trabajar con precisión y sin interrupciones, a precio justo.' },
+    { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad para cada jornada. Ideales para profesionales que buscan acabados limpios, rendimiento y confianza en cada uso.' },
   ].map(cat => `
             <div class="kaw-cat-card">
               <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
@@ -187,56 +185,37 @@ const renderKawashima = () => {
         <div class="kaw-prod-grid">
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1">
-              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2">
-              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3">
+              <img loading="lazy" src="${imgKawBosque}" class="active" alt="Motosierra Profesional">
               <div class="carousel-dots"></div>
             </div>
-            <span class="kaw-prod-tag">Aspersión</span>
-            <div class="kaw-prod-name">Aspersor AK 26</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Alta eficiencia en cultivos extensos</div>
+            <span class="kaw-prod-tag">Bosque</span>
+            <div class="kaw-prod-name">Motosierras Profesionales</div>
+            <div class="kaw-prod-spec" style="min-height:2.8rem;">Fuerza constante y cortes limpios<br>Diseñadas para durabilidad extrema</div>
             <a href="https://drive.google.com/file/d/1_cz69JEq-QHj_dGuKpY0JnxQCsl6uIK1/view?usp=drive_link" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
               Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </a>
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1">
-              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2">
-              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3">
+              <img loading="lazy" src="/Users/alanhernandezvazquez/.gemini/antigravity/brain/50be9afa-246a-496c-aaca-d99acce4ad84/aspersor_manual_campo_1778956715575.png" class="active" alt="Aspersor Manual en Campo">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Agrícola</span>
-            <div class="kaw-prod-name">Motobomba MTK 26</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Potencia compacta para trasvase de agua</div>
-            <a href="${pdfMTK26}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
+            <div class="kaw-prod-name">Oferta de Aspersores</div>
+            <div class="kaw-prod-spec" style="min-height:2.8rem;">A motor, manuales y eléctricos<br>Eficiencia para todo tipo de cultivos</div>
+            <a href="https://drive.google.com/file/d/1iwXDsjfivbGO7g4DDOBtfHz09r9vk_c3/view?usp=drive_link" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
               Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </a>
           </div>
           <div class="kaw-prod-card">
             <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1">
-              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2">
-              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3">
+              <img loading="lazy" src="${imgKawJardin}" class="active" alt="Desbrozadora Kawashima">
               <div class="carousel-dots"></div>
             </div>
             <span class="kaw-prod-tag">Jardín</span>
-            <div class="kaw-prod-name">Desbrozadora DKM26KN</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">1 HP / 26cc — Tipo D<br>Ligera y versátil para todo terreno</div>
-            <a href="#" class="kaw-prod-cta" style="text-decoration:none;">
-              Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-            </a>
-          </div>
-          <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK20LE_1}" class="active" alt="Aspersor 20LE - 1">
-              <img loading="lazy" src="${imgAK20LE_2}" alt="Aspersor 20LE - 2">
-              <div class="carousel-dots"></div>
-            </div>
-            <span class="kaw-prod-tag">Aspersión</span>
-            <div class="kaw-prod-name">Aspersor Eléctrico AK20LE</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Eléctrico / 26cc<br>Sin emisiones, máximo rendimiento</div>
-            <a href="${pdfAK20LE}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
+            <div class="kaw-prod-name">Desbrozadoras y Sierras</div>
+            <div class="kaw-prod-spec" style="min-height:2.8rem;">Potencia controlada y comodidad<br>Rendimiento para cada jornada profesional</div>
+            <a href="https://drive.google.com/file/d/1pqkksN8Q335B2cV26wUfTjHXy2bvUhyg/view?usp=drive_link" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
               Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
             </a>
           </div>
@@ -253,8 +232,8 @@ const renderKawashima = () => {
           <div class="why-grid">
             ${[
     {
-      title: 'Relación Calidad–Precio',
-      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.',
+      title: 'Relación calidad–precio',
+      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días en campo, jardín o bosque.',
       icon: `
         <line x1="12" y1="2" x2="12" y2="22"/>
         <line x1="5" y1="6" x2="12" y2="4"/>
@@ -265,8 +244,8 @@ const renderKawashima = () => {
       `
     },
     {
-      title: 'Durabilidad en Productos',
-      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.',
+      title: 'Durabilidad en productos',
+      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y el uso adecuado del equipo.',
       icon: `
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         <polyline points="9 12 11 14 15 10"/>
@@ -274,7 +253,7 @@ const renderKawashima = () => {
     },
     {
       title: 'Refacciones en todos los equipos',
-      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.',
+      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha. Con Kawashima, siempre encuentras la pieza que necesitas para seguir trabajando.',
       icon: `
         <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
       `
@@ -293,6 +272,23 @@ const renderKawashima = () => {
               </div>
 
             `).join('')}
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG/GUIDE PREVIEW -->
+      <section style="background:#f9f9f9; padding:80px 0;">
+        <div class="container-narrow reveal-up" style="display:flex; align-items:center; gap:60px;">
+          <div style="flex:1;">
+            <span class="kaw-section-eyebrow">Consejo del Experto</span>
+            <h2 class="kaw-section-title" style="margin-bottom:25px; color:#111;">Cómo elegir la desbrozadora Kawashima ideal</h2>
+            <p style="color:#666; font-size:1.1rem; line-height:1.8; margin-bottom:30px;">
+              Elegir la herramienta correcta marca la diferencia entre un trabajo pesado y uno bien hecho. Descubre nuestra guía completa para identificar el equipo que mejor se adapta a tus necesidades.
+            </p>
+            <button onclick="window.renderBlogArticle('desbrozadora-kawashima')" class="kaw-btn-primary" style="border-radius:100px; padding:15px 35px;">Leer Guía Completa</button>
+          </div>
+          <div style="flex:1; border-radius:30px; overflow:hidden; box-shadow:0 25px 50px -12px rgba(0,0,0,0.15);">
+             <img src="${imgKawJardin}" alt="Mantenimiento de Jardín" style="width:100%; height:100%; object-fit:cover;">
           </div>
         </div>
       </section>
@@ -331,59 +327,81 @@ const renderKawashima = () => {
 const brandConfig = {
   parazzini: {
     css: 'par', bg: bgParazziniFondo, banner: bannerParazzini,
-    badge: '🌿 Paisajismo Profesional • México', title: 'PARAZZINI', slogan: 'Pasión por el Paisajismo',
+    badge: '🇮🇹 Ingeniería Italiana • México', title: 'PARAZZINI', slogan: 'Potencia, calidad y respaldo al servicio del trabajo profesional.',
     accentColor: '#1A7A4A',
     stats: [{ n: '20+', l: 'Años de experiencia' }, { n: '3K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
-    marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
-    introCopy: 'Parazzini nació para darle a cada jardinero y paisajista profesional las herramientas que merecen. Equipos de precisión, rendimiento constante y un diseño pensado para quienes aman lo que hacen.',
+    marquee: ['Sector Agrícola', 'Construcción', 'Sector Hogar', 'Calidad Italiana', 'Potencia Real', 'Refacciones'],
+    introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
     cats: [
-      { img: bannerKawashima, name: 'AGRÍCOLAS', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad.', subs: 'MANGUERAS • TUBERIA PVC • MOTOBOMBAS' },
-      { img: bannerGoldenTree, name: 'CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
-      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
+      { img: bannerParazzini, name: 'SECTOR AGRÍCOLA', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad técnica.', subs: 'MANGUERAS • TUBERÍA PVC • MOTOBOMBAS' },
+      { img: bannerGoldenTree, name: 'SECTOR CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra. Revolvedoras, motobombas, generadores y más equipos que brindan potencia real.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
+      { img: bannerPowerHunt, name: 'SECTOR HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
-    prods: [{ name: 'Cortacésped PRZ-500', tag: 'Jardín' }, { name: 'Desbrozadora PRZ-26', tag: 'Jardín' }, { name: 'Soplador PRZ-3000', tag: 'Jardín' }, { name: 'Bordeadora PRZ-18', tag: 'Jardín' }],
+    prods: [{ name: 'Motobomba PRZ', tag: 'Construcción' }, { name: 'Generador PRZ', tag: 'Energía' }, { name: 'Hidrolavadora PRZ', tag: 'Hogar' }, { name: 'Revolvedora PRZ', tag: 'Construcción' }],
+    why: [
+      { title: 'Refacciones disponibles en todos los equipos', text: 'Nuestros productos están pensados para el largo plazo. Por eso, garantizamos disponibilidad de refacciones en todo el catálogo, asegurando mantenimiento continuo, ahorro a futuro y tranquilidad para el usuario profesional.' },
+      { title: 'Calidad técnica y potencia real', text: 'Cada máquina Parazzini combina potencia profesional con componentes de calidad, incluyendo motores de ingeniería italiana. Esto se traduce en equipos que rinden más, aguantan más y elevan el estándar del trabajo técnico.' },
+      { title: 'Durabilidad y respaldo', text: 'Nuestros equipos están diseñados para soportar las condiciones reales del campo, la obra y el uso intensivo. Y no estás solo: nuestro compromiso de respaldo incluye servicio, asesoría y atención postventa, porque sabemos que en el trabajo serio, el soporte hace la diferencia.' },
+    ],
+    contactLink: 'https://forms.gle/vXg39DUZdyiDzJH58'
   },
   goldentree: {
     css: 'gt', bg: bgGoldenTreeFondo, banner: bannerGoldenTree,
-    badge: '🌾 Nutrición Vegetal • México', title: 'GOLDEN TREE', slogan: 'Nutriendo tus Cosechas',
+    badge: '🌾 Riego Agrícola • México', title: 'GOLDEN TREE', slogan: 'Cintilla y soluciones de riego de alta eficiencia.',
     accentColor: '#C89B2A',
-    stats: [{ n: '15+', l: 'Años en el mercado' }, { n: '50+', l: 'Productos disponibles', mid: true }, { n: '100%', l: 'Eficacia comprobada' }],
-    marquee: ['Fertilizantes', 'Nutrición Foliar', 'Bioestimulantes', 'Sanidad Vegetal', 'Sustratos', 'Agricultura Premium'],
-    introCopy: 'Golden Tree es la marca de fertilización y sanidad vegetal de alto rendimiento. Formulaciones desarrolladas para maximizar el potencial de cada cultivo, desde hortalizas hasta árboles frutales, con ingredientes de calidad premium al alcance del agricultor mexicano.',
+    stats: [{ n: '40+', l: 'Años en el mercado' }, { n: '50+', l: 'Soluciones de riego', mid: true }, { n: '100%', l: 'Respaldo técnico' }],
+    marquee: ['Cintilla de Riego', 'Eficiencia Hídrica', 'Alta Resistencia', 'Riego Agrícola', 'Calidad Global', 'Soporte Técnico'],
+    introCopy: 'Somos una marca especializada en cintilla y soluciones de riego diseñadas para maximizar la eficiencia hídrica y la durabilidad del sistema. Innovamos en materiales con más calibres y mayor resistencia para ofrecer al agricultor rendimiento confiable y protección de su inversión en cada temporada.',
     cats: [
-      { img: bannerGoldenTree, name: 'Fertilizantes', desc: 'Fórmulas balanceadas para una nutrición completa durante todo el ciclo del cultivo.', subs: 'Granulados • Líquidos • Foliares' },
-      { img: bannerKawashima, name: 'Bioestimulantes', desc: 'Potencia la germinación, el enraizamiento y la resistencia ante el estrés ambiental.', subs: 'Aminoácidos • Algas • Hormonas' },
-      { img: bannerParazzini, name: 'Sanidad Vegetal', desc: 'Protege tus cultivos de plagas y enfermedades con productos de alta efectividad.', subs: 'Fungicidas • Insecticidas • Bactericidas' },
+      { img: bannerGoldenTree, name: 'RIEGO AGRÍCOLA', desc: 'Soluciones completas de cintilla y accesorios para maximizar el rendimiento de tus cultivos.', subs: 'CINTILLA • CONECTORES • FILTROS' },
     ],
-    prods: [{ name: 'GT Foliar Pro', tag: 'Nutrición' }, { name: 'GT Raíz Max', tag: 'Nutrición' }, { name: 'GT Bioestim 500', tag: 'Nutrición' }, { name: 'GT Fungicida Plus', tag: 'Nutrición' }],
+    prods: [{ name: 'Cintilla Golden Tree', tag: 'Riego' }, { name: 'Conectores Pro', tag: 'Riego' }, { name: 'Filtros de Anillas', tag: 'Riego' }, { name: 'Válvulas de Paso', tag: 'Riego' }],
+    why: [
+      { title: 'Más de 40 años en el mercado mundial', text: 'Nuestra experiencia global nos respalda. Durante más de cuatro décadas, Golden Tree ha desarrollado soluciones de riego confiables que hoy impulsan la productividad de agricultores en distintos países del mundo.' },
+      { title: 'Procesos de calidad', text: 'Cada rollo de cintilla Golden Tree pasa por estrictos controles de calidad y pruebas de rendimiento. Utilizamos materiales de alta resistencia y tecnología avanzada para asegurar durabilidad y eficiencia en cada sistema de riego.' },
+      { title: 'Respaldo en todos los productos', text: 'No solo ofrecemos productos, ofrecemos confianza. Nuestro compromiso es acompañar al agricultor con asesoría, soporte y garantía real, porque sabemos que detrás de cada cultivo hay una inversión que merece protección.' },
+    ],
+    contactLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47'
   },
   powerhunt: {
     css: 'ph', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
-    badge: '⚡ Energía Industrial • México', title: 'POWER HUNT', slogan: 'Energía que Nunca se Detiene',
+    badge: '⚡ Herramientas Prácticas • México', title: 'POWER HUNT', slogan: 'Herramientas prácticas para trabajos reales.',
     accentColor: '#005BB5',
-    stats: [{ n: '25+', l: 'Años de potencia' }, { n: '4K+', l: 'Equipos instalados', mid: true }, { n: '24/7', l: 'Soporte técnico' }],
-    marquee: ['Generadores', 'Plantas de Luz', 'Motobombas', 'Soldadoras', 'Compresores', 'Energía Confiable'],
-    introCopy: 'PowerHunt es la marca de generadores eléctricos y soluciones de energía para la industria, el campo y la construcción. Máquinas robustas diseñadas para operar en las condiciones más exigentes, donde la energía nunca puede faltar.',
+    stats: [{ n: '25+', l: 'Años de servicio' }, { n: '4K+', l: 'Usuarios felices', mid: true }, { n: '100%', l: 'Refacciones' }],
+    marquee: ['Hogar', 'Agrícola', 'Jardín', 'Práctico', 'Accesible', 'Refacciones Disponibles'],
+    introCopy: 'Diseñamos herramientas pensadas para quienes valoran lo práctico: equipos accesibles, confiables y listos para entrar en acción. Sea en casa, en el jardín o en el campo, Power Hunt te acompaña con soluciones que rinden en lo cotidiano.',
     cats: [
-      { img: bannerPowerHunt, name: 'Generadores', desc: 'Plantas de luz portátiles e industriales para operaciones continuas de alto rendimiento.', subs: '1kW – 50kW • Gasolina • Diesel' },
-      { img: bannerKawashima, name: 'Motobombas', desc: 'Soluciones de bombeo de agua para riego, trasvases y uso industrial.', subs: 'Centrífugas • Sumergibles • Alta presión' },
-      { img: bannerGoldenTree, name: 'Industrial', desc: 'Compresores, soldadoras y equipos de alto desempeño para la industria.', subs: 'Compresores • Soldadoras • Equipos Pro' },
+      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • GENERADORES' },
+      { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS' },
+      { img: bannerGoldenTree, name: 'JARDÍN', desc: 'Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • MOTOSIERRAS' },
     ],
-    prods: [{ name: 'Generador PH-3500', tag: 'Energía' }, { name: 'Generador PH-7000D', tag: 'Energía' }, { name: 'Motobomba PH-200', tag: 'Energía' }, { name: 'Compresor PH-50L', tag: 'Energía' }],
+    prods: [{ name: 'Hidrolavadora PH', tag: 'Hogar' }, { name: 'Generador Portátil PH', tag: 'Hogar' }, { name: 'Aspersor PH', tag: 'Agrícola' }, { name: 'Desbrozadora PH', tag: 'Jardín' }],
+    why: [
+      { title: 'Refacciones en todos los equipos', text: 'Porque sabemos lo importante que es darles vida útil a tus herramientas. Todos nuestros productos cuentan con refacciones disponibles para que sigan funcionando cuando más los necesitas.' },
+      { title: 'Practicidad accesible', text: 'Nuestros productos están pensados para tareas cotidianas y de baja exigencia, con el rendimiento justo para resolver con eficiencia y la calidad necesaria para hacerlo bien, siempre.' },
+      { title: 'Herramientas fáciles de usar', text: 'No necesitas ser experto para usarlas. Nuestras herramientas son seguras y pensadas para que cualquiera pueda sacarles provecho desde el primer uso.' },
+    ],
+    contactLink: 'https://forms.gle/14HdmMV9jE7ziRsU9'
   },
   takashi: {
     css: 'tak', bg: bgTakashiFondo, banner: bannerTakashi,
-    badge: '🔧 Precisión y Fuerza • México', title: 'TAKASHI', slogan: 'Precisión y Fuerza',
+    badge: '🔧 Eficiencia sin Complicaciones • México', title: 'TAKASHI', slogan: 'Herramientas que cumplen. Sin complicaciones.',
     accentColor: '#FF6600',
-    stats: [{ n: '20+', l: 'Años de tecnología' }, { n: '2K+', l: 'Distribuidores activos', mid: true }, { n: '100%', l: 'Refacciones garantizadas' }],
-    marquee: ['Maquinaria Agrícola', 'Alta Tecnología', 'Precisión Japonesa', 'Rendimiento Profesional', 'Campo Mexicano', 'Refacciones Disponibles'],
-    introCopy: 'Takashi combina la ingeniería de alta tecnología con el conocimiento del campo mexicano. Equipos robustos, precisos y accesibles diseñados para maximizar la productividad de cada agricultor y productor en México.',
+    stats: [{ n: '20+', l: 'Años de experiencia' }, { n: '2K+', l: 'Usuarios prácticos', mid: true }, { n: '100%', l: 'Refacciones' }],
+    marquee: ['Forestal', 'Agrícola', 'Jardín', 'Funcionalidad', 'Accesibilidad', 'Resistencia'],
+    introCopy: 'Takashi es una marca de maquinaria ligera y accesible, diseñada para quienes hacen trabajos simples, pero exigen buenos resultados. Nuestras herramientas son prácticas, resistentes y listas para cuando más se necesitan.',
     cats: [
-      { img: bannerTakashi, name: 'Agrícola', desc: 'Equipos de alta tecnología para el manejo eficiente de cultivos a gran escala.', subs: 'Tractores • Implementos • Aspersión' },
-      { img: bannerPowerHunt, name: 'Construcción', desc: 'Maquinaria robusta de alta precisión para proyectos de construcción e infraestructura.', subs: 'Compactadores • Vibradores • Mezcladoras' },
-      { img: bannerKawashima, name: 'Industrial', desc: 'Soluciones industriales de precisión para operaciones de alto volumen y exigencia.', subs: 'Bombas • Compresores • Equipos Especiales' },
+      { img: bannerTakashi, name: 'FORESTAL', desc: 'Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable y fácil de usar.', subs: 'MOTOSIERRAS • ACCESORIOS' },
+      { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales.', subs: 'ASPERSORES • MOTOBOMBAS' },
+      { img: bannerKawashima, name: 'JARDÍN', desc: 'Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar.', subs: 'DESBROZADORAS • ACCESORIOS' },
     ],
-    prods: [{ name: 'Tractor TAK-25HP', tag: 'Precisión' }, { name: 'Compactador TAK-800', tag: 'Precisión' }, { name: 'Mezcladora TAK-3.5', tag: 'Precisión' }, { name: 'Bomba TAK-5000', tag: 'Precisión' }],
+    prods: [{ name: 'Motosierra Takashi', tag: 'Forestal' }, { name: 'Aspersor Takashi', tag: 'Agrícola' }, { name: 'Motobomba Takashi', tag: 'Agrícola' }, { name: 'Desbrozadora Takashi', tag: 'Jardín' }],
+    why: [
+      { title: 'Refacciones disponibles para todos nuestros equipos', text: 'Sabemos lo importante que es mantener tus herramientas funcionando. Por eso, cada producto Takashi cuenta con refacciones disponibles, para que siempre tengas una solución a la mano y sigas trabajando sin interrupciones.' },
+      { title: 'Diseño ligero, materiales resistentes', text: 'Nuestras herramientas están hechas con materiales seleccionados que ofrecen durabilidad y confianza, pero sin sacrificar comodidad. Su diseño ligero permite un manejo fácil y seguro, ideal para tareas cotidianas o esporádicas.' },
+      { title: 'Herramientas prácticas para trabajos reales', text: 'Takashi no es lujo innecesario, es funcionalidad pura. Diseñamos cada equipo pensando en quienes necesitan resolver tareas concretas con eficiencia, sin complicarse ni gastar de más.' },
+    ],
+    contactLink: 'https://forms.gle/pUAjVxuKtu9rqK3GA'
   },
 };
 
@@ -501,16 +519,24 @@ const renderGenericBrand = (brandId) => {
         <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
           <div style="text-align:center;margin-bottom:80px;">
             <span class="${p}-section-eyebrow">Nuestra diferencia</span>
-            <h2 class="${p}-section-title">¿Por qué elegirnos?</h2>
+            <h2 class="${p}-section-title">¿Por qué elegir ${cfg.title}?</h2>
           </div>
           <div class="why-grid">
-            ${['Calidad Premium', 'Diseño Ergonómico', 'Cobertura Nacional'].map(title => `
+            ${(cfg.why || ['Calidad Premium', 'Diseño Ergonómico', 'Cobertura Nacional']).map(item => typeof item === 'string' ? `
               <div class="${p}-prod-card" style="text-align:center;padding:50px 35px;">
                 <div style="width:90px;height:90px;background:rgba(100,100,100,.1);border:1px solid rgba(100,100,100,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 30px;">
                   <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="${cfg.accentColor}" stroke-width="2"><circle cx="32" cy="32" r="22"/><path d="M22 32 l8 8 14-16"/></svg>
                 </div>
-                <h3 style="font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;">${title}</h3>
+                <h3 style="font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;">${item}</h3>
                 <p style="font-size:0.95rem;line-height:1.8;margin:0;opacity:0.7;">Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.</p>
+              </div>
+            ` : `
+              <div class="${p}-prod-card" style="text-align:center;padding:50px 35px;">
+                <div style="width:90px;height:90px;background:rgba(100,100,100,.1);border:1px solid rgba(100,100,100,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 30px;">
+                  <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="${cfg.accentColor}" stroke-width="2"><circle cx="32" cy="32" r="22"/><path d="M22 32 l8 8 14-16"/></svg>
+                </div>
+                <h3 style="font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;">${item.title}</h3>
+                <p style="font-size:0.95rem;line-height:1.8;margin:0;opacity:0.7;">${item.text}</p>
               </div>
             `).join('')}
           </div>
@@ -520,14 +546,16 @@ const renderGenericBrand = (brandId) => {
       <section class="split-banner" style="background:var(--${p}-black);">
         <div class="split-banner-text">
           <h2 style="font-size:clamp(2rem,4vw,3.2rem);font-weight:900;line-height:1.1;margin-bottom:25px;text-transform:uppercase;">
-            Únete a la red<br><span style="color:${cfg.accentColor};">${cfg.title}</span>
+            Súmate a la red de<br><span style="color:${cfg.accentColor};">distribución ${cfg.title}</span>
           </h2>
           <p style="font-size:1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;">
-            Distribuidores con acceso a catálogo completo, precios preferenciales y soporte técnico especializado.
+            ${brandId === 'goldentree' ? 'Forma parte de una marca que está transformando el riego agrícola con innovación, calidad y confianza.' : 
+              brandId === 'powerhunt' ? 'Lleva herramientas prácticas, accesibles y confiables a más personas. Con Power Hunt, tienes una marca conocida con productos funcionales.' :
+              'Forma parte de una marca que está elevando el estándar de la maquinaria profesional en México con respaldo y durabilidad.'}
           </p>
-          <button class="${p}-btn-primary" onclick="window.renderContacto(true)" style="border-radius:100px;">
+          <a href="${cfg.contactLink || '#'}" target="_blank" rel="noopener" class="${p}-btn-primary" style="text-decoration:none;border-radius:100px;display:inline-block;padding:15px 30px;">
             CONVIÉRTETE EN DISTRIBUIDOR
-          </button>
+          </a>
         </div>
         <div class="split-banner-img" style="--overlay-color:var(--${p}-black);background-image:url('${cfg.banner}');background-size:cover;background-position:center;filter:brightness(0.55) saturate(0.7);">
         </div>

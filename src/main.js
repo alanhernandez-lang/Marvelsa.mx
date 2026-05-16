@@ -5,6 +5,7 @@ import { renderHome }          from './pages/home.js';
 import { renderNosotros }      from './pages/nosotros.js';
 import { renderContacto }      from './pages/contacto.js';
 import { renderBrandMicrosite }from './pages/brandMicrosite.js';
+import { renderBlogArticle }   from './pages/blog.js';
 
 // ── Analytics (replace placeholder IDs before going live) ──
 initTracking('GTM-XXXXXX', 'G-XXXXXXXXXX', 'PIXEL_ID');
@@ -24,6 +25,9 @@ const router = () => {
     const shouldScroll = query?.includes('scrollTo=form');
     if (!shouldScroll) window.scrollTo(0, 0);
     renderContacto(shouldScroll);
+  } else if (path.startsWith('blog/')) {
+    const articleId = path.split('/')[1];
+    renderBlogArticle(articleId);
   } else if (brands[path]) {
     renderBrandMicrosite(path);
   } else {
@@ -39,6 +43,7 @@ window.renderHome          = renderHome;
 window.renderNosotros      = renderNosotros;
 window.renderContacto      = renderContacto;
 window.renderBrandMicrosite= renderBrandMicrosite;
+window.renderBlogArticle    = renderBlogArticle;
 
 // ── Back-to-top button ───────────────────────────────────────
 const backToTopBtn = document.getElementById('backToTop');
