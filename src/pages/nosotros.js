@@ -117,6 +117,36 @@ export const renderNosotros = () => {
               </div>
             `).join('')}
           </div>
+        </div>
+      </section>
+
+      <!-- ¿POR QUÉ ELEGIR MARVELSA? -->
+      <section style="padding:clamp(60px,10vw,120px) 0;">
+        <div class="container">
+          <div class="reveal-up" style="text-align:center;">
+             <h2 class="mvh-section-title" style="margin-bottom:15px;">¿Por qué elegir <em>Marvelsa</em>?</h2>
+             <p style="font-size:1.1rem;line-height:1.8;color:rgba(0,0,0,.6);margin-bottom:50px;">
+                Más que un proveedor, somos un aliado de negocio que entiende tus retos y te acompaña en cada paso.
+             </p>
+             <div class="nos-why-cards-grid">
+                ${[
+      { icon: '🧭', title: 'Experiencia comprobada', desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores.', delay: '' },
+      { icon: '⚙️', title: 'Marcas líderes', desc: 'Representamos fabricantes reconocidos por su innovación y desempeño.', delay: '0.1s' },
+      { icon: '🚚', title: 'Cobertura nacional', desc: 'Entregamos a todo México con eficiencia y respaldo logístico.', delay: '0.2s' },
+      { icon: '💻', title: 'Portal exclusivo para distribuidores', desc: 'Compra, planifica y controla tu negocio con facilidad.', delay: '0.3s' },
+      { icon: '🧰', title: 'Soporte técnico y postventa real', desc: 'Soluciones rápidas, atención cercana y respaldo garantizado.', delay: '0.4s' },
+      { icon: '💡', title: 'Valor justo', desc: 'Productos de calidad profesional a precios que permiten competir y crecer.', delay: '0.5s' }
+    ].map(c => `
+                  <div class="nos-why-card reveal-up" ${c.delay ? `style="transition-delay:${c.delay}"` : ''}>
+                    <div class="nos-why-card-icon" style="font-size:2.5rem; margin-bottom:15px;">${c.icon}</div>
+                    <h3 class="nos-why-card-title">${c.title}</h3>
+                    <p class="nos-why-card-desc">${c.desc}</p>
+                  </div>
+                `).join('')}
+             </div>
+          </div>
+        </div>
+      </section>
 
       <!-- PHILOSOPHY BANNER -->
       <section class="nos-philosophy" style="padding:clamp(60px,10vw,120px) 0;">
