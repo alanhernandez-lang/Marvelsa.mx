@@ -187,10 +187,12 @@ export const renderNosotros = () => {
         <div class="container-narrow">
           <div class="nos-philosophy-card reveal-up">
             <span class="mvh-eyebrow nos-philosophy-eyebrow">Nuestra Filosofía</span>
-            <h2 class="nos-philosophy-quote" style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;line-height:1.4;margin-bottom:20px;">
+            <h2 class="nos-philosophy-quote" style="font-size:clamp(1.5rem,3vw,2.2rem);font-weight:900;line-height:1.4;margin-bottom:20px;color:white;">
               Nuestra filosofía
             </h2>
-            <p class="nos-philosophy-text" style="font-size:1.05rem;line-height:1.8;color:rgba(0,0,0,.7);text-align:left;">
+
+            <p class="nos-philosophy-text" style="font-size:1.05rem;line-height:1.8;color:rgba(255,255,255,.8);text-align:left;">
+
               En Marvelsa creemos que el crecimiento solo es real cuando se comparte.<br>
               Por eso, cada producto, servicio y proceso está pensado para fortalecer a nuestros distribuidores, ayudarlos a expandirse y ofrecer siempre lo mejor a sus clientes.<br>
               Somos más que una comercializadora: somos el respaldo que impulsa tu negocio.
