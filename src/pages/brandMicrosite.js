@@ -253,38 +253,51 @@ const renderKawashima = () => {
           <div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:30px;">
             ${[
               { 
-                num: '01',
                 title: 'Relación Calidad–Precio', 
                 text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.',
-                svg: `<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M5 5h14M7 21h10M8 5v14a4 4 0 0 0 8 0V5"/></svg>`
+                svg: `<svg viewBox="0 0 64 64" fill="none" stroke="#CC1111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M45 25c0-4-4-7-9-7s-9 3-9 7v2c0 4 4 7 9 7s9-3 9-7v-2z"/>
+                  <path d="M25 45c0 5 4 9 9 9h4c5 0 9-4 9-9v-5H25v5z"/>
+                  <circle cx="48" cy="15" r="8" fill="white" stroke="#CC1111"/>
+                  <path d="M48 11v8M45 15h6"/>
+                  <path d="M15 25v20c0 5 5 10 10 10h5"/>
+                  <path d="M15 25c-5 0-10 5-10 10s5 10 10 10"/>
+                </svg>`
               },
               { 
-                num: '02',
                 title: 'Durabilidad en Productos', 
                 text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.',
-                svg: `<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>`
+                svg: `<svg viewBox="0 0 64 64" fill="none" stroke="#CC1111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M32 35l-4 8h8l-4-8z"/>
+                  <path d="M20 45l4 8h-8l4-8z"/>
+                  <path d="M44 45l4 8h-8l4-8z"/>
+                  <path d="M32 5v20M25 15h14"/>
+                  <path d="M22 25h20v5H22v-5z"/>
+                  <path d="M25 30l-3 10h20l-3-10"/>
+                </svg>`
               },
               { 
-                num: '03',
                 title: 'Refacciones en todos los equipos', 
                 text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.',
-                svg: `<svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1V13a2 2 0 0 1-2-2 2 2 0 0 1 2-2v-.09a1.65 1.65 0 0 0 1-1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2v.09a1.65 1.65 0 0 0-1.6 1.6z"/></svg>`
+                svg: `<svg viewBox="0 0 64 64" fill="none" stroke="#CC1111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="32" cy="32" r="12"/>
+                  <path d="M32 12v4M32 48v4M12 32h4M48 32h4M18 18l3 3M43 43l3 3M18 46l3-3M43 21l3-3"/>
+                  <path d="M25 25l14 14M35 25l-10 10"/>
+                </svg>`
               },
             ].map(card => `
-              <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:24px;overflow:hidden;transition:all 0.4s ease;">
-                <div style="background:linear-gradient(135deg, #900 0%, #CC1111 100%);padding:40px;position:relative;overflow:hidden;display:flex;justify-content:center;">
-                  <div style="position:absolute;top:-10px;right:-10px;font-size:6rem;font-weight:900;color:rgba(255,255,255,0.05);line-height:1;pointer-events:none;">${card.num}</div>
-                  <div style="position:relative;z-index:1;">${card.svg}</div>
+              <div style="background:white;padding:60px 35px 50px;border-radius:32px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.15);position:relative;display:flex;flex-direction:column;align-items:center;">
+                <div style="width:120px;height:120px;background:#efefef;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:30px;box-shadow:0 10px 25px rgba(0,0,0,0.1);">
+                  <div style="width:60px;height:60px;">${card.svg}</div>
                 </div>
-                <div style="padding:40px;text-align:center;">
-                  <h3 style="font-size:1.1rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
-                  <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
-                </div>
+                <h3 style="font-size:1.15rem;font-weight:900;color:#111;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
+                <p style="color:#666;font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
               </div>
             `).join('')}
           </div>
         </div>
       </section>
+
 
       <!-- DISTRIBUTOR SPLIT BANNER -->
       <section class="split-banner" style="background:var(--kaw-black);">
