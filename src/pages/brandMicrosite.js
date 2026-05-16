@@ -333,9 +333,9 @@ const brandConfig = {
     marquee: ['Sector Agrícola', 'Construcción', 'Sector Hogar', 'Calidad Italiana', 'Potencia Real', 'Refacciones'],
     introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
     cats: [
-      { img: bannerParazzini, name: 'SECTOR AGRÍCOLA', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad técnica.', subs: 'MANGUERAS • TUBERÍA PVC • MOTOBOMBAS' },
-      { img: bannerGoldenTree, name: 'SECTOR CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra. Revolvedoras, motobombas, generadores y más equipos que brindan potencia real.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
-      { img: bannerPowerHunt, name: 'SECTOR HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
+      { img: bannerParazzini, name: 'SECTOR AGRÍCOLA', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad técnica. Desde mangueras y tubería PVC hasta motobombas de alto rendimiento, ofrecemos soluciones completas para ingenieros de riego y profesionales del agro que buscan sistemas funcionales, resistentes y fáciles de instalar.', subs: 'MANGUERAS • TUBERÍA PVC • MOTOBOMBAS' },
+      { img: bannerGoldenTree, name: 'SECTOR CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra. Revolvedoras, motobombas, generadores y más equipos que brindan potencia real en cada proyecto. Nuestra maquinaria está diseñada para soportar las condiciones exigentes del sitio de construcción, con el respaldo que todo profesional necesita.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
+      { img: bannerPowerHunt, name: 'SECTOR HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
     prods: [{ name: 'Motobomba PRZ', tag: 'Construcción' }, { name: 'Generador PRZ', tag: 'Energía' }, { name: 'Hidrolavadora PRZ', tag: 'Hogar' }, { name: 'Revolvedora PRZ', tag: 'Construcción' }],
     why: [
@@ -343,7 +343,8 @@ const brandConfig = {
       { title: 'Calidad técnica y potencia real', text: 'Cada máquina Parazzini combina potencia profesional con componentes de calidad, incluyendo motores de ingeniería italiana. Esto se traduce en equipos que rinden más, aguantan más y elevan el estándar del trabajo técnico.' },
       { title: 'Durabilidad y respaldo', text: 'Nuestros equipos están diseñados para soportar las condiciones reales del campo, la obra y el uso intensivo. Y no estás solo: nuestro compromiso de respaldo incluye servicio, asesoría y atención postventa, porque sabemos que en el trabajo serio, el soporte hace la diferencia.' },
     ],
-    contactLink: 'https://forms.gle/vXg39DUZdyiDzJH58'
+    contactLink: 'https://forms.gle/vXg39DUZdyiDzJH58',
+    contactText: 'Forma parte de una marca que está elevando el estándar de la maquinaria profesional en México. Equipos con respaldo, durabilidad y alto valor percibido para que tu negocio crezca con nosotros.',
   },
   goldentree: {
     css: 'gt', bg: bgGoldenTreeFondo, banner: bannerGoldenTree,
@@ -352,16 +353,15 @@ const brandConfig = {
     stats: [{ n: '40+', l: 'Años en el mercado' }, { n: '50+', l: 'Soluciones de riego', mid: true }, { n: '100%', l: 'Respaldo técnico' }],
     marquee: ['Cintilla de Riego', 'Eficiencia Hídrica', 'Alta Resistencia', 'Riego Agrícola', 'Calidad Global', 'Soporte Técnico'],
     introCopy: 'Somos una marca especializada en cintilla y soluciones de riego diseñadas para maximizar la eficiencia hídrica y la durabilidad del sistema. Innovamos en materiales con más calibres y mayor resistencia para ofrecer al agricultor rendimiento confiable y protección de su inversión en cada temporada.',
-    cats: [
-      { img: bannerGoldenTree, name: 'RIEGO AGRÍCOLA', desc: 'Soluciones completas de cintilla y accesorios para maximizar el rendimiento de tus cultivos.', subs: 'CINTILLA • CONECTORES • FILTROS' },
-    ],
+    cats: [],
     prods: [{ name: 'Cintilla Golden Tree', tag: 'Riego' }, { name: 'Conectores Pro', tag: 'Riego' }, { name: 'Filtros de Anillas', tag: 'Riego' }, { name: 'Válvulas de Paso', tag: 'Riego' }],
     why: [
       { title: 'Más de 40 años en el mercado mundial', text: 'Nuestra experiencia global nos respalda. Durante más de cuatro décadas, Golden Tree ha desarrollado soluciones de riego confiables que hoy impulsan la productividad de agricultores en distintos países del mundo.' },
       { title: 'Procesos de calidad', text: 'Cada rollo de cintilla Golden Tree pasa por estrictos controles de calidad y pruebas de rendimiento. Utilizamos materiales de alta resistencia y tecnología avanzada para asegurar durabilidad y eficiencia en cada sistema de riego.' },
       { title: 'Respaldo en todos los productos', text: 'No solo ofrecemos productos, ofrecemos confianza. Nuestro compromiso es acompañar al agricultor con asesoría, soporte y garantía real, porque sabemos que detrás de cada cultivo hay una inversión que merece protección.' },
     ],
-    contactLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47'
+    contactLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47',
+    contactText: 'Forma parte de una marca que está transformando el riego agrícola con innovación, calidad y confianza. En Golden Tree, respaldamos a cada distribuidor con productos de alto rendimiento, soporte técnico y crecimiento en conjunto. Crece con nosotros y lleva soluciones confiables a más agricultores.',
   },
   powerhunt: {
     css: 'ph', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
@@ -371,9 +371,9 @@ const brandConfig = {
     marquee: ['Hogar', 'Agrícola', 'Jardín', 'Práctico', 'Accesible', 'Refacciones Disponibles'],
     introCopy: 'Diseñamos herramientas pensadas para quienes valoran lo práctico: equipos accesibles, confiables y listos para entrar en acción. Sea en casa, en el jardín o en el campo, Power Hunt te acompaña con soluciones que rinden en lo cotidiano.',
     cats: [
-      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • GENERADORES' },
-      { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS' },
-      { img: bannerGoldenTree, name: 'JARDÍN', desc: 'Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • MOTOSIERRAS' },
+      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Hidrolavadoras, generadores y más. Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • GENERADORES' },
+      { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Aspersores, motobombas y más para el campo. Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS' },
+      { img: bannerGoldenTree, name: 'JARDÍN', desc: 'Desbrozadoras, motosierras y equipos de mantenimiento. Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • MOTOSIERRAS' },
     ],
     prods: [{ name: 'Hidrolavadora PH', tag: 'Hogar' }, { name: 'Generador Portátil PH', tag: 'Hogar' }, { name: 'Aspersor PH', tag: 'Agrícola' }, { name: 'Desbrozadora PH', tag: 'Jardín' }],
     why: [
@@ -381,7 +381,8 @@ const brandConfig = {
       { title: 'Practicidad accesible', text: 'Nuestros productos están pensados para tareas cotidianas y de baja exigencia, con el rendimiento justo para resolver con eficiencia y la calidad necesaria para hacerlo bien, siempre.' },
       { title: 'Herramientas fáciles de usar', text: 'No necesitas ser experto para usarlas. Nuestras herramientas son seguras y pensadas para que cualquiera pueda sacarles provecho desde el primer uso.' },
     ],
-    contactLink: 'https://forms.gle/14HdmMV9jE7ziRsU9'
+    contactLink: 'https://forms.gle/14HdmMV9jE7ziRsU9',
+    contactText: 'Súmate a nuestra red de distribuidores y lleva herramientas prácticas, accesibles y confiables a más personas. Con Power Hunt, tienes una marca con productos funcionales y respaldo en refacciones.',
   },
   takashi: {
     css: 'tak', bg: bgTakashiFondo, banner: bannerTakashi,
@@ -391,9 +392,9 @@ const brandConfig = {
     marquee: ['Forestal', 'Agrícola', 'Jardín', 'Funcionalidad', 'Accesibilidad', 'Resistencia'],
     introCopy: 'Takashi es una marca de maquinaria ligera y accesible, diseñada para quienes hacen trabajos simples, pero exigen buenos resultados. Nuestras herramientas son prácticas, resistentes y listas para cuando más se necesitan.',
     cats: [
-      { img: bannerTakashi, name: 'FORESTAL', desc: 'Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable y fácil de usar.', subs: 'MOTOSIERRAS • ACCESORIOS' },
-      { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales.', subs: 'ASPERSORES • MOTOBOMBAS' },
-      { img: bannerKawashima, name: 'JARDÍN', desc: 'Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar.', subs: 'DESBROZADORAS • ACCESORIOS' },
+      { img: bannerTakashi, name: 'FORESTAL', desc: 'Potencia ligera para cortes precisos. Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable, fácil de usar y siempre lista para responder.', subs: 'MOTOSIERRAS • CADENAS • ACCESORIOS' },
+      { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Riego fácil, soluciones que cumplen. Takashi ofrece aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales para tareas de riego ligero o traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS' },
+      { img: bannerKawashima, name: 'JARDÍN', desc: 'Control total sin esfuerzo. Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar, son la opción ideal para trabajos de mantenimiento con buenos resultados.', subs: 'DESBROZADORAS • PODADORAS' },
     ],
     prods: [{ name: 'Motosierra Takashi', tag: 'Forestal' }, { name: 'Aspersor Takashi', tag: 'Agrícola' }, { name: 'Motobomba Takashi', tag: 'Agrícola' }, { name: 'Desbrozadora Takashi', tag: 'Jardín' }],
     why: [
@@ -401,7 +402,8 @@ const brandConfig = {
       { title: 'Diseño ligero, materiales resistentes', text: 'Nuestras herramientas están hechas con materiales seleccionados que ofrecen durabilidad y confianza, pero sin sacrificar comodidad. Su diseño ligero permite un manejo fácil y seguro, ideal para tareas cotidianas o esporádicas.' },
       { title: 'Herramientas prácticas para trabajos reales', text: 'Takashi no es lujo innecesario, es funcionalidad pura. Diseñamos cada equipo pensando en quienes necesitan resolver tareas concretas con eficiencia, sin complicarse ni gastar de más.' },
     ],
-    contactLink: 'https://forms.gle/pUAjVxuKtu9rqK3GA'
+    contactLink: 'https://forms.gle/pUAjVxuKtu9rqK3GA',
+    contactText: 'Llévate a tu negocio una marca confiable, accesible y con productos que realmente se mueven. Forma parte de nuestra red de distribución y ofrece a tus clientes herramientas que responden, sin complicaciones.',
   },
 };
 
@@ -469,6 +471,7 @@ const renderGenericBrand = (brandId) => {
 
       <hr class="${p}-sep">
 
+      ${cfg.cats.length > 0 ? `
       <section class="${p}-categories" id="${p}-cats">
         <div class="${p}-section-header">
           <span class="${p}-section-eyebrow">Líneas de producto</span>
@@ -490,7 +493,7 @@ const renderGenericBrand = (brandId) => {
             </div>
           `).join('')}
         </div>
-      </section>
+      </section>` : ''}
 
       <section class="${p}-products">
         <div class="${p}-section-header">
@@ -549,9 +552,7 @@ const renderGenericBrand = (brandId) => {
             Súmate a la red de<br><span style="color:${cfg.accentColor};">distribución ${cfg.title}</span>
           </h2>
           <p style="font-size:1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;">
-            ${brandId === 'goldentree' ? 'Forma parte de una marca que está transformando el riego agrícola con innovación, calidad y confianza.' : 
-              brandId === 'powerhunt' ? 'Lleva herramientas prácticas, accesibles y confiables a más personas. Con Power Hunt, tienes una marca conocida con productos funcionales.' :
-              'Forma parte de una marca que está elevando el estándar de la maquinaria profesional en México con respaldo y durabilidad.'}
+            ${cfg.contactText || 'Distribuidores con acceso a catálogo completo, precios preferenciales y soporte técnico especializado.'}
           </p>
           <a href="${cfg.contactLink || '#'}" target="_blank" rel="noopener" class="${p}-btn-primary" style="text-decoration:none;border-radius:100px;display:inline-block;padding:15px 30px;">
             CONVIÉRTETE EN DISTRIBUIDOR
