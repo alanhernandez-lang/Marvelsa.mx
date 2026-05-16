@@ -134,42 +134,43 @@ export const renderNosotros = () => {
               <div class="nos-why-cards-grid">
                 ${[
       {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15l-3 3h6l-3-3z"/><path d="M8 18h8v2H8z"/><circle cx="12" cy="9" r="5"/><path d="M12 4v1"/><path d="M8.5 5.5l.7.7"/><path d="M7 9h1"/><path d="M15.5 5.5l-.7.7"/><path d="M17 9h-1"/><polyline points="10 9 12 11 14 8"/></svg>',
         title: 'Experiencia Comprobada',
-        desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores',
+        desc: 'Más de dos décadas liderando la distribución B2B en múltiples sectores.',
         delay: ''
       },
       {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8 5.8 21.3l2.4-7.4L2 9.4h7.6z"/><circle cx="12" cy="12" r="3"/></svg>',
         title: 'Marcas Líderes',
         desc: 'Representamos fabricantes reconocidos por su innovación y desempeño.',
         delay: '0.1s'
       },
       {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="8"/><path d="M12 2a8 8 0 0 1 0 16 8 8 0 0 1 0-16"/><path d="M2 12h20"/><ellipse cx="12" cy="10" rx="3" ry="8"/><path d="M12 18v3"/><path d="M9 21h6"/></svg>',
         title: 'Cobertura Nacional',
         desc: 'Entregamos a todo México con eficiencia y respaldo logístico.',
         delay: '0.2s'
       },
       {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="3"/><line x1="2" y1="8" x2="22" y2="8"/><rect x="5" y="11" width="4" height="3" rx="0.5"/><rect x="11" y="11" width="4" height="3" rx="0.5"/><line x1="8" y1="20" x2="16" y2="20"/><line x1="12" y1="17" x2="12" y2="20"/></svg>',
         title: 'Portal Exclusivo',
         desc: 'Compra, planifica y controla tu negocio con facilidad.',
         delay: '0.3s'
       },
       {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H3V11z"/><path d="M21 11h-2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h2V11z"/><path d="M3 11V9a9 9 0 0 1 18 0v2"/><path d="M7 18c0 2 2.5 3 5 3s5-1 5-3"/><circle cx="12" cy="5" r="0.5" fill="currentColor"/></svg>',
         title: 'Soporte Técnico y Postventa',
         desc: 'Soluciones rápidas, atención cercana y respaldo garantizado.',
         delay: '0.4s'
       },
       {
-        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/><path d="M11 11h2"/><path d="M4 11h16"/></svg>',
+        icon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="15"/><circle cx="12" cy="3" r="1.5"/><line x1="5" y1="10" x2="12" y2="7"/><line x1="19" y1="10" x2="12" y2="7"/><rect x="3" y="10" width="4" height="6" rx="1"/><rect x="17" y="10" width="4" height="6" rx="1"/><path d="M12 15v4"/><path d="M8 19h8"/><path d="M6 16v3"/><path d="M18 16v3"/></svg>',
         title: 'Valor Justo',
         desc: 'Productos de calidad profesional a precios que permiten competir y crecer.',
         delay: '0.5s'
       },
     ].map(c => `
+
                   <div class="nos-why-card reveal-up" ${c.delay ? `style="transition-delay:${c.delay}"` : ''}>
                     <div class="nos-why-card-icon">${c.icon}</div>
                     <h3 class="nos-why-card-title">${c.title}</h3>
