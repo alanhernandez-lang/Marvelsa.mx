@@ -252,33 +252,31 @@ const renderKawashima = () => {
           </div>
           <div class="why-grid">
             ${[
-    { 
-      title: 'Relación Calidad–Precio', 
-      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.', 
+    {
+      title: 'Relación Calidad–Precio',
+      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.',
       icon: `
-        <line x1="12" y1="3" x2="12" y2="21"/>
-        <path d="M5 8h14"/>
-        <path d="M5 8c0 3.31 2.69 6 6 6s6-2.69 6-6"/>
-        <path d="M3 21h18"/>
-        <circle cx="12" cy="6" r="2"/>
-        <path d="M8 13.5C8 16 9.8 18 12 18s4-2 4-4.5"/>
+        <line x1="12" y1="2" x2="12" y2="22"/>
+        <line x1="5" y1="6" x2="12" y2="4"/>
+        <line x1="19" y1="6" x2="12" y2="4"/>
+        <path d="M5 6L2 13h6z"/>
+        <path d="M19 6l-3 7h6z"/>
+        <line x1="4" y1="22" x2="20" y2="22"/>
       `
     },
-    { 
-      title: 'Durabilidad en Productos', 
-      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.', 
+    {
+      title: 'Durabilidad en Productos',
+      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.',
       icon: `
-        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        <line x1="12" y1="7" x2="12" y2="11"/>
-        <line x1="10" y1="9" x2="14" y2="9"/>
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <polyline points="9 12 11 14 15 10"/>
       `
     },
-    { 
-      title: 'Refacciones en todos los equipos', 
-      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.', 
+    {
+      title: 'Refacciones en todos los equipos',
+      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.',
       icon: `
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
       `
     },
 
