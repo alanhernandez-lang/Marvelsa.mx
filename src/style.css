@@ -2434,6 +2434,11 @@ body.theme-kawashima {
   right: 0;
   padding: 50px 40px;
   z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.kaw-cat-card:hover .kaw-cat-content {
+  transform: translateY(-20px);
 }
 
 .kaw-cat-icon {
@@ -2480,7 +2485,7 @@ body.theme-kawashima {
 }
 
 .kaw-cat-card:hover .kaw-cat-desc {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
 }
 
@@ -3330,6 +3335,11 @@ body.theme-parazzini {
   right: 0;
   padding: 50px 40px;
   z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.par-cat-card:hover .par-cat-content {
+  transform: translateY(-20px);
 }
 
 .par-cat-icon {
@@ -3371,7 +3381,7 @@ body.theme-parazzini {
 }
 
 .par-cat-card:hover .par-cat-desc {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
 }
 
@@ -4118,6 +4128,11 @@ body.theme-goldentree {
   right: 0;
   padding: 50px 40px;
   z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.gt-cat-card:hover .gt-cat-content {
+  transform: translateY(-20px);
 }
 
 .gt-cat-icon {
@@ -4159,7 +4174,7 @@ body.theme-goldentree {
 }
 
 .gt-cat-card:hover .gt-cat-desc {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
 }
 
@@ -4912,6 +4927,11 @@ body.theme-powerhunt {
   right: 0;
   padding: 50px 40px;
   z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ph-cat-card:hover .ph-cat-content {
+  transform: translateY(-20px);
 }
 
 .ph-cat-icon {
@@ -4953,7 +4973,7 @@ body.theme-powerhunt {
 }
 
 .ph-cat-card:hover .ph-cat-desc {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
 }
 
@@ -5701,6 +5721,11 @@ body.theme-takashi {
   right: 0;
   padding: 50px 40px;
   z-index: 5;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.tak-cat-card:hover .tak-cat-content {
+  transform: translateY(-20px);
 }
 
 .tak-cat-icon {
@@ -5742,7 +5767,7 @@ body.theme-takashi {
 }
 
 .tak-cat-card:hover .tak-cat-desc {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
 }
 
