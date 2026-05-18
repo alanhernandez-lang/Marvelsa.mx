@@ -348,6 +348,7 @@ const brandConfig = {
       { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
     prods: [{ name: 'Cortacésped PRZ-500', tag: 'Jardín' }, { name: 'Desbrozadora PRZ-26', tag: 'Jardín' }, { name: 'Soplador PRZ-3000', tag: 'Jardín' }, { name: 'Bordeadora PRZ-18', tag: 'Jardín' }],
+    distributorLink: 'https://forms.gle/vXg39DUZdyiDzJH58',
     whyCards: [
       {
         title: 'Refacciones disponibles en todos los equipos',
@@ -556,9 +557,10 @@ const renderGenericBrand = (brandId) => {
             Forma parte de una marca que está transformando el acceso a herramientas profesionales en México.
             Maquinaria de alta demanda, soporte constante y respaldo comercial para que tu negocio crezca con nosotros.
           </p>
-          <button class="${p}-btn-primary" onclick="window.renderContacto(true)" style="border-radius:100px;padding:20px 40px;font-size:1rem;">
-            Conviértete en distribuidor ${cfg.title}
-          </button>
+          ${cfg.distributorLink
+      ? `<a href="${cfg.distributorLink}" target="_blank" rel="noopener" class="${p}-btn-primary" style="text-decoration:none;border-radius:100px;padding:20px 40px;font-size:1rem;display:inline-block;">Conviértete en distribuidor ${cfg.title}</a>`
+      : `<button class="${p}-btn-primary" onclick="window.renderContacto(true)" style="border-radius:100px;padding:20px 40px;font-size:1rem;">Conviértete en distribuidor ${cfg.title}</button>`
+    }
         </div>
         <div class="split-banner-img" style="--overlay-color:var(--${p}-black);background-image:url('${cfg.banner}');background-size:contain;background-repeat:no-repeat;background-position:center;background-color:var(--${p}-black);">
         </div>
