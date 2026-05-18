@@ -453,7 +453,7 @@ const renderGenericBrand = (brandId) => {
         <div class="${p}-intro-inner">
           <div>
             <span class="${p}-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="${p}-intro-title">Diseñados <em>para ti</em></h2>
+            <h2 class="${p}-intro-title">Diseñados<br><em>para ti</em></h2>
             <p class="${p}-intro-text">${cfg.introCopy}</p>
           </div>
           <div class="${p}-features">
