@@ -341,6 +341,63 @@
     max-width: 300px;
   }
 
+  /* ─ BRAND HERO HEIGHT ─ */
+  .kaw-hero,
+  .par-hero,
+  .gt-hero,
+  .ph-hero,
+  .tak-hero {
+    min-height: 80vh !important;
+  }
+
+  /* ─ BRAND HERO BADGE & SLOGAN ─ */
+  .kaw-badge,
+  .par-badge,
+  .gt-badge,
+  .ph-badge,
+  .tak-badge {
+    font-size: 0.68rem !important;
+    padding: 6px 14px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .kaw-hero-slogan,
+  .par-hero-slogan,
+  .gt-hero-slogan,
+  .ph-hero-slogan,
+  .tak-hero-slogan {
+    font-size: 1rem !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  /* ─ BRAND HERO DIVIDER — HIDE ─ */
+  .kaw-hero-divider,
+  .par-hero-divider,
+  .gt-hero-divider,
+  .ph-hero-divider,
+  .tak-hero-divider {
+    display: none !important;
+  }
+
+  /* ─ PARTICLES — DISABLE ON MOBILE ─ */
+  .kaw-particle,
+  .par-particle,
+  .gt-particle,
+  .ph-particle,
+  .tak-particle {
+    display: none !important;
+  }
+
+  /* ─ BRAND INTRO TITLES ─ */
+  .kaw-intro-title,
+  .par-intro-title,
+  .gt-intro-title,
+  .ph-intro-title,
+  .tak-intro-title {
+    font-size: clamp(1.8rem, 8vw, 2.8rem) !important;
+    line-height: 1.2 !important;
+  }
+
   /* ─ BRAND INTRO ─ */
   .kaw-intro-inner,
   .par-intro-inner,
@@ -350,6 +407,23 @@
     grid-template-columns: 1fr !important;
     gap: 40px !important;
     padding: 0 20px !important;
+  }
+
+  /* ─ FEATURE ITEMS ─ */
+  .kaw-intro-features,
+  .par-features,
+  .gt-features,
+  .ph-features,
+  .tak-features {
+    gap: 16px !important;
+  }
+
+  .kaw-feature-item,
+  .par-feature-item,
+  .gt-feature-item,
+  .ph-feature-item,
+  .tak-feature-item {
+    padding: 16px !important;
   }
 
   /* ─ BRAND CATEGORY GRIDS ─ */
@@ -368,6 +442,34 @@
   .ph-cat-card,
   .tak-cat-card {
     height: 300px !important;
+  }
+
+  /* ─ CATEGORY CARD CONTENT ─ */
+  .kaw-cat-content,
+  .par-cat-content,
+  .gt-cat-content,
+  .ph-cat-content,
+  .tak-cat-content {
+    padding: 30px 20px !important;
+  }
+
+  .kaw-cat-name,
+  .par-cat-name,
+  .gt-cat-name,
+  .ph-cat-name,
+  .tak-cat-name {
+    font-size: 1.4rem !important;
+    letter-spacing: 1px !important;
+  }
+
+  .kaw-cat-icon,
+  .par-cat-icon,
+  .gt-cat-icon,
+  .ph-cat-icon,
+  .tak-cat-icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 12px !important;
   }
 
   /* ─ BRAND PRODUCTS GRID ─ */
@@ -482,11 +584,21 @@
   .ph-prod-grid,
   .tak-prod-grid {
     grid-template-columns: 1fr !important;
+    padding: 0 12px !important;
   }
 
   /* Section titles even smaller */
   .mvh-section-title {
     font-size: 1.5rem !important;
+  }
+
+  /* Brand section titles */
+  .kaw-section-title,
+  .par-section-title,
+  .gt-section-title,
+  .ph-section-title,
+  .tak-section-title {
+    font-size: clamp(1.5rem, 7vw, 2rem) !important;
   }
 
   /* Nav logo size */
@@ -499,9 +611,73 @@
     height: 200px !important;
   }
 
+  /* Hero height smaller on phones */
+  .kaw-hero,
+  .par-hero,
+  .gt-hero,
+  .ph-hero,
+  .tak-hero {
+    min-height: 70vh !important;
+  }
+
+  /* Hero title smaller on phones */
+  .kaw-hero-title,
+  .par-hero-title,
+  .gt-hero-title,
+  .ph-hero-title,
+  .tak-hero-title {
+    font-size: clamp(2.4rem, 12vw, 4rem) !important;
+  }
+
+  /* Category cards shorter on phones */
+  .kaw-cat-card,
+  .par-cat-card,
+  .gt-cat-card,
+  .ph-cat-card,
+  .tak-cat-card {
+    height: 260px !important;
+  }
+
+  /* Split banner text smaller padding */
+  .split-banner-text {
+    padding: 36px 16px !important;
+  }
+
+  /* Split banner image shorter */
+  .split-banner-img {
+    height: 200px !important;
+  }
+
+  /* Why-grid single col with reduced gap */
+  .why-grid {
+    gap: 40px !important;
+  }
+
+  /* Intro text padding */
+  .kaw-intro-inner,
+  .par-intro-inner,
+  .gt-intro-inner,
+  .ph-intro-inner,
+  .tak-intro-inner {
+    padding: 0 12px !important;
+  }
+
   /* Stats wrap tight */
   .kaw-hero-stats > div,
-  .par-hero-stats > div {
+  .par-hero-stats > div,
+  .gt-hero-stats > div,
+  .ph-hero-stats > div,
+  .tak-hero-stats > div {
     width: 100%;
+  }
+
+  /* Distributor button full width */
+  .kaw-btn-primary, .kaw-btn-outline,
+  .par-btn-primary, .par-btn-outline,
+  .gt-btn-primary,  .gt-btn-outline,
+  .ph-btn-primary,  .ph-btn-outline,
+  .tak-btn-primary, .tak-btn-outline {
+    padding: 14px 24px !important;
+    font-size: 0.85rem !important;
   }
 }
