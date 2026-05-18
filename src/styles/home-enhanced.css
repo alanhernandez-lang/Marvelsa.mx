@@ -51,6 +51,8 @@ body:not([class*="theme-"]) {
 
 /* ── SECTION TITLES — refined typography ──── */
 .mvh-section-title {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-style: italic !important;
   letter-spacing: -1.5px !important;
   line-height: 1.02 !important;
 }

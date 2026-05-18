@@ -2217,13 +2217,16 @@ body.theme-kawashima {
 .kaw-intro-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: white;
   line-height: 1.05;
   margin-bottom: 30px;
 }
 
 .kaw-intro-title em {
-  font-style: normal;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--kaw-red-light);
 }
 
@@ -2343,9 +2346,17 @@ body.theme-kawashima {
 .kaw-section-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: white;
   line-height: 1.1;
   margin-bottom: 20px;
+}
+
+.kaw-section-title em {
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--kaw-red-light);
 }
 
 .kaw-section-sub {
@@ -3140,13 +3151,16 @@ body.theme-parazzini {
 .par-intro-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: white;
   line-height: 1.05;
   margin-bottom: 30px;
 }
 
 .par-intro-title em {
-  font-style: normal;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--par-green-light);
 }
 
@@ -3228,9 +3242,17 @@ body.theme-parazzini {
 .par-section-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: white;
   line-height: 1.1;
   margin-bottom: 20px;
+}
+
+.par-section-title em {
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--par-green-light);
 }
 
 .par-section-sub {
@@ -3914,13 +3936,16 @@ body.theme-goldentree {
 .gt-intro-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: var(--gt-text);
   line-height: 1.05;
   margin-bottom: 30px;
 }
 
 .gt-intro-title em {
-  font-style: normal;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--gt-gold-dark);
 }
 
@@ -4005,9 +4030,17 @@ body.theme-goldentree {
 .gt-section-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: var(--gt-text);
   line-height: 1.1;
   margin-bottom: 20px;
+}
+
+.gt-section-title em {
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--gt-gold-dark);
 }
 
 .gt-section-sub {
@@ -4696,13 +4729,16 @@ body.theme-powerhunt {
 .ph-intro-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: var(--ph-text);
   line-height: 1.05;
   margin-bottom: 30px;
 }
 
 .ph-intro-title em {
-  font-style: normal;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--ph-blue-dark);
 }
 
@@ -4787,9 +4823,17 @@ body.theme-powerhunt {
 .ph-section-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: var(--ph-text);
   line-height: 1.1;
   margin-bottom: 20px;
+}
+
+.ph-section-title em {
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--ph-blue-dark);
 }
 
 .ph-section-sub {
@@ -5478,13 +5522,16 @@ body.theme-takashi {
 .tak-intro-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: white;
   line-height: 1.05;
   margin-bottom: 30px;
 }
 
 .tak-intro-title em {
-  font-style: normal;
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
   color: var(--tak-orange-light);
 }
 
@@ -5566,9 +5613,17 @@ body.theme-takashi {
 .tak-section-title {
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: white;
   line-height: 1.1;
   margin-bottom: 20px;
+}
+
+.tak-section-title em {
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--tak-orange-light);
 }
 
 .tak-section-sub {
@@ -6873,6 +6928,8 @@ body.theme-takashi .cta-link {
 .mvh-section-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: #1a1a1a;
   line-height: 1.2;
   letter-spacing: -2px;
@@ -6881,8 +6938,8 @@ body.theme-takashi .cta-link {
 
 .mvh-section-title em {
   font-style: italic;
-  font-family: 'Playfair Display', serif;
-  background: linear-gradient(135deg, #00b4b4, #008080);
+  font-family: 'Playfair Display', Georgia, serif;
+  background: linear-gradient(135deg, #005E5E 0%, #00b4b4 50%, #C5A02D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -6929,6 +6986,8 @@ body.theme-takashi .cta-link {
 .mvh-intro-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 900;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
   color: #1a1a1a;
   line-height: 1.05;
   letter-spacing: -2px;
@@ -6936,8 +6995,9 @@ body.theme-takashi .cta-link {
 }
 
 .mvh-intro-title em {
-  font-style: normal;
-  background: linear-gradient(135deg, #00b4b4, #008080);
+  font-style: italic;
+  font-family: 'Playfair Display', Georgia, serif;
+  background: linear-gradient(135deg, #005E5E 0%, #00b4b4 50%, #C5A02D 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
