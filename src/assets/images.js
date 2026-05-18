@@ -28,9 +28,9 @@ export { default as imgKawAgricola }      from './images/Agricola.png';
 export { default as imgKawBosque }        from './images/Bosque.png';
 export { default as imgKawJardin }        from './images/Jardin.png';
 
-export { default as imgAK26_1 }           from './images/AK26 1.png';
-export { default as imgAK26_2 }           from './images/AK26 2.png';
-export { default as imgAK26_3 }           from './images/AK26 3.png';
+export { default as imgAK26_1 }           from './images/AK26-1.png';
+export { default as imgAK26_2 }           from './images/AK26-2.png';
+export { default as imgAK26_3 }           from './images/AK26-3.png';
 export { default as imgAK20LE_1 }         from './images/AspersorAK20LE.png';
 export { default as imgAK20LE_2 }         from './images/AspersorAK20LE2.png';
 export { default as imgMTK26_1 }           from './images/MTK26.png';
