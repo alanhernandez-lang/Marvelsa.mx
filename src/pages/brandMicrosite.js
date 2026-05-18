@@ -336,14 +336,14 @@ const brandConfig = {
     marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
     introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
     features: [
-      { title: 'Potencia', label: 'Comprobada', desc: 'Motores de alto rendimiento con tecnología italiana que entregan la fuerza necesaria para las jornadas más exigentes.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
+      { title: 'Potencia', label: 'Real', desc: 'Motores de alto rendimiento con tecnología italiana que entregan la fuerza necesaria para las jornadas más exigentes.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
       { title: 'Calidad', label: 'Comprobada', desc: 'Estándares técnicos elevados en cada pieza y ensamble, garantizando durabilidad y precisión en cada uso.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
       { title: 'Respaldo', label: 'Garantizado', desc: 'Red de servicio técnico y refacciones disponibles en México para mantener tus equipos siempre operativos.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
     ],
     cats: [
-      { img: bannerKawashima, name: 'AGRÍCOLAS', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad.', subs: 'MANGUERAS • TUBERIA PVC • MOTOBOMBAS' },
-      { img: bannerGoldenTree, name: 'CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
-      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
+      { img: bannerKawashima, name: 'AGRÍCOLAS', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad técnica. Desde mangueras y tubería PVC hasta motobombas de alto rendimiento, ofrecemos soluciones completas para ingenieros de riego y profesionales del agro que buscan sistemas funcionales, resistentes y fáciles de instalar.', subs: 'MANGUERAS • TUBERIA PVC • MOTOBOMBAS' },
+      { img: bannerGoldenTree, name: 'CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra. Revolvedoras, motobombas, generadores y más equipos que brindan potencia real en cada proyecto. Nuestra maquinaria está diseñada para soportar las condiciones exigentes del sitio de construcción, con el respaldo que todo profesional necesita.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
+      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
     prods: [{ name: 'Cortacésped PRZ-500', tag: 'Jardín' }, { name: 'Desbrozadora PRZ-26', tag: 'Jardín' }, { name: 'Soplador PRZ-3000', tag: 'Jardín' }, { name: 'Bordeadora PRZ-18', tag: 'Jardín' }],
   },
