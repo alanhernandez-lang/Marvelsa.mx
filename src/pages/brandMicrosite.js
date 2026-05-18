@@ -549,17 +549,18 @@ const renderGenericBrand = (brandId) => {
 
       <section class="split-banner" style="background:var(--${p}-black);">
         <div class="split-banner-text">
-          <h2 style="font-size:clamp(2rem,4vw,3.2rem);font-weight:900;line-height:1.1;margin-bottom:25px;text-transform:uppercase;">
-            Únete a la red<br><span style="color:${cfg.accentColor};">${cfg.title}</span>
+          <h2 style="font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:white;line-height:1.1;margin-bottom:25px;text-transform:uppercase;">
+            Súmate a la <span style="color:${cfg.accentColor};">red de distribución</span> ${cfg.title}
           </h2>
-          <p style="font-size:1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;">
-            Distribuidores con acceso a catálogo completo, precios preferenciales y soporte técnico especializado.
+          <p style="font-size:1.1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;">
+            Forma parte de una marca que está transformando el acceso a herramientas profesionales en México.
+            Maquinaria de alta demanda, soporte constante y respaldo comercial para que tu negocio crezca con nosotros.
           </p>
-          <button class="${p}-btn-primary" onclick="window.renderContacto(true)" style="border-radius:100px;">
-            CONVIÉRTETE EN DISTRIBUIDOR
+          <button class="${p}-btn-primary" onclick="window.renderContacto(true)" style="border-radius:100px;padding:20px 40px;font-size:1rem;">
+            Conviértete en distribuidor ${cfg.title}
           </button>
         </div>
-        <div class="split-banner-img" style="--overlay-color:var(--${p}-black);background-image:url('${cfg.banner}');background-size:cover;background-position:center;filter:brightness(0.55) saturate(0.7);">
+        <div class="split-banner-img" style="--overlay-color:var(--${p}-black);background-image:url('${cfg.banner}');background-size:contain;background-repeat:no-repeat;background-position:center;background-color:var(--${p}-black);">
         </div>
       </section>
 
