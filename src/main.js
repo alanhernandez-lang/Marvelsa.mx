@@ -1,4 +1,3 @@
-// src/main.js
 import { brands }              from './data/brands.js';
 import { initTracking }        from './core/tracking.js';
 import { renderHome }          from './pages/home.js';

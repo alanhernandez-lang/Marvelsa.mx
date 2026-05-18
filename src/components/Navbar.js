@@ -1,4 +1,3 @@
-// src/components/Navbar.js — with mobile hamburger menu
 import { brands }       from '../data/brands.js';
 import { logoMarvelsa } from '../assets/images.js';
 

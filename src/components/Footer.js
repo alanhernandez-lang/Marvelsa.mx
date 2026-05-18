@@ -1,4 +1,3 @@
-// src/components/Footer.js
 import { logoMarvelsa } from '../assets/images.js';
 
 export const getFooterHTML = () => `

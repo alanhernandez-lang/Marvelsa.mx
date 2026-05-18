@@ -1,4 +1,3 @@
-// src/pages/blog.js
 import { renderNavbar } from '../components/Navbar.js';
 import { getFooterHTML } from '../components/Footer.js';
 

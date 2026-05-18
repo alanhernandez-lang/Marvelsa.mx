@@ -1,4 +1,3 @@
-// src/pages/contacto.js
 import { renderNavbar }       from '../components/Navbar.js';
 import { renderHeroCarousel } from '../components/HeroCarousel.js';
 import { renderLeadForm }     from '../components/LeadForm.js';

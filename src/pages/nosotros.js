@@ -1,4 +1,3 @@
-// src/pages/nosotros.js
 import { renderNavbar } from '../components/Navbar.js';
 import { renderHeroCarousel } from '../components/HeroCarousel.js';
 import { getFooterHTML } from '../components/Footer.js';

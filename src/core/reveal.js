@@ -1,6 +1,3 @@
-// src/core/reveal.js
-// Utility: activates IntersectionObserver for scroll-reveal animations.
-
 export const activateRevealObserver = ({ includeTimeline = false } = {}) => {
   setTimeout(() => {
     const observer = new IntersectionObserver(

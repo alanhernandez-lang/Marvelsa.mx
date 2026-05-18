@@ -1,4 +1,3 @@
-// src/components/LeadForm.js
 import { trackLeadConversion } from '../core/tracking';
 
 export const renderLeadForm = (containerId) => {
@@ -34,14 +33,12 @@ export const renderLeadForm = (containerId) => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     
-    // UI Feedback: Loading state
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.innerText;
     submitBtn.innerText = 'ENVIANDO...';
     submitBtn.disabled = true;
     submitBtn.style.opacity = '0.7';
 
-    // Collect data
     const formData = new FormData(form);
     
     try {

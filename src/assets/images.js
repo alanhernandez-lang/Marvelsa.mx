@@ -1,6 +1,3 @@
-// src/assets/images.js
-// Centraliza todos los imports de imágenes para mantener los módulos limpios.
-
 export { default as mainStrategicImage }  from './images/Imagen 1 pagina principal.png';
 export { default as imgCobertura }        from './images/Cobertura.png';
 export { default as imgExperiencia }      from './images/Experiencia.png';
@@ -21,7 +18,6 @@ export { default as imgNosotrosFull }     from './images/NuestraHistoria.png';
 export { default as img30Anos }           from './images/30-anos.jpg';
 export { default as logoMarvelsa }        from './images/marvelsa-logo.png';
 
-export { default as bgKawashimaFondo }    from './images/KawashimaFondo.png';
 export { default as bgKawashimaFondoNew } from './images/Fondo Kawashima.png';
 export { default as bgParazziniFondo }    from './images/ParazziniFondo.png';
 export { default as bgGoldenTreeFondo }   from './images/GoldenTreeFondo.png';

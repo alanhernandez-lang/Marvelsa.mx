@@ -1,4 +1,3 @@
-// src/data/brands.js
 import logoKawashima from '../assets/images/KAWASHIMA-Logo.png';
 import logoParazzini from '../assets/images/PARAZZINI-Logo.png';
 import logoGoldenTree from '../assets/images/GOLDENTREE-Logo.png';
@@ -13,7 +12,6 @@ export const brands = {
     slogan: 'Tecnología Japonesa en Movimiento',
     description: 'Líder en maquinaria motorizada para agricultura y construcción.',
     logo: logoKawashima,
-    products: [],
   },
   parazzini: {
     id: 'parazzini',
@@ -30,7 +28,6 @@ export const brands = {
     slogan: 'Nutriendo tus Cosechas',
     description: 'Expertos en fertilización y sanidad vegetal de alta gama.',
     logo: logoGoldenTree,
-    products: [],
   },
   powerhunt: {
     id: 'powerhunt',

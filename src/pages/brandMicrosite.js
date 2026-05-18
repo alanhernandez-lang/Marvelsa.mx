@@ -1,11 +1,10 @@
-// src/pages/brandMicrosite.js
 import { brands } from '../data/brands.js';
 import { renderNavbar } from '../components/Navbar.js';
 import { renderLeadForm } from '../components/LeadForm.js';
 import { getFooterHTML } from '../components/Footer.js';
 import {
   bannerKawashima, bannerGoldenTree, bannerPowerHunt, bannerTakashi, bannerParazzini,
-  bgKawashimaFondo, bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo,
+  bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo,
   imgKawAgricola, imgKawBosque, imgKawJardin,
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
