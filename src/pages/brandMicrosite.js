@@ -132,10 +132,10 @@ const renderKawashima = () => {
           </div>
           <div class="kaw-intro-features">
             ${[
-    { icon: 'wrench', title: 'Herramientas profesionales', desc: 'Equipos diseñados para uso rudo, con tecnología que garantiza durabilidad en cualquier jornada.', path: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z' },
-    { icon: 'tag', title: 'Precio justo', desc: 'Calidad de alto desempeño a un costo accesible para potenciar tu inversión.', path: 'M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7h.01' },
-    { icon: 'headset', title: 'Soporte en México', desc: 'Red nacional de centros de servicio y refacciones siempre al alcance de tu mano.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4' },
-  ].map((f, i) => `
+      { icon: 'wrench', title: 'Herramientas profesionales', desc: 'Equipos diseñados para uso rudo, con tecnología que garantiza durabilidad en cualquier jornada.', path: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z' },
+      { icon: 'tag', title: 'Precio justo', desc: 'Calidad de alto desempeño a un costo accesible para potenciar tu inversión.', path: 'M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82zM7 7h.01' },
+      { icon: 'headset', title: 'Soporte en México', desc: 'Red nacional de centros de servicio y refacciones siempre al alcance de tu mano.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z M9 12l2 2 4-4' },
+    ].map((f, i) => `
               <div class="kaw-feature-item" style="transition-delay:${i * 0.15 + 0.1}s">
                 <div class="kaw-feature-icon">
                   <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="${f.path}"/></svg>
@@ -158,10 +158,10 @@ const renderKawashima = () => {
         </div>
         <div class="kaw-cat-grid">
           ${[
-    { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Aspersores a motor, manuales y eléctricos que brindan potencia, autonomía y eficiencia para todo tipo de cultivos.' },
-    { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para fuerza constante, cortes limpios y larga durabilidad.' },
-    { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad.' },
-  ].map(cat => `
+      { img: imgKawAgricola, name: 'AGRÍCOLA', desc: 'Aspersores a motor, manuales y eléctricos que brindan potencia, autonomía y eficiencia para todo tipo de cultivos.' },
+      { img: imgKawBosque, name: 'BOSQUE', desc: 'Motosierras profesionales, cadenas y refacciones diseñadas para fuerza constante, cortes limpios y larga durabilidad.' },
+      { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad.' },
+    ].map(cat => `
             <div class="kaw-cat-card">
               <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
               <div class="kaw-cat-overlay" style="background:linear-gradient(to top,rgba(0,0,0,.9) 0%,rgba(0,0,0,.4) 40%,transparent 100%);"></div>
@@ -251,10 +251,10 @@ const renderKawashima = () => {
           </div>
           <div class="why-grid">
             ${[
-    {
-      title: 'Relación Calidad–Precio',
-      text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.',
-      icon: `
+      {
+        title: 'Relación Calidad–Precio',
+        text: 'En Kawashima creemos que la calidad profesional no tiene que costar de más. Ofrecemos maquinaria profesional a un precio justo, pensado para quienes trabajan todos los días.',
+        icon: `
         <line x1="12" y1="2" x2="12" y2="22"/>
         <line x1="5" y1="6" x2="12" y2="4"/>
         <line x1="19" y1="6" x2="12" y2="4"/>
@@ -262,24 +262,24 @@ const renderKawashima = () => {
         <path d="M19 6l-3 7h6z"/>
         <line x1="4" y1="22" x2="20" y2="22"/>
       `
-    },
-    {
-      title: 'Durabilidad en Productos',
-      text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.',
-      icon: `
+      },
+      {
+        title: 'Durabilidad en Productos',
+        text: 'Fabricamos con materiales de alto rendimiento que aseguran potencia constante y larga vida útil, siempre que se realice el mantenimiento preventivo y uso adecuado.',
+        icon: `
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         <polyline points="9 12 11 14 15 10"/>
       `
-    },
-    {
-      title: 'Refacciones en todos los equipos',
-      text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.',
-      icon: `
+      },
+      {
+        title: 'Refacciones en todos los equipos',
+        text: 'Todos nuestros equipos cuentan con refacciones disponibles en México y una red de servicio lista para mantener tus máquinas en marcha.',
+        icon: `
         <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
       `
-    },
+      },
 
-  ].map(card => `
+    ].map(card => `
               <div class="kaw-why-card" style="background:rgba(255,255,255,0.03);text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid rgba(255,255,255,0.06);transition:all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);box-shadow:0 20px 40px rgba(0,0,0,0.2);">
                 <div style="position:absolute;top:0;left:0;right:0;height:4px;background:var(--kaw-red);border-radius:32px 32px 0 0;opacity:0.8;"></div>
                 <div class="kaw-card-icon-wrap" style="width:90px;height:90px;background:white;border-radius:24px;display:flex;align-items:center;justify-content:center;margin:-105px auto 30px;box-shadow:0 20px 40px rgba(204,17,17,0.3);position:relative;z-index:2;transform:rotate(-5deg);">
@@ -334,7 +334,12 @@ const brandConfig = {
     accentColor: '#1A7A4A',
     stats: [{ n: '20+', l: 'Años de experiencia' }, { n: '3K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
     marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
-    introCopy: 'Parazzini nació para darle a cada jardinero y paisajista profesional las herramientas que merecen. Equipos de precisión, rendimiento constante y un diseño pensado para quienes aman lo que hacen.',
+    introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
+    features: [
+      { title: 'Potencia', label: 'Comprobada', desc: 'Motores de alto rendimiento con tecnología italiana que entregan la fuerza necesaria para las jornadas más exigentes.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
+      { title: 'Calidad', label: 'Comprobada', desc: 'Estándares técnicos elevados en cada pieza y ensamble, garantizando durabilidad y precisión en cada uso.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
+      { title: 'Respaldo', label: 'Garantizado', desc: 'Red de servicio técnico y refacciones disponibles en México para mantener tus equipos siempre operativos.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
+    ],
     cats: [
       { img: bannerKawashima, name: 'AGRÍCOLAS', desc: 'Todo lo que necesitas para armar sistemas de riego eficientes, duraderos y con calidad.', subs: 'MANGUERAS • TUBERIA PVC • MOTOBOMBAS' },
       { img: bannerGoldenTree, name: 'CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
@@ -432,16 +437,16 @@ const renderGenericBrand = (brandId) => {
             <p class="${p}-intro-text">${cfg.introCopy}</p>
           </div>
           <div class="${p}-features">
-            ${[
-    { title: 'Calidad', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
-    { title: 'Diseño', path: 'M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z' },
-    { title: 'Soporte', path: 'M21 10c0-4.97-4.03-9-9-9s-9 4.03-9 9M7 15h10m2 0a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2M5 15a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2' }
-  ].map((f, i) => `
+            ${(cfg.features || [
+      { title: 'Calidad', label: 'Comprobada', desc: 'Herramientas que garantizan resultados profesionales en cada jornada de trabajo.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
+      { title: 'Diseño', label: 'Comprobado', desc: 'Herramientas que garantizan resultados profesionales en cada jornada de trabajo.', path: 'M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z' },
+      { title: 'Soporte', label: 'Comprobado', desc: 'Herramientas que garantizan resultados profesionales en cada jornada de trabajo.', path: 'M21 10c0-4.97-4.03-9-9-9s-9 4.03-9 9M7 15h10m2 0a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2M5 15a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2' },
+    ]).map((f, i) => `
               <div class="${p}-feature-item" style="transition-delay:${i * 0.15 + 0.1}s">
                 <div class="${p}-feature-icon">
                   <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="${f.path}"/></svg>
                 </div>
-                <div class="${p}-feature-text"><h4>${f.title} Comprobada</h4><p>Herramientas que garantizan resultados profesionales en cada jornada de trabajo.</p></div>
+                <div class="${p}-feature-text"><h4>${f.title} ${f.label}</h4><p>${f.desc}</p></div>
               </div>
             `).join('')}
           </div>
