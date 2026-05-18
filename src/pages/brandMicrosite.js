@@ -348,6 +348,23 @@ const brandConfig = {
       { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
     prods: [{ name: 'Cortacésped PRZ-500', tag: 'Jardín' }, { name: 'Desbrozadora PRZ-26', tag: 'Jardín' }, { name: 'Soplador PRZ-3000', tag: 'Jardín' }, { name: 'Bordeadora PRZ-18', tag: 'Jardín' }],
+    whyCards: [
+      {
+        title: 'Refacciones disponibles en todos los equipos',
+        text: 'Nuestros productos están pensados para el largo plazo. Por eso, garantizamos disponibilidad de refacciones en todo el catálogo, asegurando mantenimiento continuo, ahorro a futuro y tranquilidad para el usuario profesional.',
+        icon: `<path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>`,
+      },
+      {
+        title: 'Calidad técnica y potencia real',
+        text: 'Cada máquina Parazzini combina <strong>potencia profesional</strong> con <strong>componentes de calidad</strong>, incluyendo motores de ingeniería italiana. Esto se traduce en equipos que rinden más, aguantan más y elevan el estándar del trabajo técnico.',
+        icon: `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>`,
+      },
+      {
+        title: 'Durabilidad y respaldo',
+        text: 'Nuestros equipos están diseñados para soportar las condiciones reales del campo, la obra y el uso intensivo. Y no estás solo: <strong>nuestro compromiso de respaldo incluye servicio, asesoría y atención postventa</strong>, porque sabemos que en el trabajo serio, el soporte hace la diferencia.',
+        icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>`,
+      },
+    ],
   },
   goldentree: {
     css: 'gt', bg: bgGoldenTreeFondo, banner: bannerGoldenTree,
@@ -510,13 +527,20 @@ const renderGenericBrand = (brandId) => {
             <h2 class="${p}-section-title">¿Por qué elegirnos?</h2>
           </div>
           <div class="why-grid">
-            ${['Calidad Premium', 'Diseño Ergonómico', 'Cobertura Nacional'].map(title => `
-              <div class="${p}-prod-card" style="text-align:center;padding:50px 35px;">
-                <div style="width:90px;height:90px;background:rgba(100,100,100,.1);border:1px solid rgba(100,100,100,.25);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 30px;">
-                  <svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="${cfg.accentColor}" stroke-width="2"><circle cx="32" cy="32" r="22"/><path d="M22 32 l8 8 14-16"/></svg>
+            ${(cfg.whyCards || [
+      { title: 'Calidad Premium', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>` },
+      { title: 'Diseño Ergonómico', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>` },
+      { title: 'Cobertura Nacional', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
+    ]).map(card => `
+              <div style="background:rgba(255,255,255,0.03);text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid rgba(255,255,255,0.06);transition:all 0.5s cubic-bezier(0.2,0.8,0.2,1);box-shadow:0 20px 40px rgba(0,0,0,0.2);">
+                <div style="position:absolute;top:0;left:0;right:0;height:4px;background:${cfg.accentColor};border-radius:32px 32px 0 0;opacity:0.8;"></div>
+                <div style="width:90px;height:90px;background:white;border-radius:24px;display:flex;align-items:center;justify-content:center;margin:-105px auto 30px;box-shadow:0 20px 40px rgba(0,0,0,0.18);position:relative;z-index:2;transform:rotate(-5deg);">
+                  <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="${cfg.accentColor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    ${card.icon}
+                  </svg>
                 </div>
-                <h3 style="font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px;">${title}</h3>
-                <p style="font-size:0.95rem;line-height:1.8;margin:0;opacity:0.7;">Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.</p>
+                <h3 style="font-size:1.15rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
+                <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
               </div>
             `).join('')}
           </div>
