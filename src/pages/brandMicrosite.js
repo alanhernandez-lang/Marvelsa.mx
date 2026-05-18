@@ -333,7 +333,7 @@ const brandConfig = {
   parazzini: {
     css: 'par', bg: bgParazziniFondo, banner: bannerParazzini,
     badge: '🌿 Paisajismo Profesional • México', title: 'PARAZZINI', slogan: 'Pasión por el Paisajismo',
-    accentColor: '#1A7A4A',
+    accentColor: '#D4A800',
     stats: [{ n: '20+', l: 'Años de experiencia' }, { n: '3K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
     marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
     introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
@@ -532,9 +532,9 @@ const renderGenericBrand = (brandId) => {
       { title: 'Diseño Ergonómico', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>` },
       { title: 'Cobertura Nacional', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
     ]).map(card => `
-              <div style="background:rgba(255,255,255,0.03);text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid rgba(255,255,255,0.06);transition:all 0.5s cubic-bezier(0.2,0.8,0.2,1);box-shadow:0 20px 40px rgba(0,0,0,0.2);">
+              <div class="brand-why-card" style="background:rgba(255,255,255,0.03);text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid rgba(255,255,255,0.06);box-shadow:0 20px 40px rgba(0,0,0,0.2);">
                 <div style="position:absolute;top:0;left:0;right:0;height:4px;background:${cfg.accentColor};border-radius:32px 32px 0 0;opacity:0.8;"></div>
-                <div style="width:90px;height:90px;background:white;border-radius:24px;display:flex;align-items:center;justify-content:center;margin:-105px auto 30px;box-shadow:0 20px 40px rgba(0,0,0,0.18);position:relative;z-index:2;transform:rotate(-5deg);">
+                <div class="why-icon-wrap" style="width:90px;height:90px;background:white;border-radius:24px;display:flex;align-items:center;justify-content:center;margin:-105px auto 30px;box-shadow:0 20px 40px rgba(0,0,0,0.18);position:relative;z-index:2;transform:rotate(-5deg);">
                   <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="${cfg.accentColor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     ${card.icon}
                   </svg>

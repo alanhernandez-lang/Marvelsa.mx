@@ -3122,6 +3122,25 @@ body.theme-parazzini {
   transform: translateY(-3px);
 }
 
+/* ---- SHARED WHY-CARD (all generic brands) ---- */
+.brand-why-card {
+  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.brand-why-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4) !important;
+}
+
+.brand-why-card .why-icon-wrap {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.brand-why-card:hover .why-icon-wrap {
+  transform: scale(1.1) rotate(5deg) !important;
+}
+
 .par-intro {
   background: var(--par-dark);
   padding: 120px 0;
