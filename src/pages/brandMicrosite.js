@@ -355,9 +355,9 @@ const brandConfig = {
     marquee: ['Fertilizantes', 'Nutrición Foliar', 'Bioestimulantes', 'Sanidad Vegetal', 'Sustratos', 'Agricultura Premium'],
     introCopy: 'Golden Tree es la marca de fertilización y sanidad vegetal de alto rendimiento. Formulaciones desarrolladas para maximizar el potencial de cada cultivo, desde hortalizas hasta árboles frutales, con ingredientes de calidad premium al alcance del agricultor mexicano.',
     cats: [
-      { img: bannerGoldenTree, name: 'Fertilizantes', desc: 'Fórmulas balanceadas para una nutrición completa durante todo el ciclo del cultivo.', subs: 'Granulados • Líquidos • Foliares' },
-      { img: bannerKawashima, name: 'Bioestimulantes', desc: 'Potencia la germinación, el enraizamiento y la resistencia ante el estrés ambiental.', subs: 'Aminoácidos • Algas • Hormonas' },
-      { img: bannerParazzini, name: 'Sanidad Vegetal', desc: 'Protege tus cultivos de plagas y enfermedades con productos de alta efectividad.', subs: 'Fungicidas • Insecticidas • Bactericidas' },
+      { img: bannerGoldenTree, name: 'Fertilizantes', desc: 'Nutrición completa durante todo el ciclo del cultivo. Fórmulas granuladas, líquidas y foliares con los macronutrientes y micronutrientes que tus plantas necesitan para alcanzar su máximo potencial productivo.', subs: 'Granulados • Líquidos • Foliares' },
+      { img: bannerKawashima, name: 'Bioestimulantes', desc: 'Potencia natural para cada etapa de crecimiento. Formulaciones a base de aminoácidos, algas y hormonas que aceleran la germinación, fortalecen el enraizamiento y aumentan la resistencia ante el estrés hídrico y ambiental.', subs: 'Aminoácidos • Algas • Hormonas' },
+      { img: bannerParazzini, name: 'Sanidad Vegetal', desc: 'Protección profesional contra plagas y enfermedades. Fungicidas, insecticidas y bactericidas de alta efectividad desarrollados para mantener tus cultivos sanos y maximizar el rendimiento de cosecha.', subs: 'Fungicidas • Insecticidas • Bactericidas' },
     ],
     prods: [{ name: 'GT Foliar Pro', tag: 'Nutrición' }, { name: 'GT Raíz Max', tag: 'Nutrición' }, { name: 'GT Bioestim 500', tag: 'Nutrición' }, { name: 'GT Fungicida Plus', tag: 'Nutrición' }],
   },
@@ -369,9 +369,9 @@ const brandConfig = {
     marquee: ['Generadores', 'Plantas de Luz', 'Motobombas', 'Soldadoras', 'Compresores', 'Energía Confiable'],
     introCopy: 'PowerHunt es la marca de generadores eléctricos y soluciones de energía para la industria, el campo y la construcción. Máquinas robustas diseñadas para operar en las condiciones más exigentes, donde la energía nunca puede faltar.',
     cats: [
-      { img: bannerPowerHunt, name: 'Generadores', desc: 'Plantas de luz portátiles e industriales para operaciones continuas de alto rendimiento.', subs: '1kW – 50kW • Gasolina • Diesel' },
-      { img: bannerKawashima, name: 'Motobombas', desc: 'Soluciones de bombeo de agua para riego, trasvases y uso industrial.', subs: 'Centrífugas • Sumergibles • Alta presión' },
-      { img: bannerGoldenTree, name: 'Industrial', desc: 'Compresores, soldadoras y equipos de alto desempeño para la industria.', subs: 'Compresores • Soldadoras • Equipos Pro' },
+      { img: bannerPowerHunt, name: 'Generadores', desc: 'Energía confiable donde más la necesitas. Plantas de luz portátiles e industriales de 1 kW a 50 kW, a gasolina y diésel, diseñadas para operar continuamente en campo, obra y eventos sin interrupciones.', subs: '1kW – 50kW • Gasolina • Diesel' },
+      { img: bannerKawashima, name: 'Motobombas', desc: 'Potencia de bombeo para cualquier aplicación. Bombas centrífugas, sumergibles y de alta presión que garantizan un flujo constante de agua para riego, trasvases industriales y sistemas de abastecimiento.', subs: 'Centrífugas • Sumergibles • Alta presión' },
+      { img: bannerGoldenTree, name: 'Industrial', desc: 'Equipamiento robusto para la industria exigente. Compresores de aire, soldadoras eléctricas y equipos especiales de alto desempeño diseñados para responder a las demandas del trabajo industrial diario.', subs: 'Compresores • Soldadoras • Equipos Pro' },
     ],
     prods: [{ name: 'Generador PH-3500', tag: 'Energía' }, { name: 'Generador PH-7000D', tag: 'Energía' }, { name: 'Motobomba PH-200', tag: 'Energía' }, { name: 'Compresor PH-50L', tag: 'Energía' }],
   },
@@ -383,9 +383,9 @@ const brandConfig = {
     marquee: ['Maquinaria Agrícola', 'Alta Tecnología', 'Precisión Japonesa', 'Rendimiento Profesional', 'Campo Mexicano', 'Refacciones Disponibles'],
     introCopy: 'Takashi combina la ingeniería de alta tecnología con el conocimiento del campo mexicano. Equipos robustos, precisos y accesibles diseñados para maximizar la productividad de cada agricultor y productor en México.',
     cats: [
-      { img: bannerTakashi, name: 'Agrícola', desc: 'Equipos de alta tecnología para el manejo eficiente de cultivos a gran escala.', subs: 'Tractores • Implementos • Aspersión' },
-      { img: bannerPowerHunt, name: 'Construcción', desc: 'Maquinaria robusta de alta precisión para proyectos de construcción e infraestructura.', subs: 'Compactadores • Vibradores • Mezcladoras' },
-      { img: bannerKawashima, name: 'Industrial', desc: 'Soluciones industriales de precisión para operaciones de alto volumen y exigencia.', subs: 'Bombas • Compresores • Equipos Especiales' },
+      { img: bannerTakashi, name: 'Agrícola', desc: 'Tecnología avanzada para el campo mexicano. Tractores, implementos y sistemas de aspersión de alta precisión que maximizan la productividad y reducen tiempos de operación en cultivos de mediana y gran escala.', subs: 'Tractores • Implementos • Aspersión' },
+      { img: bannerPowerHunt, name: 'Construcción', desc: 'Maquinaria de precisión para proyectos de alto impacto. Compactadores, vibradores y mezcladoras diseñados para soportar las condiciones más exigentes de obra, garantizando resultados en cada operación.', subs: 'Compactadores • Vibradores • Mezcladoras' },
+      { img: bannerKawashima, name: 'Industrial', desc: 'Soluciones de alto volumen con precisión técnica. Bombas, compresores y equipos especiales Takashi que operan con fiabilidad en entornos de producción continua y alta exigencia industrial.', subs: 'Bombas • Compresores • Equipos Especiales' },
     ],
     prods: [{ name: 'Tractor TAK-25HP', tag: 'Precisión' }, { name: 'Compactador TAK-800', tag: 'Precisión' }, { name: 'Mezcladora TAK-3.5', tag: 'Precisión' }, { name: 'Bomba TAK-5000', tag: 'Precisión' }],
   },
@@ -433,7 +433,7 @@ const renderGenericBrand = (brandId) => {
         <div class="${p}-intro-inner">
           <div>
             <span class="${p}-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="${p}-intro-title">Diseñados para <em>ti</em></h2>
+            <h2 class="${p}-intro-title">Diseñados <em>para ti</em></h2>
             <p class="${p}-intro-text">${cfg.introCopy}</p>
           </div>
           <div class="${p}-features">
