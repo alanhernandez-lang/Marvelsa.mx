@@ -437,7 +437,11 @@ const brandConfig = {
       { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Takashi ofrece aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales para tareas de riego ligero o traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • RIEGO' },
       { img: bannerKawashima, name: 'JARDÍN', desc: 'Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar, son la opción ideal para trabajos de mantenimiento con buenos resultados.', subs: 'DESBROZADORAS • MANTENIMIENTO • JARDÍN' },
     ],
-    prods: [{ name: 'Tractor TAK-25HP', tag: 'Precisión' }, { name: 'Compactador TAK-800', tag: 'Precisión' }, { name: 'Mezcladora TAK-3.5', tag: 'Precisión' }, { name: 'Bomba TAK-5000', tag: 'Precisión' }],
+    prods: [
+      { name: 'BT6.520', tag: 'Jardín', pdf: 'https://drive.google.com/file/d/1OkK0msXI9BLhczDtKVo5XM222Osq-w-F/view' },
+      { name: 'MT|3', tag: 'Forestal', pdf: 'https://drive.google.com/file/d/15J2NeUrM84rhnuWirmkvn07pWlw6jres/view' },
+      { name: 'WOOD58', tag: 'Forestal', pdf: 'https://drive.google.com/file/d/1mojUAbHEI7tc_SrjaHASBFN4d72wwXam/view' },
+    ],
   },
 };
 
