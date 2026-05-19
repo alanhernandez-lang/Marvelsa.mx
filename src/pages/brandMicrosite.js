@@ -558,10 +558,10 @@ const renderGenericBrand = (brandId) => {
 
       <section class="split-banner" style="background:var(--${p}-black);">
         <div class="split-banner-text">
-          <h2 style="font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:white;line-height:1.1;margin-bottom:25px;text-transform:uppercase;">
+          <h2 style="font-size:clamp(2.5rem,5vw,4.2rem);font-weight:900;color:${cfg.lightTheme ? 'var(--' + p + '-text)' : 'white'};line-height:1.1;margin-bottom:25px;text-transform:uppercase;">
             Súmate a la <span style="color:${cfg.accentColor};">red de distribución</span> ${cfg.title}
           </h2>
-          <p style="font-size:1.1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;">
+          <p style="font-size:1.1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;color:${cfg.lightTheme ? 'var(--' + p + '-text)' : 'white'};">
             Forma parte de una marca que está transformando el acceso a herramientas profesionales en México.
             Maquinaria de alta demanda, soporte constante y respaldo comercial para que tu negocio crezca con nosotros.
           </p>
