@@ -393,7 +393,7 @@ const brandConfig = {
   powerhunt: {
     css: 'ph', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
     badge: '⚡ Energía Industrial • México', title: 'POWER HUNT', slogan: 'Energía que Nunca se Detiene',
-    accentColor: '#005BB5',
+    accentColor: '#1D4ED8',
     stats: [{ n: '25+', l: 'Años de potencia' }, { n: '4K+', l: 'Equipos instalados', mid: true }, { n: '24/7', l: 'Soporte técnico' }],
     marquee: ['Generadores', 'Plantas de Luz', 'Motobombas', 'Soldadoras', 'Compresores', 'Energía Confiable'],
     introCopy: 'PowerHunt es la marca de generadores eléctricos y soluciones de energía para la industria, el campo y la construcción. Máquinas robustas diseñadas para operar en las condiciones más exigentes, donde la energía nunca puede faltar.',
