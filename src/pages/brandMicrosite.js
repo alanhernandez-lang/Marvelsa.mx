@@ -402,6 +402,11 @@ const brandConfig = {
       { title: 'Confiables', label: 'Siempre', desc: 'Herramientas robustas que funcionan cuando más las necesitas, sin importar las condiciones del terreno o del trabajo.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
       { title: 'Soluciones', label: 'Cotidianas', desc: 'Para el hogar, el jardín y el campo. Fáciles de usar y listas para entrar en acción desde el primer día.', path: 'M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' },
     ],
+    whyCards: [
+      { title: 'Refacciones en todos los equipos', text: 'Porque sabemos lo importante que es darles vida útil a tus herramientas. Todos nuestros productos cuentan con refacciones disponibles para que sigan funcionando cuando más los necesitas.', icon: `<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>` },
+      { title: 'Practicidad accesible', text: 'Nuestros productos están pensados para tareas cotidianas y de baja exigencia, con el rendimiento justo para resolver con eficiencia y la calidad necesaria para hacerlo bien, siempre.', icon: `<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/>` },
+      { title: 'Herramientas fáciles de usar', text: 'No necesitas ser experto para usarlas. Nuestras herramientas son seguras y pensadas para que cualquiera pueda sacarles provecho desde el primer uso.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
+    ],
     cats: [
       { img: bannerPowerHunt, name: 'HOGAR', desc: 'Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • GENERADORES • MÁS' },
       { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • CAMPO' },
