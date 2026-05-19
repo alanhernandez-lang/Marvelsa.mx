@@ -373,7 +373,7 @@ const brandConfig = {
     accentColor: '#C89B2A',
     stats: [{ n: '15+', l: 'Años en el mercado' }, { n: '50+', l: 'Productos disponibles', mid: true }, { n: '100%', l: 'Eficacia comprobada' }],
     marquee: ['Fertilizantes', 'Nutrición Foliar', 'Bioestimulantes', 'Sanidad Vegetal', 'Sustratos', 'Agricultura Premium'],
-    introCopy: 'Golden Tree es la marca de fertilización y sanidad vegetal de alto rendimiento. Formulaciones desarrolladas para maximizar el potencial de cada cultivo, desde hortalizas hasta árboles frutales, con ingredientes de calidad premium al alcance del agricultor mexicano.',
+    introCopy: 'Somos una marca especializada en cintilla y soluciones de riego diseñadas para maximizar la eficiencia hídrica y la durabilidad del sistema. Innovamos en materiales con más calibres y mayor resistencia para ofrecer al agricultor rendimiento confiable y protección de su inversión en cada temporada.',
     cats: [
       { img: bannerGoldenTree, name: 'Fertilizantes', desc: 'Nutrición completa durante todo el ciclo del cultivo. Fórmulas granuladas, líquidas y foliares con los macronutrientes y micronutrientes que tus plantas necesitan para alcanzar su máximo potencial productivo.', subs: 'Granulados • Líquidos • Foliares' },
       { img: bannerKawashima, name: 'Bioestimulantes', desc: 'Potencia natural para cada etapa de crecimiento. Formulaciones a base de aminoácidos, algas y hormonas que aceleran la germinación, fortalecen el enraizamiento y aumentan la resistencia ante el estrés hídrico y ambiental.', subs: 'Aminoácidos • Algas • Hormonas' },
