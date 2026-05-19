@@ -432,6 +432,11 @@ const brandConfig = {
       { title: 'Resultados', label: 'Reales', desc: 'Para quienes exigen buenos resultados en trabajos simples. Calidad que se nota desde el primer uso.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
       { title: 'Siempre', label: 'Lista', desc: 'Resistente y confiable cuando más la necesitas. Herramientas que no fallan cuando el trabajo no puede esperar.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
     ],
+    whyCards: [
+      { title: 'Refacciones disponibles para todos nuestros equipos', text: 'Sabemos lo importante que es mantener tus herramientas funcionando. Por eso, cada producto Takashi cuenta con refacciones disponibles, para que siempre tengas una solución a la mano y sigas trabajando sin interrupciones.', icon: `<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>` },
+      { title: 'Diseño ligero, materiales resistentes', text: 'Nuestras herramientas están hechas con materiales seleccionados que ofrecen durabilidad y confianza, pero sin sacrificar comodidad. Su diseño ligero permite un manejo fácil y seguro, ideal para tareas cotidianas o esporádicas.', icon: `<path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/>` },
+      { title: 'Herramientas prácticas para trabajos reales', text: 'Takashi no es lujo innecesario, es funcionalidad pura. Diseñamos cada equipo pensando en quienes necesitan resolver tareas concretas con eficiencia, sin complicarse ni gastar de más.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
+    ],
     cats: [
       { img: bannerTakashi, name: 'FORESTAL', desc: 'Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable, fácil de usar y siempre lista para responder.', subs: 'MOTOSIERRAS • CORTE • PODA' },
       { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Takashi ofrece aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales para tareas de riego ligero o traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • RIEGO' },
