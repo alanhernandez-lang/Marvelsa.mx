@@ -374,6 +374,11 @@ const brandConfig = {
     stats: [{ n: '15+', l: 'Años en el mercado' }, { n: '50+', l: 'Productos disponibles', mid: true }, { n: '100%', l: 'Eficacia comprobada' }],
     marquee: ['Fertilizantes', 'Nutrición Foliar', 'Bioestimulantes', 'Sanidad Vegetal', 'Sustratos', 'Agricultura Premium'],
     introCopy: 'Somos una marca especializada en cintilla y soluciones de riego diseñadas para maximizar la eficiencia hídrica y la durabilidad del sistema. Innovamos en materiales con más calibres y mayor resistencia para ofrecer al agricultor rendimiento confiable y protección de su inversión en cada temporada.',
+    features: [
+      { title: 'Eficiencia', label: 'Hídrica', desc: 'Sistemas de riego que reducen el consumo de agua y maximizan el rendimiento de cada metro de cultivo.', path: 'M12 2c0 0-7 8.25-7 12a7 7 0 0 0 14 0c0-3.75-7-12-7-12z' },
+      { title: 'Mayor', label: 'Durabilidad', desc: 'Cintilla con más calibres y materiales de alta resistencia para que tu sistema dure más temporadas sin fallas.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
+      { title: 'Respaldo', label: 'Técnico', desc: 'Asesoría especializada para diseñar e instalar el sistema de riego ideal para tu tipo de cultivo y terreno.', path: 'M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z' },
+    ],
     cats: [
       { img: bannerGoldenTree, name: 'Fertilizantes', desc: 'Nutrición completa durante todo el ciclo del cultivo. Fórmulas granuladas, líquidas y foliares con los macronutrientes y micronutrientes que tus plantas necesitan para alcanzar su máximo potencial productivo.', subs: 'Granulados • Líquidos • Foliares' },
       { img: bannerKawashima, name: 'Bioestimulantes', desc: 'Potencia natural para cada etapa de crecimiento. Formulaciones a base de aminoácidos, algas y hormonas que aceleran la germinación, fortalecen el enraizamiento y aumentan la resistencia ante el estrés hídrico y ambiental.', subs: 'Aminoácidos • Algas • Hormonas' },
