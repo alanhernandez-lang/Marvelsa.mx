@@ -403,9 +403,9 @@ const brandConfig = {
       { title: 'Soluciones', label: 'Cotidianas', desc: 'Para el hogar, el jardín y el campo. Fáciles de usar y listas para entrar en acción desde el primer día.', path: 'M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' },
     ],
     cats: [
-      { img: bannerPowerHunt, name: 'Generadores', desc: 'Energía confiable donde más la necesitas. Plantas de luz portátiles e industriales de 1 kW a 50 kW, a gasolina y diésel, diseñadas para operar continuamente en campo, obra y eventos sin interrupciones.', subs: '1kW – 50kW • Gasolina • Diesel' },
-      { img: bannerKawashima, name: 'Motobombas', desc: 'Potencia de bombeo para cualquier aplicación. Bombas centrífugas, sumergibles y de alta presión que garantizan un flujo constante de agua para riego, trasvases industriales y sistemas de abastecimiento.', subs: 'Centrífugas • Sumergibles • Alta presión' },
-      { img: bannerGoldenTree, name: 'Industrial', desc: 'Equipamiento robusto para la industria exigente. Compresores de aire, soldadoras eléctricas y equipos especiales de alto desempeño diseñados para responder a las demandas del trabajo industrial diario.', subs: 'Compresores • Soldadoras • Equipos Pro' },
+      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • GENERADORES • MÁS' },
+      { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • CAMPO' },
+      { img: bannerGoldenTree, name: 'JARDÍN', desc: 'Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • MOTOSIERRAS • MANTENIMIENTO' },
     ],
     prods: [{ name: 'Generador PH-3500', tag: 'Energía' }, { name: 'Generador PH-7000D', tag: 'Energía' }, { name: 'Motobomba PH-200', tag: 'Energía' }, { name: 'Compresor PH-50L', tag: 'Energía' }],
   },
