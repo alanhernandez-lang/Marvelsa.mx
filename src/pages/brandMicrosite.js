@@ -407,7 +407,12 @@ const brandConfig = {
       { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • CAMPO' },
       { img: bannerGoldenTree, name: 'JARDÍN', desc: 'Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • MOTOSIERRAS • MANTENIMIENTO' },
     ],
-    prods: [{ name: 'Generador PH-3500', tag: 'Energía' }, { name: 'Generador PH-7000D', tag: 'Energía' }, { name: 'Motobomba PH-200', tag: 'Energía' }, { name: 'Compresor PH-50L', tag: 'Energía' }],
+    prods: [
+      { name: 'Aspersor Mochila APH26', tag: 'Agrícola', pdf: 'https://drive.google.com/file/d/1tnCdSC-Z5bSSwGEehDqIcDmkAGWDnn4F/view' },
+      { name: 'Compresor COMPHKIT25L', tag: 'Compresor', pdf: 'https://drive.google.com/file/d/17WpnevdHCSFYwe5nG5gvYWsNXKLbBSWv/view' },
+      { name: 'Desbrozadora DELTA52', tag: 'Jardín', pdf: 'https://drive.google.com/file/d/1URELYgUdcoJ0HFLozab2AsK2kapvd1T-/view' },
+      { name: 'Manguera MPH-RT-2-100', tag: 'Riego', pdf: 'https://drive.google.com/file/d/1_GsOUq6IDVXjqSn1R2gOkeYOAHoKvc1n/view' },
+    ],
   },
   takashi: {
     css: 'tak', bg: bgTakashiFondo, banner: bannerTakashi,
@@ -527,7 +532,7 @@ const renderGenericBrand = (brandId) => {
               <span class="${p}-prod-tag">${prod.tag}</span>
               <div class="${p}-prod-name">${prod.name}</div>
               <div class="${p}-prod-spec">Alta eficiencia • Diseño ergonómico<br>Refacciones disponibles en México</div>
-              <a href="#" class="${p}-prod-cta" style="text-decoration:none;">
+              <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;">
                 Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
               </a>
             </div>
