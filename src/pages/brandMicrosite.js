@@ -426,7 +426,12 @@ const brandConfig = {
     accentColor: '#FF6600',
     stats: [{ n: '20+', l: 'Años de tecnología' }, { n: '2K+', l: 'Distribuidores activos', mid: true }, { n: '100%', l: 'Refacciones garantizadas' }],
     marquee: ['Maquinaria Agrícola', 'Alta Tecnología', 'Precisión Japonesa', 'Rendimiento Profesional', 'Campo Mexicano', 'Refacciones Disponibles'],
-    introCopy: 'Takashi combina la ingeniería de alta tecnología con el conocimiento del campo mexicano. Equipos robustos, precisos y accesibles diseñados para maximizar la productividad de cada agricultor y productor en México.',
+    introCopy: 'Takashi es una marca de maquinaria ligera y accesible, diseñada para quienes hacen trabajos simples, pero exigen buenos resultados. Nuestras herramientas son prácticas, resistentes y listas para cuando más se necesitan.',
+    features: [
+      { title: 'Ligera', label: 'y Práctica', desc: 'Sin peso extra, sin complicaciones. Lista para cualquier tarea del día a día sin sacrificar rendimiento.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
+      { title: 'Resultados', label: 'Reales', desc: 'Para quienes exigen buenos resultados en trabajos simples. Calidad que se nota desde el primer uso.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
+      { title: 'Siempre', label: 'Lista', desc: 'Resistente y confiable cuando más la necesitas. Herramientas que no fallan cuando el trabajo no puede esperar.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
+    ],
     cats: [
       { img: bannerTakashi, name: 'Agrícola', desc: 'Tecnología avanzada para el campo mexicano. Tractores, implementos y sistemas de aspersión de alta precisión que maximizan la productividad y reducen tiempos de operación en cultivos de mediana y gran escala.', subs: 'Tractores • Implementos • Aspersión' },
       { img: bannerPowerHunt, name: 'Construcción', desc: 'Maquinaria de precisión para proyectos de alto impacto. Compactadores, vibradores y mezcladoras diseñados para soportar las condiciones más exigentes de obra, garantizando resultados en cada operación.', subs: 'Compactadores • Vibradores • Mezcladoras' },
