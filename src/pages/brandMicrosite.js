@@ -384,6 +384,7 @@ const brandConfig = {
       { title: 'Procesos de calidad', text: 'Cada rollo de cintilla Golden Tree pasa por estrictos controles de calidad y pruebas de rendimiento. Utilizamos materiales de alta resistencia y tecnología avanzada para asegurar durabilidad y eficiencia en cada sistema de riego.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
       { title: 'Respaldo en todos los productos', text: 'No solo ofrecemos productos, ofrecemos confianza. Nuestro compromiso es acompañar al agricultor con asesoría, soporte y garantía real, porque sabemos que detrás de cada cultivo hay una inversión que merece protección.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
     ],
+    lightTheme: true,
     hideCats: true,
     cats: [],
     prods: [{ name: 'GT Foliar Pro', tag: 'Nutrición' }, { name: 'GT Raíz Max', tag: 'Nutrición' }, { name: 'GT Bioestim 500', tag: 'Nutrición' }, { name: 'GT Fungicida Plus', tag: 'Nutrición' }],
@@ -540,15 +541,15 @@ const renderGenericBrand = (brandId) => {
       { title: 'Diseño Ergonómico', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/>` },
       { title: 'Cobertura Nacional', text: 'Materiales de primera línea que garantizan durabilidad y rendimiento en cada jornada de trabajo.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
     ]).map(card => `
-              <div class="brand-why-card" style="background:rgba(255,255,255,0.03);text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid rgba(255,255,255,0.06);box-shadow:0 20px 40px rgba(0,0,0,0.2);">
+              <div class="brand-why-card" style="background:${cfg.lightTheme ? 'rgba(255,255,255,0.7)' : 'rgba(255,255,255,0.03)'};text-align:center;padding:60px 35px 50px;border-radius:32px;position:relative;overflow:visible;border:1px solid ${cfg.lightTheme ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.06)'};box-shadow:0 20px 40px rgba(0,0,0,0.1);">
                 <div style="position:absolute;top:0;left:0;right:0;height:4px;background:${cfg.accentColor};border-radius:32px 32px 0 0;opacity:0.8;"></div>
                 <div class="why-icon-wrap" style="width:90px;height:90px;background:white;border-radius:24px;display:flex;align-items:center;justify-content:center;margin:-105px auto 30px;box-shadow:0 20px 40px rgba(0,0,0,0.18);position:relative;z-index:2;transform:rotate(-5deg);">
                   <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="${cfg.accentColor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
                     ${card.icon}
                   </svg>
                 </div>
-                <h3 style="font-size:1.15rem;font-weight:900;color:white;text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
-                <p style="color:rgba(255,255,255,0.6);font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
+                <h3 style="font-size:1.15rem;font-weight:900;color:${cfg.lightTheme ? 'var(--' + p + '-text)' : 'white'};text-transform:uppercase;letter-spacing:1px;margin-bottom:20px;">${card.title}</h3>
+                <p style="color:${cfg.lightTheme ? 'var(--' + p + '-muted)' : 'rgba(255,255,255,0.6)'};font-size:0.95rem;line-height:1.8;margin:0;">${card.text}</p>
               </div>
             `).join('')}
           </div>
