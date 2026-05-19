@@ -384,6 +384,7 @@ const brandConfig = {
       { title: 'Procesos de calidad', text: 'Cada rollo de cintilla Golden Tree pasa por estrictos controles de calidad y pruebas de rendimiento. Utilizamos materiales de alta resistencia y tecnología avanzada para asegurar durabilidad y eficiencia en cada sistema de riego.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
       { title: 'Respaldo en todos los productos', text: 'No solo ofrecemos productos, ofrecemos confianza. Nuestro compromiso es acompañar al agricultor con asesoría, soporte y garantía real, porque sabemos que detrás de cada cultivo hay una inversión que merece protección.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
     ],
+    distributorLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47',
     lightTheme: true,
     hideCats: true,
     cats: [],
