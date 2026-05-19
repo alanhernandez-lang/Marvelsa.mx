@@ -433,9 +433,9 @@ const brandConfig = {
       { title: 'Siempre', label: 'Lista', desc: 'Resistente y confiable cuando más la necesitas. Herramientas que no fallan cuando el trabajo no puede esperar.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
     ],
     cats: [
-      { img: bannerTakashi, name: 'Agrícola', desc: 'Tecnología avanzada para el campo mexicano. Tractores, implementos y sistemas de aspersión de alta precisión que maximizan la productividad y reducen tiempos de operación en cultivos de mediana y gran escala.', subs: 'Tractores • Implementos • Aspersión' },
-      { img: bannerPowerHunt, name: 'Construcción', desc: 'Maquinaria de precisión para proyectos de alto impacto. Compactadores, vibradores y mezcladoras diseñados para soportar las condiciones más exigentes de obra, garantizando resultados en cada operación.', subs: 'Compactadores • Vibradores • Mezcladoras' },
-      { img: bannerKawashima, name: 'Industrial', desc: 'Soluciones de alto volumen con precisión técnica. Bombas, compresores y equipos especiales Takashi que operan con fiabilidad en entornos de producción continua y alta exigencia industrial.', subs: 'Bombas • Compresores • Equipos Especiales' },
+      { img: bannerTakashi, name: 'FORESTAL', desc: 'Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable, fácil de usar y siempre lista para responder.', subs: 'MOTOSIERRAS • CORTE • PODA' },
+      { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Takashi ofrece aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales para tareas de riego ligero o traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • RIEGO' },
+      { img: bannerKawashima, name: 'JARDÍN', desc: 'Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar, son la opción ideal para trabajos de mantenimiento con buenos resultados.', subs: 'DESBROZADORAS • MANTENIMIENTO • JARDÍN' },
     ],
     prods: [{ name: 'Tractor TAK-25HP', tag: 'Precisión' }, { name: 'Compactador TAK-800', tag: 'Precisión' }, { name: 'Mezcladora TAK-3.5', tag: 'Precisión' }, { name: 'Bomba TAK-5000', tag: 'Precisión' }],
   },
