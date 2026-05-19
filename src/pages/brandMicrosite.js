@@ -396,7 +396,12 @@ const brandConfig = {
     accentColor: '#005BB5',
     stats: [{ n: '25+', l: 'Años de potencia' }, { n: '4K+', l: 'Equipos instalados', mid: true }, { n: '24/7', l: 'Soporte técnico' }],
     marquee: ['Generadores', 'Plantas de Luz', 'Motobombas', 'Soldadoras', 'Compresores', 'Energía Confiable'],
-    introCopy: 'PowerHunt es la marca de generadores eléctricos y soluciones de energía para la industria, el campo y la construcción. Máquinas robustas diseñadas para operar en las condiciones más exigentes, donde la energía nunca puede faltar.',
+    introCopy: 'Diseñamos herramientas pensadas para quienes valoran lo práctico: equipos accesibles, confiables y listos para entrar en acción. Sea en casa, en el jardín o en el campo, Power Hunt te acompaña con soluciones que rinden en lo cotidiano.',
+    features: [
+      { title: 'Equipos', label: 'Accesibles', desc: 'Calidad de alto desempeño a un precio justo, para que cualquier persona tenga la herramienta correcta en el momento correcto.', path: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z' },
+      { title: 'Confiables', label: 'Siempre', desc: 'Herramientas robustas que funcionan cuando más las necesitas, sin importar las condiciones del terreno o del trabajo.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
+      { title: 'Soluciones', label: 'Cotidianas', desc: 'Para el hogar, el jardín y el campo. Fáciles de usar y listas para entrar en acción desde el primer día.', path: 'M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z' },
+    ],
     cats: [
       { img: bannerPowerHunt, name: 'Generadores', desc: 'Energía confiable donde más la necesitas. Plantas de luz portátiles e industriales de 1 kW a 50 kW, a gasolina y diésel, diseñadas para operar continuamente en campo, obra y eventos sin interrupciones.', subs: '1kW – 50kW • Gasolina • Diesel' },
       { img: bannerKawashima, name: 'Motobombas', desc: 'Potencia de bombeo para cualquier aplicación. Bombas centrífugas, sumergibles y de alta presión que garantizan un flujo constante de agua para riego, trasvases industriales y sistemas de abastecimiento.', subs: 'Centrífugas • Sumergibles • Alta presión' },
