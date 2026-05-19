@@ -379,6 +379,11 @@ const brandConfig = {
       { title: 'Mayor', label: 'Durabilidad', desc: 'Cintilla con más calibres y materiales de alta resistencia para que tu sistema dure más temporadas sin fallas.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
       { title: 'Respaldo', label: 'Técnico', desc: 'Asesoría especializada para diseñar e instalar el sistema de riego ideal para tu tipo de cultivo y terreno.', path: 'M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z' },
     ],
+    whyCards: [
+      { title: 'Más de 40 años en el mercado mundial', text: 'Nuestra experiencia global nos respalda. Durante más de cuatro décadas, Golden Tree ha desarrollado soluciones de riego confiables que hoy impulsan la productividad de agricultores en distintos países del mundo.', icon: `<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>` },
+      { title: 'Procesos de calidad', text: 'Cada rollo de cintilla Golden Tree pasa por estrictos controles de calidad y pruebas de rendimiento. Utilizamos materiales de alta resistencia y tecnología avanzada para asegurar durabilidad y eficiencia en cada sistema de riego.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
+      { title: 'Respaldo en todos los productos', text: 'No solo ofrecemos productos, ofrecemos confianza. Nuestro compromiso es acompañar al agricultor con asesoría, soporte y garantía real, porque sabemos que detrás de cada cultivo hay una inversión que merece protección.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
+    ],
     hideCats: true,
     cats: [],
     prods: [{ name: 'GT Foliar Pro', tag: 'Nutrición' }, { name: 'GT Raíz Max', tag: 'Nutrición' }, { name: 'GT Bioestim 500', tag: 'Nutrición' }, { name: 'GT Fungicida Plus', tag: 'Nutrición' }],
