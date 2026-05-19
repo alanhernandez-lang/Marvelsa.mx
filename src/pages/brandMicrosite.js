@@ -379,9 +379,8 @@ const brandConfig = {
       { title: 'Mayor', label: 'Durabilidad', desc: 'Cintilla con más calibres y materiales de alta resistencia para que tu sistema dure más temporadas sin fallas.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
       { title: 'Respaldo', label: 'Técnico', desc: 'Asesoría especializada para diseñar e instalar el sistema de riego ideal para tu tipo de cultivo y terreno.', path: 'M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z' },
     ],
-    cats: [
-      { img: bannerGoldenTree, name: 'RIEGO AGRÍCOLA', desc: 'Soluciones completas de riego para maximizar la eficiencia hídrica de tu cultivo. Cintilla de alta resistencia, mangueras y sistemas diseñados para durar más temporadas con el mejor rendimiento por hectárea.', subs: 'CINTILLA • MANGUERAS • SISTEMAS DE RIEGO' },
-    ],
+    hideCats: true,
+    cats: [],
     prods: [{ name: 'GT Foliar Pro', tag: 'Nutrición' }, { name: 'GT Raíz Max', tag: 'Nutrición' }, { name: 'GT Bioestim 500', tag: 'Nutrición' }, { name: 'GT Fungicida Plus', tag: 'Nutrición' }],
   },
   powerhunt: {
@@ -476,9 +475,9 @@ const renderGenericBrand = (brandId) => {
         </div>
       </section>
 
-      <hr class="${p}-sep">
+      ${!cfg.hideCats ? `<hr class="${p}-sep">` : ''}
 
-      <section class="${p}-categories" id="${p}-cats">
+      ${!cfg.hideCats ? `<section class="${p}-categories" id="${p}-cats">
         <div class="${p}-section-header">
           <span class="${p}-section-eyebrow">Líneas de producto</span>
           <h2 class="${p}-section-title">Equipos Para Cada Necesidad</h2>
@@ -499,7 +498,7 @@ const renderGenericBrand = (brandId) => {
             </div>
           `).join('')}
         </div>
-      </section>
+      </section>` : ''}
 
       <section class="${p}-products">
         <div class="${p}-section-header">
