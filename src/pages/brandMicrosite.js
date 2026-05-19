@@ -424,6 +424,7 @@ const brandConfig = {
     css: 'tak', bg: bgTakashiFondo, banner: bannerTakashi,
     badge: '🔧 Precisión y Fuerza • México', title: 'TAKASHI', slogan: 'Precisión y Fuerza',
     accentColor: '#FF6600',
+    distributorLink: 'https://forms.gle/pUAjVxuKtu9rqK3GA',
     stats: [{ n: '20+', l: 'Años de tecnología' }, { n: '2K+', l: 'Distribuidores activos', mid: true }, { n: '100%', l: 'Refacciones garantizadas' }],
     marquee: ['Maquinaria Agrícola', 'Alta Tecnología', 'Precisión Japonesa', 'Rendimiento Profesional', 'Campo Mexicano', 'Refacciones Disponibles'],
     introCopy: 'Takashi es una marca de maquinaria ligera y accesible, diseñada para quienes hacen trabajos simples, pero exigen buenos resultados. Nuestras herramientas son prácticas, resistentes y listas para cuando más se necesitan.',
