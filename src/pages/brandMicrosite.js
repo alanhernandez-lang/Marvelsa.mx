@@ -94,7 +94,7 @@ const renderKawashima = () => {
         <div class="kaw-hero-content">
           <div class="kaw-badge">⚡ Maquinaria Profesional • México</div>
           <h1 class="kaw-hero-title">KAWASHIMA</h1>
-          <p class="kaw-hero-slogan">El Trabajo Real Necesita Herramientas Reales</p>
+          <p class="kaw-hero-slogan">Profesional para el trabajo real.</p>
           <div class="kaw-hero-divider"></div>
           <div class="kaw-hero-stats">
             <div class="kaw-stat"><span class="kaw-stat-number">30+</span><span class="kaw-stat-label">Años de potencia</span></div>
