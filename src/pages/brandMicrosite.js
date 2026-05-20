@@ -122,7 +122,7 @@ const renderKawashima = () => {
         <div class="kaw-intro-inner">
           <div class="kaw-intro-left">
             <span class="kaw-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="kaw-intro-title">Fabricados para el<br>campo <span style="color:var(--kaw-red);">mexicano</span></h2>
+            <h2 class="kaw-intro-title">Diseñados para rendir<br>en todo <span style="color:var(--kaw-red);">trabajo</span></h2>
             <p class="kaw-intro-text">
               Fabricamos equipos potentes, resistentes y accesibles para el campo, la jardinería y el bosque.
               Creemos que la calidad no debe ser un lujo, por eso ofrecemos maquinaria de alto desempeño con precio justo,
