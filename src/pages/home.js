@@ -13,11 +13,11 @@ const marqueeItems = ['Maquinaria Agrícola', 'Refacciones Originales', 'Soporte
 const marqueeHTML = Array(6).fill(marqueeItems.map(t => `<span class="mvh-mqitem-pill">${t}</span>`).join('')).join('');
 
 const brandBanners = [
-  { id: 'kawashima', img: bannerKawashima, title: 'KAWASHIMA', pills: ['Agrícola', 'Bosque', 'Poda y Jardín'], desc: 'Ingeniería de alto desempeño diseñada para las condiciones más exigentes del campo mexicano.' },
-  { id: 'parazzini', img: bannerParazzini, title: 'PARAZZINI', pills: ['Jardinería', 'Paisajismo', 'Fumigación'], desc: 'Soluciones profesionales de fumigación y control de plagas con tecnología de punta.' },
-  { id: 'takashi', img: bannerTakashi, title: 'TAKASHI', pills: ['Mantenimiento', 'Áreas Verdes'], desc: 'Potencia y precisión para el mantenimiento de áreas verdes.' },
-  { id: 'goldentree', img: bannerGoldenTree, title: 'GOLDEN TREE', pills: ['Forestal', 'Trabajo Pesado'], desc: 'Equipos robustos para el trabajo pesado en el bosque.' },
-  { id: 'powerhunt', img: bannerPowerHunt, title: 'POWER HUNT', pills: ['Industria', 'Generadores'], desc: 'Energía y fuerza para la construcción e industria.' },
+  { id: 'kawashima', img: bannerKawashima, title: 'KAWASHIMA', pills: ['Agrícola', 'Forestal', 'Poda y Jardín'], desc: 'Herramientas que combinan potencia, ligereza y durabilidad, pensadas para acompañar a quienes enfrentan los retos del trabajo diario, con la mejor relación calidad-precio.' },
+  { id: 'parazzini', img: bannerParazzini, title: 'PARAZZINI', pills: ['Construcción', 'Agrícola', 'Energía', 'Bombeo'], desc: 'Maquinaria con motores de calidad italiana que combinan fuerza, eficiencia y durabilidad para los profesionales.' },
+  { id: 'takashi', img: bannerTakashi, title: 'TAKASHI', pills: ['Forestal', 'Agrícola'], desc: 'Para los trabajos simples, maquinaria que cumple.' },
+  { id: 'goldentree', img: bannerGoldenTree, title: 'GOLDEN TREE', pills: ['Sistemas de riego', 'Agrícola'], desc: '30 años cuidando tu inversión en el campo con riego eficiente.' },
+  { id: 'powerhunt', img: bannerPowerHunt, title: 'POWER HUNT', pills: ['Taller', 'Agrícola', 'Hogar', 'Jardín'], desc: 'Creamos maquinaria potente, fácil de armar y lista para entrar en acción.' },
 ];
 
 export const renderHome = () => {
