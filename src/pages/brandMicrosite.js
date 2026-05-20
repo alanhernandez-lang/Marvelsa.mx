@@ -332,9 +332,9 @@ const renderKawashima = () => {
 const brandConfig = {
   parazzini: {
     css: 'par', bg: bgParazziniFondo, banner: bannerParazzini,
-    badge: '⚙️ Maquinaria Profesional • México', title: 'PARAZZINI', slogan: 'Pasión por el Paisajismo',
+    badge: '⚙️ Maquinaria Profesional • México', title: 'PARAZZINI', slogan: 'Calidad y potencia que trabajan contigo',
     accentColor: '#D4A800',
-    stats: [{ n: '20+', l: 'Años de experiencia' }, { n: '3K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
+    stats: [{ n: '30+', l: 'Años de experiencia' }, { n: '500K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
     marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
     introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
     features: [
