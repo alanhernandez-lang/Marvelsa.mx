@@ -183,7 +183,7 @@ const renderKawashima = () => {
         <div class="kaw-section-header">
           <span class="kaw-section-eyebrow">Top Productos</span>
           <h2 class="kaw-section-title">Equipos destacados</h2>
-          <p class="kaw-section-sub">Ingeniería que no falla cuando más la necesitas.</p>
+          <p class="kaw-section-sub">Equipos más buscados por el mercado.</p>
         </div>
         <div class="kaw-prod-grid">
           <div class="kaw-prod-card">
