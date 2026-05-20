@@ -24,13 +24,13 @@ export { default as bgGoldenTreeFondo }   from './images/GoldenTreeFondo.png';
 export { default as bgPowerHuntFondo }    from './images/PowerHuntFondo.png';
 export { default as bgTakashiFondo }      from './images/TakashiFondo.png';
 
-export { default as imgKawAgricola }      from './images/AK31-montaje_d.png';
+export { default as imgKawAgricola }      from './images/AK31-montaje_d.jpg';
 export { default as imgKawBosque }        from './images/Bosque.png';
 export { default as imgKawJardin }        from './images/Jardin.png';
 
-export { default as imgAK26_1 }           from './images/AK26-1.png';
-export { default as imgAK26_2 }           from './images/AK26-2.png';
-export { default as imgAK26_3 }           from './images/AK26-3.png';
+export { default as imgAK26_1 }           from './images/AK26-1.jpg';
+export { default as imgAK26_2 }           from './images/AK26-2.jpg';
+export { default as imgAK26_3 }           from './images/AK26-3.jpg';
 export { default as imgAK20LE_1 }         from './images/AspersorAK20LE.png';
 export { default as imgAK20LE_2 }         from './images/AspersorAK20LE2.png';
 export { default as imgMTK26_1 }           from './images/MTK26.png';
