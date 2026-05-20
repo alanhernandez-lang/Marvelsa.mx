@@ -332,7 +332,7 @@ const renderKawashima = () => {
 const brandConfig = {
   parazzini: {
     css: 'par', bg: bgParazziniFondo, banner: bannerParazzini,
-    badge: '🌿 Paisajismo Profesional • México', title: 'PARAZZINI', slogan: 'Pasión por el Paisajismo',
+    badge: '⚙️ Maquinaria Profesional • México', title: 'PARAZZINI', slogan: 'Pasión por el Paisajismo',
     accentColor: '#D4A800',
     stats: [{ n: '20+', l: 'Años de experiencia' }, { n: '3K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
     marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
