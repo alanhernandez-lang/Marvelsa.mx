@@ -9,7 +9,7 @@ import {
 } from '../assets/images.js';
 import { activateRevealObserver } from '../core/reveal.js';
 
-const marqueeItems = ['Maquinaria Agrícola', 'Refacciones Originales', 'Soporte Técnico', 'Campo y Bosque', 'Construcción', 'Jardinería'];
+const marqueeItems = ['Maquinaria Agrícola', 'Refacciones Originales', 'Soporte Técnico', 'Campo', 'Forestal', 'Construcción', 'Jardinería'];
 const marqueeHTML = Array(6).fill(marqueeItems.map(t => `<span class="mvh-mqitem-pill">${t}</span>`).join('')).join('');
 
 const brandBanners = [
