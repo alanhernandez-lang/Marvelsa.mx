@@ -24,7 +24,7 @@ export { default as bgGoldenTreeFondo }   from './images/GoldenTreeFondo.png';
 export { default as bgPowerHuntFondo }    from './images/PowerHuntFondo.png';
 export { default as bgTakashiFondo }      from './images/TakashiFondo.png';
 
-export { default as imgKawAgricola }      from './images/Agricola.png';
+export { default as imgKawAgricola }      from './images/AK31-montaje_d.png';
 export { default as imgKawBosque }        from './images/Bosque.png';
 export { default as imgKawJardin }        from './images/Jardin.png';
 
