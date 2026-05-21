@@ -58,12 +58,10 @@ export const renderNosotros = () => {
         <div class="container nosotros-split-grid">
           <div class="reveal-left" style="display:flex;">
             <div class="glass-panel-premium" style="padding:clamp(30px,5vw,60px);border-radius:30px;width:100%;display:flex;flex-direction:column;justify-content:center;background:#fff;box-shadow:0 25px 50px -12px rgba(0,0,0,.08);border:none;">
-                <span class="mvh-eyebrow" style="margin-bottom:15px;">¿Quiénes somos?</span>
-                <h2 class="mvh-section-title" style="margin-bottom:30px;">Más de 30 años <em>impulsando</em> a quienes mueven a México</h2>
+                <span class="mvh-eyebrow" style="margin-bottom:15px;">Nuestra Esencia</span>
+                <h2 class="mvh-section-title" style="margin-bottom:30px;">Impulsamos tu <em>Crecimiento</em></h2>
                 <p style="font-size:1.15rem;line-height:1.8;color:rgba(0,0,0,.7);margin-bottom:30px;">
-                  Somos el aliado estratégico de distribuidores y negocios en México. Llevamos hasta ti la más amplia oferta en maquinaria, refacciones y soluciones para el campo, la construcción y la industria. Con el respaldo técnico de nuestro equipo y disponibilidad de productos, hacemos más fácil tu día a día y el de tus clientes.
-                  <br><br>
-                  En Marvelsa creemos que la calidad profesional no debe ser un lujo: por eso acercamos productos de alto desempeño a precios justos, ofreciendo a nuestros distribuidores y sus clientes el valor real que se merecen.
+                  En Comercializadora Marvelsa conectamos a los distribuidores con las mejores marcas del mundo en maquinaria, refacciones y soluciones para los sectores agrícola, ferretero, construcción, forestal y jardín. Nuestra misión: que cada negocio crezca con productos confiables, precios justos y el respaldo técnico que hace la diferencia.
                 </p>
             </div>
           </div>
