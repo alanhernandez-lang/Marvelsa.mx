@@ -13,9 +13,8 @@ export const renderNavbar = (containerId) => {
     <nav class="pill-navbar container animate-nav-down">
 
       <div class="nav-logo">
-        <a href="#/" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+        <a href="#/">
           <img loading="eager" src="${logoMarvelsa}" alt="Marvelsa Logo" style="height:45px;width:auto;display:block;">
-          <span style="font-size:1.15rem;font-weight:900;color:var(--primary);letter-spacing:-0.5px;line-height:1;">Marvelsa.mx</span>
         </a>
       </div>
 
