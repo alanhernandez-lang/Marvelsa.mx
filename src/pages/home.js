@@ -17,7 +17,9 @@ const brandBanners = [
   { id: 'parazzini', img: bannerParazzini, title: 'PARAZZINI', pills: ['Construcción', 'Agrícola', 'Energía', 'Bombeo'], desc: 'Maquinaria con motores de calidad italiana que combinan fuerza, eficiencia y durabilidad para los profesionales.' },
   { id: 'takashi', img: bannerTakashi, title: 'TAKASHI', pills: ['Forestal', 'Agrícola'], desc: 'Para los trabajos simples, maquinaria que cumple.' },
   { id: 'goldentree', img: bannerGoldenTree, title: 'GOLDEN TREE', pills: ['Sistemas de riego', 'Agrícola'], desc: '30 años cuidando tu inversión en el campo con riego eficiente.' },
+  { id: 'ducar', img: bannerPowerHunt, title: 'DUCAR', pills: ['Motores', 'Generadores', 'Agrícola'], desc: 'Motores y generadores de alto desempeño con refacciones disponibles en todo México.' },
   { id: 'powerhunt', img: bannerPowerHunt, title: 'POWER HUNT', pills: ['Taller', 'Agrícola', 'Hogar', 'Jardín'], desc: 'Creamos maquinaria potente, fácil de armar y lista para entrar en acción.' },
+  { id: 'oregon', img: bannerKawashima, title: 'OREGON', pills: ['Forestal', 'Agrícola', 'Accesorios'], desc: 'La marca #1 mundial en cadenas y componentes para motosierra. Corte profesional siempre.' },
 ];
 
 export const renderHome = () => {

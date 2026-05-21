@@ -1,4 +1,5 @@
 export { default as mainStrategicImage }  from './images/Imagen 1 pagina principal.jpg';
+export { default as logoDucar }           from './images/DUCAR_logo.png';
 export { default as imgCobertura }        from './images/Cobertura.png';
 export { default as imgExperiencia }      from './images/Experiencia.png';
 export { default as imgServicio }         from './images/Servicio.png';

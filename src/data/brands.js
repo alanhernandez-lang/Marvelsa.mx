@@ -3,6 +3,8 @@ import logoParazzini from '../assets/images/PARAZZINI-Logo.png';
 import logoGoldenTree from '../assets/images/GOLDENTREE-Logo.png';
 import logoPowerHunt from '../assets/images/POWERHUNT-Logo.png';
 import logoTakashi from '../assets/images/TAKASHI.Logo.png';
+import logoDucar from '../assets/images/DUCAR_logo.png';
+import logoMarvelsa from '../assets/images/marvelsa-logo.png';
 
 export const brands = {
   kawashima: {
@@ -29,6 +31,14 @@ export const brands = {
     description: 'Expertos en fertilización y sanidad vegetal de alta gama.',
     logo: logoGoldenTree,
   },
+  ducar: {
+    id: 'ducar',
+    name: 'Ducar',
+    theme: 'theme-ducar',
+    slogan: 'Motores que no paran',
+    description: 'Motores y generadores de alto desempeño para el campo y la industria.',
+    logo: logoDucar,
+  },
   powerhunt: {
     id: 'powerhunt',
     name: 'PowerHunt',
@@ -44,5 +54,13 @@ export const brands = {
     slogan: 'Precisión y Fuerza',
     description: 'Maquinaria de alta tecnología para el campo mexicano.',
     logo: logoTakashi,
+  },
+  oregon: {
+    id: 'oregon',
+    name: 'Oregon',
+    theme: 'theme-oregon',
+    slogan: 'Corte profesional',
+    description: 'Cadenas, barras y componentes para motosierra de clase mundial.',
+    logo: logoMarvelsa,
   },
 };

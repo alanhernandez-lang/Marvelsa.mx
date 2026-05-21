@@ -449,6 +449,66 @@ const brandConfig = {
       { name: 'WOOD58', tag: 'Forestal', pdf: 'https://drive.google.com/file/d/1mojUAbHEI7tc_SrjaHASBFN4d72wwXam/view' },
     ],
   },
+  ducar: {
+    css: 'duc', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
+    badge: '⚙️ Motores de Alto Desempeño • México', title: 'DUCAR', slogan: 'Motores que no paran',
+    accentColor: '#D70E1B',
+    distributorLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47',
+    stats: [{ n: '20+', l: 'Años en el mercado' }, { n: '10K+', l: 'Motores instalados', mid: true }, { n: '100%', l: 'Refacciones disponibles' }],
+    marquee: ['Motores', 'Generadores', 'Motobombas', 'Motocultor', 'Compresores', 'Alta Potencia'],
+    introCopy: 'DUCAR es una marca de motores y maquinaria de potencia diseñada para responder a las exigencias del campo, la industria y la construcción. Ofrecemos motores confiables, generadores robustos y motobombas de alto rendimiento, con refacciones disponibles en todo México.',
+    features: [
+      { title: 'Potencia', label: 'Comprobada', desc: 'Motores de alto desempeño diseñados para las jornadas más exigentes del campo y la industria, con rendimiento constante.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
+      { title: 'Durabilidad', label: 'Real', desc: 'Construidos con materiales de primera línea para soportar condiciones extremas y prolongar la vida útil del equipo.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
+      { title: 'Refacciones', label: 'Siempre', desc: 'Disponibilidad garantizada de refacciones originales en toda la República Mexicana para mantener tus equipos operativos.', path: 'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z' },
+    ],
+    whyCards: [
+      { title: 'Motores para cualquier aplicación', text: 'Desde pequeñas motobombas hasta generadores industriales, DUCAR ofrece motores para cada necesidad con el rendimiento y la confiabilidad que los profesionales exigen.', icon: `<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>` },
+      { title: 'Red de refacciones en México', text: 'Contamos con una red de distribución de refacciones en todo el país, para que tus equipos nunca queden parados. Respaldo técnico real, sin excusas.', icon: `<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>` },
+      { title: 'Equipos listos para trabajar', text: 'Fáciles de arrancar, sencillos de mantener. Nuestros equipos están diseñados para que cualquier operador los use desde el primer día con confianza y seguridad.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
+    ],
+    cats: [
+      { img: bannerParazzini, name: 'AGRÍCOLA', desc: 'Motobombas, motocultores y generadores diseñados para las necesidades del campo mexicano. Equipos confiables que acompañan al agricultor en cada jornada.', subs: 'MOTOBOMBAS • MOTOCULTORES • GENERADORES' },
+      { img: bannerKawashima, name: 'CONSTRUCCIÓN', desc: 'Generadores y compresores de potencia real para sitios de obra. Equipos robustos que no fallan cuando el proyecto no puede detenerse.', subs: 'GENERADORES • COMPRESORES • OBRA' },
+      { img: bannerTakashi, name: 'INDUSTRIAL', desc: 'Soluciones de potencia para aplicaciones industriales y comerciales que exigen desempeño continuo y alta confiabilidad en operación.', subs: 'MOTORES • PLANTAS DE LUZ • INDUSTRIAL' },
+    ],
+    prods: [
+      { name: 'Motor DQ170F', tag: 'Motor', pdf: null },
+      { name: 'Generador DG3500', tag: 'Generador', pdf: null },
+      { name: 'Motobomba DWP30', tag: 'Agrícola', pdf: null },
+      { name: 'Motocultor DT500', tag: 'Agrícola', pdf: null },
+    ],
+  },
+  oregon: {
+    css: 'ore', bg: bgKawashimaFondoNew, banner: bannerKawashima,
+    badge: '🪚 Corte Profesional • México', title: 'OREGON', slogan: 'Corte profesional, siempre',
+    accentColor: '#F06400',
+    distributorLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47',
+    stats: [{ n: '60+', l: 'Años de innovación' }, { n: '100K+', l: 'Productos disponibles', mid: true }, { n: '100%', l: 'Compatibilidad garantizada' }],
+    marquee: ['Cadenas', 'Barras Guía', 'Sprockets', 'Partes de Motosierra', 'Accesorios Forestales', 'Calidad Mundial'],
+    introCopy: 'Oregon es la marca líder mundial en cadenas, barras guía y componentes para motosierra. Con más de 60 años de innovación, ofrecemos productos de precisión que maximizan el rendimiento y la vida útil de tus equipos, respaldados por disponibilidad inmediata en México.',
+    features: [
+      { title: 'Corte', label: 'Preciso', desc: 'Cadenas fabricadas con acero de alta aleación que garantizan cortes limpios, rápidos y seguros en cualquier tipo de madera.', path: 'M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z M16 8 L2 22 M17.5 15 L9 15' },
+      { title: 'Máxima', label: 'Durabilidad', desc: 'Componentes con tratamientos especiales que resisten el desgaste extremo y prolongan los intervalos de mantenimiento.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
+      { title: 'Compatibilidad', label: 'Universal', desc: 'Compatible con las principales marcas de motosierra del mercado. Un solo proveedor para todas tus necesidades de corte.', path: 'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z' },
+    ],
+    whyCards: [
+      { title: 'La marca #1 en cadenas para motosierra', text: 'Oregon es la referencia mundial en componentes de corte. Usada por profesionales forestales, agricultores y técnicos en más de 100 países, es la elección que nunca falla.', icon: `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>` },
+      { title: 'Compatibilidad con todas las marcas', text: 'Nuestro catálogo cubre los principales modelos de motosierra del mercado mexicano. Sea cual sea tu equipo, tenemos el componente correcto para mantenerlo en óptimas condiciones.', icon: `<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>` },
+      { title: 'Disponibilidad inmediata en México', text: 'Gracias a nuestra red de distribución nacional, los componentes Oregon están disponibles cuando los necesitas, sin demoras ni contratiempos que paren tu trabajo.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
+    ],
+    cats: [
+      { img: bannerKawashima, name: 'FORESTAL', desc: 'Cadenas y barras guía de alta resistencia para trabajo forestal intensivo. Diseñadas para el corte profesional en condiciones extremas.', subs: 'CADENAS • BARRAS GUÍA • FORESTAL' },
+      { img: bannerTakashi, name: 'AGRÍCOLA', desc: 'Componentes Oregon para equipos de poda y mantenimiento agrícola. Mantén tus motosierras y podadoras siempre en condiciones óptimas.', subs: 'PODA • MANTENIMIENTO • CAMPO' },
+      { img: bannerParazzini, name: 'ACCESORIOS', desc: 'Sprockets, eslabones remache y aceites de cadena Oregon para el mantenimiento completo de tus equipos de corte.', subs: 'SPROCKETS • ESLABONES • ACEITES' },
+    ],
+    prods: [
+      { name: 'Cadena Oregon 72V', tag: 'Forestal', pdf: null },
+      { name: 'Barra Guía 20"', tag: 'Forestal', pdf: null },
+      { name: 'Sprocket Rim', tag: 'Accesorio', pdf: null },
+      { name: 'Aceite de Cadena', tag: 'Mantenimiento', pdf: null },
+    ],
+  },
 };
 
 const renderGenericBrand = (brandId) => {
