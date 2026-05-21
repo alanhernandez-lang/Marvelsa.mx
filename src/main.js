@@ -11,8 +11,8 @@ initTracking('GTM-XXXXXX', 'G-XXXXXXXXXX', 'PIXEL_ID');
 
 // ── Router ──────────────────────────────────────────────────
 const router = () => {
-  const fullPath = window.location.hash.replace('#/', '');
-  const [path, query] = fullPath.split('?');
+  const path   = window.location.pathname.replace(/^\//, '');
+  const search = window.location.search;
 
   window.scrollTo(0, 0);
 
@@ -21,12 +21,9 @@ const router = () => {
   } else if (path === 'nosotros') {
     renderNosotros();
   } else if (path === 'contacto') {
-    const shouldScroll = query?.includes('scrollTo=form');
-    if (!shouldScroll) window.scrollTo(0, 0);
-    renderContacto(shouldScroll);
+    renderContacto(search.includes('scrollTo=form'));
   } else if (path.startsWith('blog/')) {
-    const articleId = path.split('/')[1];
-    renderBlogArticle(articleId);
+    renderBlogArticle(path.split('/')[1]);
   } else if (brands[path]) {
     renderBrandMicrosite(path);
   } else {
@@ -34,8 +31,25 @@ const router = () => {
   }
 };
 
-window.addEventListener('hashchange', router);
+const navigate = (path) => {
+  history.pushState({}, '', path);
+  router();
+};
+window.navigate = navigate;
+
+window.addEventListener('popstate', router);
 window.addEventListener('load', router);
+
+// Intercept internal link clicks for SPA navigation
+document.addEventListener('click', (e) => {
+  const a = e.target.closest('a[href]');
+  if (!a) return;
+  const href = a.getAttribute('href');
+  if (href && href.startsWith('/') && !href.startsWith('//')) {
+    e.preventDefault();
+    navigate(href);
+  }
+});
 
 // ── Expose to global scope (used by onclick handlers in HTML strings) ──
 window.renderHome          = renderHome;

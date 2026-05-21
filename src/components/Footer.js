@@ -5,7 +5,7 @@ export const getFooterHTML = () => `
     <div class="container footer-grid">
 
       <div class="footer-col about">
-        <a href="#/">
+        <a href="/">
           <img loading="lazy" src="${logoMarvelsa}" alt="Marvelsa Logo" style="height:45px;width:auto;display:block;">
         </a>
         <p class="footer-desc">
@@ -31,9 +31,9 @@ export const getFooterHTML = () => `
       <div class="footer-col links">
         <h3>MARVEL</h3>
         <ul>
-          <li><a href="#/">INICIO</a></li>
-          <li><a href="#/nosotros">NOSOTROS</a></li>
-          <li><a href="#/contacto">MARCAS</a></li>
+          <li><a href="/">INICIO</a></li>
+          <li><a href="/nosotros">NOSOTROS</a></li>
+          <li><a href="/contacto">MARCAS</a></li>
         </ul>
       </div>
 

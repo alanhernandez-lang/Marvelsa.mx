@@ -68,7 +68,7 @@ export const renderBlogArticle = (articleId) => {
         <h3 style="text-align:center; margin-top:60px;">Elige con inteligencia, trabaja con confianza</h3>
         <p style="text-align:center;">No se trata solo de potencia, sino de elegir la herramienta que realmente se adapta a ti. Ya sea que necesites una desbrozadora semiprofesional de eje curvo y maneral tipo D para trabajos de jardín, o una profesional de eje recto y maneral tipo bicicleta para uso intensivo, Kawashima tiene el modelo ideal para tu trabajo.</p>
         <div style="text-align:center; margin-top:30px;">
-          <button onclick="window.location.hash='#/marca/kawashima'" class="kaw-btn-primary" style="border-radius:100px; padding:15px 40px;">Encuentra tu desbrozadora Kawashima</button>
+          <button onclick="navigate('/kawashima')" class="kaw-btn-primary" style="border-radius:100px; padding:15px 40px;">Encuentra tu desbrozadora Kawashima</button>
         </div>
       `
     }

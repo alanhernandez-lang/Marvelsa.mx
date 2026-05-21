@@ -50,7 +50,7 @@ export const renderHome = () => {
               En Marvelsa creemos que la calidad profesional no debe ser un lujo: por eso acercamos productos de alto desempeño a precios justos, ofreciendo a nuestros distribuidores y sus clientes el valor real que se merecen.
             </p>
             <div style="display:flex;gap:15px;flex-wrap:wrap;">
-              <button class="mvh-btn-teal" onclick="window.location.hash='#/nosotros'">Nuestra Historia</button>
+              <button class="mvh-btn-teal" onclick="navigate('/nosotros')">Nuestra Historia</button>
             </div>
           </div>
           <div style="flex:1;min-width:300px;">
@@ -95,7 +95,7 @@ export const renderHome = () => {
         </div>
         <div class="container mvh-brands-grid" style="padding:0 20px;">
           ${brandBanners.map(b => `
-            <div class="brand-banner reveal-up" onclick="window.location.hash='#/${b.id}'">
+            <div class="brand-banner reveal-up" onclick="navigate('/${b.id}')">
               <div class="brand-banner-img-wrap">
                 <img loading="lazy" src="${b.img}" alt="${b.title}">
               </div>
@@ -143,7 +143,7 @@ export const renderHome = () => {
           <p style="color:rgba(255,255,255,.8);max-width:600px;margin:0 auto 40px;font-size:1.1rem;">
             En Marvelsa siempre estamos en busca de nuevos aliados comerciales. Si deseas distribuir nuestras marcas y acceder a productos de calidad profesional con respaldo técnico, completa el formulario y comienza a formar parte de nuestra red de distribuidores
           </p>
-          <button class="mvh-btn-teal" onclick="window.location.hash='#/contacto?scrollTo=form'" style="padding:20px 40px;font-size:1rem;">
+          <button class="mvh-btn-teal" onclick="navigate('/contacto?scrollTo=form')" style="padding:20px 40px;font-size:1rem;">
             Contactar Ahora
           </button>
         </div>
