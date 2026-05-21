@@ -4,7 +4,7 @@ import logoGoldenTree from '../assets/images/GOLDENTREE-Logo.png';
 import logoPowerHunt from '../assets/images/POWERHUNT-Logo.png';
 import logoTakashi from '../assets/images/TAKASHI.Logo.png';
 import logoDucar from '../assets/images/DUCAR_logo.png';
-import logoMarvelsa from '../assets/images/marvelsa-logo.png';
+import logoOregon from '../assets/images/Oregon Logo.png';
 
 export const brands = {
   kawashima: {
@@ -61,6 +61,6 @@ export const brands = {
     theme: 'theme-oregon',
     slogan: 'Corte profesional',
     description: 'Cadenas, barras y componentes para motosierra de clase mundial.',
-    logo: logoMarvelsa,
+    logo: logoOregon,
   },
 };
