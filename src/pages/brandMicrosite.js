@@ -335,7 +335,7 @@ const brandConfig = {
     badge: '⚙️ Maquinaria Profesional • México', title: 'PARAZZINI', slogan: 'Calidad y potencia que trabajan contigo',
     accentColor: '#D4A800',
     stats: [{ n: '30+', l: 'Años de experiencia' }, { n: '500K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
-    marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
+    marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro', 'Generadores', 'Hidrolavadoras', 'Motobombas', 'Bailarinas', 'Revolvedoras', 'Torres de luz', 'Maquinaria ligera', 'Motocultores'],
     introTitle: 'Potencia y calidad<br><em>para profesionales</em>',
     introCopy: 'Desarrollamos maquinaria que combina rendimiento profesional, fuerza comprobada y un valor accesible. La clave de esta fórmula: nuestros motores bajo calidad italiana, reconocida mundialmente por su resistencia, potencia y excelencia mecánica.',
     features: [
