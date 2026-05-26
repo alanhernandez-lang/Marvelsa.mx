@@ -348,7 +348,14 @@ const brandConfig = {
       { img: bannerGoldenTree, name: 'CONSTRUCCIÓN', desc: 'Equipos robustos para trabajos pesados, pensados para durar en obra. Revolvedoras, motobombas, generadores y más equipos que brindan potencia real en cada proyecto. Nuestra maquinaria está diseñada para soportar las condiciones exigentes del sitio de construcción, con el respaldo que todo profesional necesita.', subs: 'REVOLVEDORAS • MOTOBOMBAS • GENERADORES' },
       { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
-    prods: [{ name: 'Cortacésped PRZ-500', tag: 'Jardín' }, { name: 'Desbrozadora PRZ-26', tag: 'Jardín' }, { name: 'Soplador PRZ-3000', tag: 'Jardín' }, { name: 'Bordeadora PRZ-18', tag: 'Jardín' }],
+    prods: [
+      { name: 'REVOLVER1G', tag: 'Construcción', spec: 'Revolvedora gasolina de 1/2 saco • Volumen de olla 140 Litros' },
+      { name: 'GP10000GAS', tag: 'Energía',       spec: 'Generador estacionario a gas LP y GN de 10 Kw • Monofásico' },
+      { name: 'HP5.5N',     tag: 'Limpieza',      spec: 'Hidrolavadora a gasolina 5.5hp' },
+      { name: 'GP3000M',    tag: 'Energía',       spec: 'Generador Parazzini 3000W 6.5HP 4T' },
+      { name: 'BP2.510',    tag: 'Bombeo',        spec: 'Motobomba 2.5hp 4 tiempos OHV autocebante 1 pulg' },
+      { name: 'BP720',      tag: 'Bombeo',        spec: 'Motobomba 7hp 4 tiempos OHV autocebante 2 pulg' },
+    ],
     distributorLink: 'https://forms.gle/vXg39DUZdyiDzJH58',
     whyCards: [
       {
@@ -613,7 +620,7 @@ const renderGenericBrand = (brandId) => {
               </div>
               <span class="${p}-prod-tag">${prod.tag}</span>
               <div class="${p}-prod-name">${prod.name}</div>
-              <div class="${p}-prod-spec">Alta eficiencia • Diseño ergonómico<br>Refacciones disponibles en México</div>
+              <div class="${p}-prod-spec">${prod.spec || 'Alta eficiencia • Diseño ergonómico<br>Refacciones disponibles en México'}</div>
               <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;">
                 Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
               </a>
