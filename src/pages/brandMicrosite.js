@@ -336,7 +336,8 @@ const brandConfig = {
     accentColor: '#D4A800',
     stats: [{ n: '30+', l: 'Años de experiencia' }, { n: '500K+', l: 'Profesionales equipados', mid: true }, { n: '100%', l: 'Soporte técnico' }],
     marquee: ['Podadoras', 'Desbrozadoras', 'Cortacésped', 'Jardinería', 'Paisajismo', 'Herramientas Pro'],
-    introCopy: 'Parazzini es una marca de maquinaria diseñada para responder a las exigencias reales del campo, la construcción y la industria. Ofrecemos equipos potentes, confiables y accesibles, desarrollados con estándares técnicos altos y motores de calidad italiana que garantizan durabilidad y rendimiento.',
+    introTitle: 'Potencia y calidad<br><em>para profesionales</em>',
+    introCopy: 'Desarrollamos maquinaria que combina rendimiento profesional, fuerza comprobada y un valor accesible. La clave de esta fórmula: nuestros motores bajo calidad italiana, reconocida mundialmente por su resistencia, potencia y excelencia mecánica.',
     features: [
       { title: 'Potencia', label: 'Real', desc: 'Motores de alto rendimiento con tecnología italiana que entregan la fuerza necesaria para las jornadas más exigentes.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
       { title: 'Calidad', label: 'Comprobada', desc: 'Estándares técnicos elevados en cada pieza y ensamble, garantizando durabilidad y precisión en cada uso.', path: 'M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z' },
@@ -553,7 +554,7 @@ const renderGenericBrand = (brandId) => {
         <div class="${p}-intro-inner">
           <div>
             <span class="${p}-intro-eyebrow">Nuestra Esencia</span>
-            <h2 class="${p}-intro-title">Diseñados<br><em>para ti</em></h2>
+            <h2 class="${p}-intro-title">${cfg.introTitle || 'Diseñados<br><em>para ti</em>'}</h2>
             <p class="${p}-intro-text">${cfg.introCopy}</p>
           </div>
           <div class="${p}-features">
