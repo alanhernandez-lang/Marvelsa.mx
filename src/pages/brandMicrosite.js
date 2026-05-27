@@ -381,7 +381,7 @@ const brandConfig = {
     accentColor: '#C89B2A',
     stats: [{ n: '15+', l: 'Años en el mercado' }, { n: '40+', l: 'Presencia en países', mid: true }, { n: '100%', l: 'Eficacia comprobada' }],
     marquee: ['Gotero laberinto', 'Manguera de aspersión', 'Gotero pastilla', 'Cinta blanca'],
-    introTitle: 'Tu tranquilidad en el campo<br>empieza con un buen riego.',
+    introTitle: 'Tu tranquilidad en el campo<br><em>empieza con un buen riego.</em>',
     introCopy: 'Durante más de 30 años, Golden Tree ha cultivado algo más que sistemas de riego. Desde Corea del Sur, perfeccionamos la tecnología que asegura que cada gota llegue donde debe, con precisión, eficiencia y resistencia.<br><br>Hoy, al llegar a México y Latinoamérica, traemos esa misma calidad, pero con algo que nadie más ofrece: garantía, con un servicio humano y accesible que sí da la cara.',
     features: [
       { title: 'Eficiencia', label: 'Hídrica', desc: 'Sistemas de riego que reducen el consumo de agua y maximizan el rendimiento de cada metro de cultivo.', path: 'M12 2c0 0-7 8.25-7 12a7 7 0 0 0 14 0c0-3.75-7-12-7-12z' },
