@@ -349,12 +349,12 @@ const brandConfig = {
       { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
     prods: [
-      { name: 'REVOLVER1G', tag: 'Construcción', spec: 'Revolvedora gasolina de 1/2 saco • Volumen de olla 140 Litros' },
-      { name: 'GP10000GAS', tag: 'Energía',       spec: 'Generador estacionario a gas LP y GN de 10 Kw • Monofásico' },
-      { name: 'HP5.5N',     tag: 'Limpieza',      spec: 'Hidrolavadora a gasolina 5.5hp' },
-      { name: 'GP3000M',    tag: 'Energía',       spec: 'Generador Parazzini 3000W 6.5HP 4T' },
-      { name: 'BP2.510',    tag: 'Bombeo',        spec: 'Motobomba 2.5hp 4 tiempos OHV autocebante 1 pulg' },
-      { name: 'BP720',      tag: 'Bombeo',        spec: 'Motobomba 7hp 4 tiempos OHV autocebante 2 pulg' },
+      { name: 'REVOLVER1G', tag: 'Construcción', spec: 'Revolvedora a gasolina de 1/2 saco • Volumen de olla 140 litros • Motor 4 tiempos' },
+      { name: 'GP10000GAS', tag: 'Energía',       spec: 'Generador estacionario a gas LP y GN • Potencia 10 kW • Monofásico' },
+      { name: 'HP5.5N',     tag: 'Limpieza',      spec: 'Hidrolavadora a gasolina • Motor 5.5 HP • Alta presión para limpieza profesional' },
+      { name: 'GP3000M',    tag: 'Energía',       spec: 'Generador portátil 3000W • Motor 6.5 HP 4 tiempos • Arranque manual' },
+      { name: 'BP2.510',    tag: 'Bombeo',        spec: 'Motobomba autocebante 1 pulg • Motor 2.5 HP OHV 4 tiempos • Uso agrícola' },
+      { name: 'BP720',      tag: 'Bombeo',        spec: 'Motobomba autocebante 2 pulg • Motor 7 HP 4 tiempos OHV • Alto caudal' },
     ],
     distributorLink: 'https://forms.gle/vXg39DUZdyiDzJH58',
     whyCards: [
@@ -767,60 +767,44 @@ const renderGenericBrand = (brandId) => {
               }
             }
             
-            let specsHTML = '';
+            // Build specs list
+            const specBullet = (text) => `
+              <li style="font-size:0.82rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.5;text-align:left;">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>${text}</span>
+              </li>`;
+            
+            let specsItems = [];
             if (prod.spec) {
-              const specParts = prod.spec.split(/•|—/);
-              const startIndex = hasModel ? 1 : 0;
-              const actualSpecs = specParts.slice(startIndex).map(s => s.trim()).filter(Boolean);
-              
-              if (actualSpecs.length > 0) {
-                specsHTML = `
-                  <ul class="${p}-prod-spec-list" style="list-style:none;padding:0;margin:15px 0 25px 0;display:flex;flex-direction:column;gap:8px;">
-                    ${actualSpecs.map(specText => `
-                      <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
-                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;">
-                          <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>${specText}</span>
-                      </li>
-                    `).join('')}
-                  </ul>
-                `;
-              } else {
-                specsHTML = `<div class="${p}-prod-spec" style="margin:15px 0 25px 0;font-size:0.85rem;color:var(--${p}-muted);line-height:1.6;text-align:left;">${prod.spec}</div>`;
-              }
-            } else {
-              specsHTML = `
-                <ul class="${p}-prod-spec-list" style="list-style:none;padding:0;margin:15px 0 25px 0;display:flex;flex-direction:column;gap:8px;">
-                  <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Alta eficiencia y potencia</span>
-                  </li>
-                  <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Diseño ergonómico y duradero</span>
-                  </li>
-                  <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
-                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    <span>Refacciones originales en México</span>
-                  </li>
-                </ul>
-              `;
+              const allParts = prod.spec.split(/•|—/).map(s => s.trim()).filter(Boolean);
+              // If hasModel, skip the first part (used as title); otherwise use all
+              specsItems = hasModel && allParts.length > 1 ? allParts.slice(1) : allParts;
             }
+            
+            // Fallback defaults if no spec items
+            if (specsItems.length === 0) {
+              specsItems = ['Alta eficiencia y potencia', 'Diseño ergonómico y duradero', 'Refacciones originales en México'];
+            }
+            
+            const specsHTML = `
+              <ul style="list-style:none;padding:0;margin:12px 0 0 0;display:flex;flex-direction:column;gap:6px;flex:1;">
+                ${specsItems.map(specBullet).join('')}
+              </ul>
+            `;
 
             return `
               <div class="${p}-prod-card">
-                <div class="prod-illustration-wrap" style="height:190px;background:rgba(255,255,255,${cfg.lightTheme ? '0.6' : '0.015'});border:1px solid rgba(255,255,255,${cfg.lightTheme ? '0.12' : '0.04'});border-radius:16px;margin-bottom:20px;display:flex;align-items:center;justify-content:center;padding:25px;position:relative;overflow:hidden;box-shadow:inset 0 4px 20px rgba(0,0,0,${cfg.lightTheme ? '0.02' : '0.2'});transition:all 0.4s ease;">
-                  <div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}08 0%, transparent 70%);"></div>
+                <div class="prod-illustration-wrap" style="height:180px;background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;overflow:hidden;transition:all 0.4s ease;">
+                  <div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}0A 0%, transparent 70%);"></div>
                   ${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}
                 </div>
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px;width:100%;">
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px;">
                   <span class="${p}-prod-tag" style="margin-bottom:0;">${prod.tag}</span>
-                  ${displayModel ? `<span class="model-badge" style="font-family:monospace;font-size:0.7rem;font-weight:700;color:${cfg.accentColor};background:${cfg.accentColor}15;border:1px solid ${cfg.accentColor}40;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;box-shadow: 0 0 8px ${cfg.accentColor}08;">${displayModel}</span>` : ''}
+                  ${displayModel ? `<span style="font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-size:0.65rem;font-weight:700;color:${cfg.accentColor};background:${cfg.accentColor}12;border:1px solid ${cfg.accentColor}30;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">${displayModel}</span>` : ''}
                 </div>
-                <div class="${p}-prod-name" style="font-size:1.15rem;font-weight:800;line-height:1.3;min-height:2.8rem;display:flex;align-items:center;text-align:left;">${displayTitle}</div>
+                <div class="${p}-prod-name" style="font-size:1.1rem;font-weight:800;line-height:1.3;min-height:3rem;display:flex;align-items:flex-start;text-align:left;">${displayTitle}</div>
                 ${specsHTML}
-                <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;">
+                <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);">
                   Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
                 </a>
               </div>

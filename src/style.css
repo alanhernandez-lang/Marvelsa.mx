@@ -8269,86 +8269,143 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
 .pg-wrap--wide { max-width: 1400px; }
 
 /* ============================================================
-   UPGRADED BRAND PRODUCT CARDS (GLOBAL OVERRIDES)
+   UPGRADED BRAND PRODUCT CARDS (GLOBAL OVERRIDES v2)
    ============================================================ */
+
+/* ---- Balanced Grid: 3 columns on desktop ---- */
+.par-prod-grid,
+.gt-prod-grid,
+.ph-prod-grid,
+.tak-prod-grid,
+.duc-prod-grid,
+.ore-prod-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 24px !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 0 40px !important;
+}
+
+@media (max-width: 1024px) {
+  .par-prod-grid,
+  .gt-prod-grid,
+  .ph-prod-grid,
+  .tak-prod-grid,
+  .duc-prod-grid,
+  .ore-prod-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .par-prod-grid,
+  .gt-prod-grid,
+  .ph-prod-grid,
+  .tak-prod-grid,
+  .duc-prod-grid,
+  .ore-prod-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 0 20px !important;
+  }
+}
+
+/* ---- Card Structure ---- */
 .par-prod-card,
 .gt-prod-card,
 .ph-prod-card,
 .tak-prod-card,
 .duc-prod-card,
 .ore-prod-card {
-  border-radius: 24px !important;
-  padding: 30px 24px !important;
-  transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+  border-radius: 20px !important;
+  padding: 24px !important;
+  transition: all 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-start !important;
 }
 
-/* Glassmorphism for Dark Themes */
-.par-prod-card,
-.ph-prod-card,
-.tak-prod-card,
-.duc-prod-card,
+/* Dark theme cards */
+.par-prod-card {
+  background: rgba(30, 25, 6, 0.85) !important;
+  border: 1px solid rgba(212, 168, 0, 0.12) !important;
+}
+.ph-prod-card {
+  background: rgba(6, 14, 30, 0.85) !important;
+  border: 1px solid rgba(0, 91, 181, 0.12) !important;
+}
+.tak-prod-card {
+  background: rgba(30, 16, 0, 0.85) !important;
+  border: 1px solid rgba(255, 102, 0, 0.12) !important;
+}
+.duc-prod-card {
+  background: var(--duc-card) !important;
+  border: 1px solid rgba(215, 14, 27, 0.12) !important;
+}
 .ore-prod-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.02) 0%, rgba(255, 255, 255, 0.05) 100%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+  background: var(--ore-card) !important;
+  border: 1px solid rgba(240, 100, 0, 0.12) !important;
 }
 
-/* Glassmorphism for Light Themes (Golden Tree) */
+/* Light theme card (Golden Tree) */
 .gt-prod-card {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 100%) !important;
-  border: 1px solid rgba(0, 0, 0, 0.06) !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03) !important;
+  background: rgba(255, 255, 255, 0.75) !important;
+  border: 1px solid rgba(200, 155, 42, 0.15) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
 }
 
-/* Hover effects with glow and lift */
+/* ---- Hover Effects ---- */
 .par-prod-card:hover {
+  transform: translateY(-6px) !important;
   border-color: rgba(212, 168, 0, 0.35) !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 168, 0, 0.15) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(212, 168, 0, 0.1) !important;
 }
-
 .gt-prod-card:hover {
-  border-color: rgba(200, 155, 42, 0.35) !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08), 0 0 30px rgba(200, 155, 42, 0.1) !important;
+  transform: translateY(-6px) !important;
+  border-color: rgba(200, 155, 42, 0.3) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06), 0 0 25px rgba(200, 155, 42, 0.08) !important;
 }
-
 .ph-prod-card:hover {
+  transform: translateY(-6px) !important;
   border-color: rgba(0, 91, 181, 0.35) !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 91, 181, 0.15) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(0, 91, 181, 0.1) !important;
 }
-
 .tak-prod-card:hover {
+  transform: translateY(-6px) !important;
   border-color: rgba(255, 102, 0, 0.35) !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 102, 0, 0.15) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(255, 102, 0, 0.1) !important;
 }
-
 .duc-prod-card:hover {
+  transform: translateY(-6px) !important;
   border-color: rgba(215, 14, 27, 0.35) !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(215, 14, 27, 0.15) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(215, 14, 27, 0.1) !important;
 }
-
 .ore-prod-card:hover {
+  transform: translateY(-6px) !important;
   border-color: rgba(240, 100, 0, 0.35) !important;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(240, 100, 0, 0.15) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 25px rgba(240, 100, 0, 0.1) !important;
 }
 
-/* Hover styling for the illustration wrapper */
+/* ---- Illustration wrapper hover ---- */
 .par-prod-card:hover .prod-illustration-wrap,
-.gt-prod-card:hover .prod-illustration-wrap,
 .ph-prod-card:hover .prod-illustration-wrap,
 .tak-prod-card:hover .prod-illustration-wrap,
 .duc-prod-card:hover .prod-illustration-wrap,
 .ore-prod-card:hover .prod-illustration-wrap {
-  transform: translateY(-4px);
-  box-shadow: inset 0 4px 20px rgba(0,0,0,0.4), 0 10px 20px rgba(0,0,0,0.2) !important;
-  border-color: rgba(255, 255, 255, 0.15) !important;
+  background: rgba(0, 0, 0, 0.35) !important;
 }
 
 .gt-prod-card:hover .prod-illustration-wrap {
-  box-shadow: inset 0 4px 10px rgba(0,0,0,0.03), 0 10px 20px rgba(0,0,0,0.06) !important;
-  border-color: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 
-
+/* ---- CTA anchored to bottom ---- */
+.par-prod-cta,
+.gt-prod-cta,
+.ph-prod-cta,
+.tak-prod-cta,
+.duc-prod-cta,
+.ore-prod-cta {
+  margin-top: auto !important;
+}
