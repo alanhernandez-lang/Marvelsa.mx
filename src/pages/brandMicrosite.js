@@ -377,26 +377,38 @@ const brandConfig = {
   },
   goldentree: {
     css: 'gt', bg: bgGoldenTreeFondo, banner: bannerGoldenTree,
-    badge: '🌾 Nutrición Vegetal • México', title: 'GOLDEN TREE', slogan: 'Nutriendo tus Cosechas',
+    badge: '🌿 Soluciones de riego', title: 'GOLDEN TREE', slogan: 'Nutriendo tus Cosechas',
     accentColor: '#C89B2A',
-    stats: [{ n: '15+', l: 'Años en el mercado' }, { n: '50+', l: 'Productos disponibles', mid: true }, { n: '100%', l: 'Eficacia comprobada' }],
-    marquee: ['Fertilizantes', 'Nutrición Foliar', 'Bioestimulantes', 'Sanidad Vegetal', 'Sustratos', 'Agricultura Premium'],
-    introCopy: 'Somos una marca especializada en cintilla y soluciones de riego diseñadas para maximizar la eficiencia hídrica y la durabilidad del sistema. Innovamos en materiales con más calibres y mayor resistencia para ofrecer al agricultor rendimiento confiable y protección de su inversión en cada temporada.',
+    stats: [{ n: '15+', l: 'Años en el mercado' }, { n: '40+', l: 'Presencia en países', mid: true }, { n: '100%', l: 'Eficacia comprobada' }],
+    marquee: ['Gotero laberinto', 'Manguera de aspersión', 'Gotero pastilla', 'Cinta blanca'],
+    introTitle: 'Tu tranquilidad en el campo<br>empieza con un buen riego.',
+    introCopy: 'Durante más de 30 años, Golden Tree ha cultivado algo más que sistemas de riego. Desde Corea del Sur, perfeccionamos la tecnología que asegura que cada gota llegue donde debe, con precisión, eficiencia y resistencia.<br><br>Hoy, al llegar a México y Latinoamérica, traemos esa misma calidad, pero con algo que nadie más ofrece: garantía, con un servicio humano y accesible que sí da la cara.',
     features: [
       { title: 'Eficiencia', label: 'Hídrica', desc: 'Sistemas de riego que reducen el consumo de agua y maximizan el rendimiento de cada metro de cultivo.', path: 'M12 2c0 0-7 8.25-7 12a7 7 0 0 0 14 0c0-3.75-7-12-7-12z' },
       { title: 'Mayor', label: 'Durabilidad', desc: 'Cintilla con más calibres y materiales de alta resistencia para que tu sistema dure más temporadas sin fallas.', path: 'M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z' },
       { title: 'Respaldo', label: 'Técnico', desc: 'Asesoría especializada para diseñar e instalar el sistema de riego ideal para tu tipo de cultivo y terreno.', path: 'M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z' },
     ],
     whyCards: [
-      { title: 'Más de 40 años en el mercado mundial', text: 'Nuestra experiencia global nos respalda. Durante más de cuatro décadas, Golden Tree ha desarrollado soluciones de riego confiables que hoy impulsan la productividad de agricultores en distintos países del mundo.', icon: `<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>` },
-      { title: 'Procesos de calidad', text: 'Cada rollo de cintilla Golden Tree pasa por estrictos controles de calidad y pruebas de rendimiento. Utilizamos materiales de alta resistencia y tecnología avanzada para asegurar durabilidad y eficiencia en cada sistema de riego.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
+      { title: 'Más de 30 años en el mercado mundial', text: 'Nuestra experiencia global nos respalda. Durante más de tres décadas, Golden Tree ha desarrollado soluciones de riego confiables que hoy impulsan la productividad de agricultores en distintos países del mundo.', icon: `<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>` },
+      { title: 'Certificaciones mundiales', text: 'Para garantizar la satisfacción de nuestros clientes con la calidad del servicio y los productos que ofrecemos, contamos con la certificación ISO 9001 de aseguramiento de la calidad y un sistema de gestión cualificado. Por ello, nuestros productos se diseñan, desarrollan y fabrican de acuerdo con nuestras estrictas especificaciones. Confiamos plenamente en que nuestros sistemas de gestión y producción cualificados nos permiten ofrecer productos superiores y el mejor servicio a nuestros valiosos clientes.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
       { title: 'Respaldo en todos los productos', text: 'No solo ofrecemos productos, ofrecemos confianza. Nuestro compromiso es acompañar al agricultor con asesoría, soporte y garantía real, porque sabemos que detrás de cada cultivo hay una inversión que merece protección.', icon: `<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>` },
     ],
     distributorLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47',
+    distributorBody: 'Súmate a la marca que está transformando el sector con sistemas de riego innovadores, rentables y de alta durabilidad. Al convertirte en nuestro aliado, no solo vendes tecnología de punta, sino que aseguras y respaldas la inversión de tus clientes en el campo. ¿Listo para multiplicar tus ventas?',
+    prodsTitle: 'Productos destacados',
     lightTheme: true,
     hideCats: true,
     cats: [],
-    prods: [{ name: 'GT Foliar Pro', tag: 'Nutrición' }, { name: 'GT Raíz Max', tag: 'Nutrición' }, { name: 'GT Bioestim 500', tag: 'Nutrición' }, { name: 'GT Fungicida Plus', tag: 'Nutrición' }],
+    prods: [
+      { name: 'BL015-100-10-3050', tag: 'Bluedrip', spec: 'Cinta Bluedrip 5/8" • Flujo medio 1 lph • Espaciado @10cm • Cal 6 mil • Rollo 3,050 m' },
+      { name: 'BL125-80-20-3660', tag: 'Bluedrip', spec: 'Cinta Bluedrip 5/8" • Flujo bajo 0.8 lph • Espaciado @20cm • Cal 5 mil • Rollo 3,660 m' },
+      { name: 'GSD3-030-080-100', tag: 'Aspersión', spec: 'Cinta GoldenSpray D-3 1.5" • 0.30 mm • 220 lpm • Rollo 100 m' },
+      { name: 'WDE175-130-20-2600', tag: 'WhiteDrip', spec: 'Cinta WhiteDrip pastilla 5/8" • Flujo medio 1.3 lph • Espaciado @20cm • Cal 8 mil • Rollo 2,600 m' },
+      { name: 'BL015-100-20-3050', tag: 'Bluedrip', spec: 'Cinta Bluedrip 5/8" • Flujo medio 1 lph • Espaciado @20cm • Cal 6 mil • Rollo 3,050 m' },
+      { name: 'GR020-100-30-2300', tag: 'GreenDrip', spec: 'Cinta GreenDrip 5/8" • Flujo medio 1 lph • Espaciado @30cm • Cal 8 mil • Rollo 2,300 m' },
+      { name: 'WDL175-100-10-2600', tag: 'WhiteDrip', spec: 'Cinta WhiteDrip laberinto 5/8" • Flujo medio 1 lph • Espaciado @10cm • Cal 8 mil • Rollo 2,600 m' },
+      { name: 'GR015-100-20-280', tag: 'GreenDrip', spec: 'Cinta GreenDrip 5/8" • Flujo medio 1 lph • Espaciado @20cm • Cal 6 mil • Rollo 2,800 m' },
+    ],
   },
   powerhunt: {
     css: 'ph', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
@@ -745,7 +757,7 @@ const renderGenericBrand = (brandId) => {
       <section class="${p}-products">
         <div class="${p}-section-header">
           <span class="${p}-section-eyebrow">Top Productos</span>
-          <h2 class="${p}-section-title">Equipos destacados</h2>
+          <h2 class="${p}-section-title">${cfg.prodsTitle || 'Equipos destacados'}</h2>
           <p class="${p}-section-sub">La herramienta correcta hace la diferencia.</p>
         </div>
         <div class="${p}-prod-grid">
@@ -846,8 +858,7 @@ const renderGenericBrand = (brandId) => {
             Súmate a la <span style="color:${cfg.accentColor};">red de distribución</span> ${cfg.title}
           </h2>
           <p style="font-size:1.1rem;line-height:1.8;margin-bottom:40px;opacity:0.7;color:${cfg.lightTheme ? 'var(--' + p + '-text)' : 'white'};">
-            Forma parte de una marca que está transformando el acceso a herramientas profesionales en México.
-            Maquinaria de alta demanda, soporte constante y respaldo comercial para que tu negocio crezca con nosotros.
+            ${cfg.distributorBody || 'Forma parte de una marca que está transformando el acceso a herramientas profesionales en México. Maquinaria de alta demanda, soporte constante y respaldo comercial para que tu negocio crezca con nosotros.'}
           </p>
           ${cfg.distributorLink
       ? `<a href="${cfg.distributorLink}" target="_blank" rel="noopener" class="${p}-btn-primary" style="text-decoration:none;border-radius:100px;padding:20px 40px;font-size:1rem;display:inline-block;">Conviértete en distribuidor ${cfg.title}</a>`
