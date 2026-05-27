@@ -519,6 +519,142 @@ const brandConfig = {
   },
 };
 
+const getProductIllustration = (p, accentColor, tag, name) => {
+  const normTag = (tag || '').toLowerCase();
+  const normName = (name || '').toLowerCase();
+  let tagId = 'default';
+  let path = '';
+  
+  if (normTag.includes('construc') || normName.includes('revolver') || normName.includes('mezcladora')) {
+    tagId = 'construction';
+    path = `
+      <!-- Drum/Mixer body -->
+      <path d="M35 32 L65 32 L75 52 L25 52 Z" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" stroke-linejoin="round" />
+      <!-- Frame -->
+      <path d="M25 52 L15 78 M75 52 L85 78 M15 78 L85 78 M50 52 L50 78" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" stroke-linecap="round" />
+      <!-- Wheel -->
+      <circle cx="80" cy="42" r="8" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <path d="M80 34 L80 50 M72 42 L88 42" stroke="url(#${p}-stroke-${tagId})" stroke-width="1" />
+    `;
+  } else if (normTag.includes('energ') || normTag.includes('generad') || normName.includes('generad') || normName.includes('gp') || normName.includes('dg') || normName.includes('planta')) {
+    tagId = 'generator';
+    path = `
+      <!-- Cage Frame -->
+      <rect x="25" y="25" width="50" height="50" rx="6" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <!-- Engine detailing (fins) -->
+      <line x1="33" y1="40" x2="67" y2="40" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" stroke-dasharray="2 3" />
+      <line x1="33" y1="48" x2="67" y2="48" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" stroke-dasharray="2 3" />
+      <line x1="33" y1="56" x2="67" y2="56" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" stroke-dasharray="2 3" />
+      <!-- Central Lightning Bolt -->
+      <path d="M53 32 L40 50 L49 50 L45 68 L60 48 L50 48 Z" fill="${accentColor}" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+    `;
+  } else if (normTag.includes('limpie') || normName.includes('hp') || normName.includes('hidro') || normName.includes('limpieza')) {
+    tagId = 'washer';
+    path = `
+      <!-- Gun body -->
+      <path d="M25 65 L30 50 L65 50 M30 50 L33 45 L65 45 M35 50 L38 58" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      <!-- Lance/Barrel -->
+      <line x1="65" y1="47" x2="80" y2="47" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <rect x="80" y="44" width="5" height="6" rx="1" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <!-- Water spray cone -->
+      <path d="M85 47 L95 35 M85 47 L95 59 M87 47 L95 41 M87 47 L95 53" stroke="${accentColor}" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+      <!-- Background glow element -->
+      <circle cx="45" cy="45" r="18" fill="url(#${p}-grad-${tagId})" />
+    `;
+  } else if (normTag.includes('bombeo') || normTag.includes('riego') || normTag.includes('agrícol') || normName.includes('bomba') || normName.includes('manguera') || normName.includes('dwp') || normName.includes('bp') || normName.includes('aspersor') || normName.includes('cintilla')) {
+    tagId = 'pump';
+    path = `
+      <!-- Pump body circle -->
+      <circle cx="45" cy="50" r="18" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <!-- Inlet pipe (bottom) -->
+      <path d="M40 68 L40 82 M50 68 L50 82" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <!-- Outlet pipe (top-right) -->
+      <path d="M58 40 L72 30 M63 46 L77 36" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" fill="none" />
+      <!-- Impeller center and vanes -->
+      <circle cx="45" cy="50" r="4" fill="${accentColor}" />
+      <path d="M45 46 C48 42, 53 45, 53 50 M45 54 C42 58, 37 55, 37 50 M49 50 C53 53, 50 58, 45 58 M41 50 C37 47, 40 42, 45 42" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" stroke-linecap="round" fill="none" />
+      <!-- Water wave lines outside -->
+      <path d="M72 23 Q80 23, 85 28 T95 28" fill="none" stroke="${accentColor}" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    `;
+  } else if (normTag.includes('jard') || normTag.includes('forest') || normTag.includes('corte') || normName.includes('motosierra') || normName.includes('desbrozadora') || normName.includes('wood') || normName.includes('delta') || normName.includes('bt') || normName.includes('cadena') || normName.includes('barra') || normName.includes('aceite')) {
+    tagId = 'garden';
+    path = `
+      <!-- Saw blade -->
+      <circle cx="50" cy="50" r="18" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" stroke-dasharray="2 2" />
+      <!-- Saw teeth -->
+      <path d="M50 30 L53 32 L47 32 Z M64 36 L66 39 L61 41 Z M70 50 L68 53 L68 47 Z M64 64 L61 66 L66 69 Z M50 70 L47 68 L53 68 Z M36 64 L39 61 L34 59 Z M30 50 L32 47 L32 53 Z M36 36 L34 39 L39 41 Z" fill="url(#${p}-stroke-${tagId})" />
+      <!-- Center arbor hole -->
+      <circle cx="50" cy="50" r="3" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <!-- Leaf overlay -->
+      <path d="M50 32 C62 32, 65 44, 50 62 C35 44, 38 32, 50 32 Z" fill="none" stroke="${accentColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M50 32 L50 62" stroke="${accentColor}" stroke-width="1" />
+    `;
+  } else if (normTag.includes('compres') || normName.includes('comp') || normName.includes('compressor')) {
+    tagId = 'compressor';
+    path = `
+      <!-- Tank cylinder -->
+      <rect x="25" y="42" width="50" height="25" rx="10" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <!-- Feet / Wheels -->
+      <circle cx="35" cy="72" r="5" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <line x1="65" y1="67" x2="65" y2="74" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <!-- Gauge -->
+      <circle cx="50" cy="30" r="8" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <path d="M50 30 L55 25" stroke="${accentColor}" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M47 30 A3 3 0 0 1 53 30" stroke="url(#${p}-stroke-${tagId})" stroke-width="1" />
+      <line x1="50" y1="38" x2="50" y2="42" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+    `;
+  } else if (normTag.includes('nutric') || normTag.includes('foliar') || normTag.includes('fertiliz')) {
+    tagId = 'nutrition';
+    path = `
+      <path d="M50 80 L50 30 M50 50 Q65 40, 70 30 Q55 45, 50 50 M50 60 Q35 50, 30 40 Q45 55, 50 60" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" stroke-linecap="round" fill="none" />
+      <circle cx="50" cy="25" r="3" fill="${accentColor}" />
+      <circle cx="72" cy="27" r="2" fill="${accentColor}" />
+      <circle cx="28" cy="37" r="2" fill="${accentColor}" />
+      <circle cx="50" cy="55" r="22" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="1" stroke-dasharray="4 4" />
+    `;
+  } else if (normTag.includes('motor') || normName.includes('motor') || normName.includes('dq')) {
+    tagId = 'motor';
+    path = `
+      <!-- Piston head -->
+      <rect x="35" y="25" width="30" height="20" rx="2" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="2" />
+      <!-- Ring lines -->
+      <line x1="35" y1="31" x2="65" y2="31" stroke="url(#${p}-stroke-${tagId})" stroke-width="1" />
+      <line x1="35" y1="36" x2="65" y2="36" stroke="url(#${p}-stroke-${tagId})" stroke-width="1" />
+      <!-- Piston pin/rod -->
+      <rect x="46" y="45" width="8" height="22" rx="1" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <circle cx="50" cy="45" r="4" fill="none" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" />
+      <circle cx="50" cy="67" r="6" fill="url(#${p}-grad-${tagId})" stroke="${accentColor}" stroke-width="1.5" />
+    `;
+  } else {
+    tagId = 'default';
+    path = `
+      <!-- Shield/Hexagon background -->
+      <polygon points="50,15 80,32 80,68 50,85 20,68 20,32" fill="url(#${p}-grad-${tagId})" stroke="url(#${p}-stroke-${tagId})" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Gear center -->
+      <circle cx="50" cy="50" r="10" fill="none" stroke="${accentColor}" stroke-width="2" />
+      <!-- Gear teeth -->
+      <path d="M50 35 L50 40 M50 60 L50 65 M35 50 L40 50 M60 50 L65 50 M39 39 L43 43 M57 57 L61 61 M61 39 L57 43 M43 57 L39 61" stroke="${accentColor}" stroke-width="2.5" stroke-linecap="round" />
+    `;
+  }
+
+  return `
+    <svg viewBox="0 0 100 100" width="100%" height="100%" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+      <defs>
+        <linearGradient id="${p}-grad-${tagId}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="${accentColor}" stop-opacity="0.05" />
+          <stop offset="100%" stop-color="${accentColor}" stop-opacity="0.2" />
+        </linearGradient>
+        <linearGradient id="${p}-stroke-${tagId}" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+          <stop offset="50%" stop-color="${accentColor}" stop-opacity="1" />
+          <stop offset="100%" stop-color="${accentColor}" stop-opacity="0.2" />
+        </linearGradient>
+      </defs>
+      ${path}
+    </svg>
+  `;
+};
+
 const renderGenericBrand = (brandId) => {
   const cfg = brandConfig[brandId];
   const p = cfg.css;  // prefix: 'par', 'gt', 'ph', 'tak'
@@ -595,7 +731,7 @@ const renderGenericBrand = (brandId) => {
               <div class="${p}-cat-overlay"></div>
               <div class="${p}-cat-content">
                 <div class="${p}-cat-icon">
-                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 4-2 8-2s4 2 8 2v-2c-4 0-4-2-8-2-1.13 0-1.9.16-2.53.33C13.93 11.66 17 8 17 8z"/></svg>
+                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 4-2 8-2s4 2 8 2v-2"/></svg>
                 </div>
                 <div class="${p}-cat-name">${cat.name}</div>
                 <div class="${p}-cat-desc">${cat.desc}</div>
@@ -613,19 +749,83 @@ const renderGenericBrand = (brandId) => {
           <p class="${p}-section-sub">La herramienta correcta hace la diferencia.</p>
         </div>
         <div class="${p}-prod-grid">
-          ${cfg.prods.map(prod => `
-            <div class="${p}-prod-card">
-              <div style="height:180px;background:rgba(0,0,0,.03);border-radius:10px;margin-bottom:20px;display:flex;align-items:center;justify-content:center;">
-                <svg viewBox="0 0 24 24" width="60" height="60" fill="none" stroke="rgba(100,100,100,0.2)" stroke-width="1"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 4-2 8-2s4 2 8 2v-2"/></svg>
+          ${cfg.prods.map(prod => {
+            const hasModel = /^[A-Z0-9.\-|]+$/.test(prod.name);
+            let displayTitle = prod.name;
+            let displayModel = '';
+            
+            if (hasModel) {
+              displayModel = prod.name;
+              if (prod.spec) {
+                const parts = prod.spec.split(/•|—/);
+                displayTitle = parts[0].trim();
+                displayTitle = displayTitle.charAt(0).toUpperCase() + displayTitle.slice(1);
+              } else {
+                if (prod.tag === 'Jardín') displayTitle = 'Equipo de Jardinería';
+                else if (prod.tag === 'Forestal') displayTitle = 'Equipo Forestal';
+                else displayTitle = prod.tag || 'Equipo Especializado';
+              }
+            }
+            
+            let specsHTML = '';
+            if (prod.spec) {
+              const specParts = prod.spec.split(/•|—/);
+              const startIndex = hasModel ? 1 : 0;
+              const actualSpecs = specParts.slice(startIndex).map(s => s.trim()).filter(Boolean);
+              
+              if (actualSpecs.length > 0) {
+                specsHTML = `
+                  <ul class="${p}-prod-spec-list" style="list-style:none;padding:0;margin:15px 0 25px 0;display:flex;flex-direction:column;gap:8px;">
+                    ${actualSpecs.map(specText => `
+                      <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <span>${specText}</span>
+                      </li>
+                    `).join('')}
+                  </ul>
+                `;
+              } else {
+                specsHTML = `<div class="${p}-prod-spec" style="margin:15px 0 25px 0;font-size:0.85rem;color:var(--${p}-muted);line-height:1.6;text-align:left;">${prod.spec}</div>`;
+              }
+            } else {
+              specsHTML = `
+                <ul class="${p}-prod-spec-list" style="list-style:none;padding:0;margin:15px 0 25px 0;display:flex;flex-direction:column;gap:8px;">
+                  <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Alta eficiencia y potencia</span>
+                  </li>
+                  <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Diseño ergonómico y duradero</span>
+                  </li>
+                  <li style="font-size:0.85rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.4;text-align:left;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Refacciones originales en México</span>
+                  </li>
+                </ul>
+              `;
+            }
+
+            return `
+              <div class="${p}-prod-card">
+                <div class="prod-illustration-wrap" style="height:190px;background:rgba(255,255,255,${cfg.lightTheme ? '0.6' : '0.015'});border:1px solid rgba(255,255,255,${cfg.lightTheme ? '0.12' : '0.04'});border-radius:16px;margin-bottom:20px;display:flex;align-items:center;justify-content:center;padding:25px;position:relative;overflow:hidden;box-shadow:inset 0 4px 20px rgba(0,0,0,${cfg.lightTheme ? '0.02' : '0.2'});transition:all 0.4s ease;">
+                  <div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}08 0%, transparent 70%);"></div>
+                  ${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px;width:100%;">
+                  <span class="${p}-prod-tag" style="margin-bottom:0;">${prod.tag}</span>
+                  ${displayModel ? `<span class="model-badge" style="font-family:monospace;font-size:0.7rem;font-weight:700;color:${cfg.accentColor};background:${cfg.accentColor}15;border:1px solid ${cfg.accentColor}40;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;box-shadow: 0 0 8px ${cfg.accentColor}08;">${displayModel}</span>` : ''}
+                </div>
+                <div class="${p}-prod-name" style="font-size:1.15rem;font-weight:800;line-height:1.3;min-height:2.8rem;display:flex;align-items:center;text-align:left;">${displayTitle}</div>
+                ${specsHTML}
+                <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;">
+                  Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+                </a>
               </div>
-              <span class="${p}-prod-tag">${prod.tag}</span>
-              <div class="${p}-prod-name">${prod.name}</div>
-              <div class="${p}-prod-spec">${prod.spec || 'Alta eficiencia • Diseño ergonómico<br>Refacciones disponibles en México'}</div>
-              <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;">
-                Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-              </a>
-            </div>
-          `).join('')}
+            `;
+          }).join('')}
         </div>
       </section>
 
