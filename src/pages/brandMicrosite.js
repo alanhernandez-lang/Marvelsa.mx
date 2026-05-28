@@ -186,61 +186,31 @@ const renderKawashima = () => {
           <p class="kaw-section-sub">Equipos más buscados por el mercado.</p>
         </div>
         <div class="kaw-prod-grid">
-          <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK26_1}" class="active" alt="Aspersor AK 26 - 1">
-              <img loading="lazy" src="${imgAK26_2}" alt="Aspersor AK 26 - 2">
-              <img loading="lazy" src="${imgAK26_3}" alt="Aspersor AK 26 - 3">
-              <div class="carousel-dots"></div>
+          ${[
+            { sku: 'AKH20L',     name: 'Aspersor híbrido 20 lts',           tag: 'Aspersión', spec: 'Motor híbrido / 20 lts<br>Eficiencia y versatilidad en campo abierto' },
+            { sku: 'KPD52TOP',   name: 'Desbrozador PRO 52cc',              tag: 'Jardín',    spec: '52cc / 2 tiempos<br>Potencia profesional para terrenos difíciles' },
+            { sku: 'MAKO65',     name: 'Motosierra Profesional 65cc',       tag: 'Forestal',  spec: '65cc / 2 barras y cadenas de 20 pulg.<br>Máxima potencia para trabajo forestal' },
+            { sku: 'AK5L',       name: 'Aspersor manual 5L',                tag: 'Aspersión', spec: 'Manual / 5 litros<br>Compacto y fácil de operar' },
+            { sku: 'ASK772TPRO', name: 'Pulverizador PRO 77cc 17 Lts',      tag: 'Agrícola',  spec: '77cc / 17 lts<br>Máxima capacidad para aplicación de líquidos' },
+            { sku: 'MKD5220',    name: 'Motosierra Dakota 52cc',            tag: 'Forestal',  spec: '52cc / barra 20 pulg.<br>Kawashima Dakota para cortes profesionales' },
+            { sku: 'AK-35GX',    name: 'Aspersor motorizado profesional',   tag: 'Aspersión', spec: 'Motor a gasolina / Alta potencia<br>Diseñado para grandes superficies agrícolas' },
+            { sku: 'WIND43',     name: 'Soplador de mochila 43cc',          tag: 'Jardín',    spec: '43cc / Mochila ergonómica<br>Potencia y comodidad para limpieza de terrenos' },
+          ].map(prod => `
+            <div class="kaw-prod-card">
+              <div class="kaw-prod-img-wrap" style="height:200px;display:flex;align-items:center;justify-content:center;margin-bottom:25px;background:rgba(255,255,255,0.06);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
+                ${getProductIllustration('kaw', '#CC1111', prod.tag, prod.name)}
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px;">
+                <span class="kaw-prod-tag" style="margin-bottom:0;">${prod.tag}</span>
+                <span style="font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-size:0.62rem;font-weight:700;color:#CC1111;background:rgba(204,17,17,0.12);border:1px solid rgba(204,17,17,0.3);padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">${prod.sku}</span>
+              </div>
+              <div class="kaw-prod-name">${prod.name}</div>
+              <div class="kaw-prod-spec" style="min-height:2.8rem;">${prod.spec}</div>
+              <a href="#" class="kaw-prod-cta" style="text-decoration:none;">
+                Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+              </a>
             </div>
-            <span class="kaw-prod-tag">Aspersión</span>
-            <div class="kaw-prod-name">Aspersor AK 26</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Alta eficiencia en cultivos extensos</div>
-            <a href="https://drive.google.com/file/d/1_cz69JEq-QHj_dGuKpY0JnxQCsl6uIK1/view?usp=drive_link" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
-              Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-            </a>
-          </div>
-          <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgMTK26_1}" class="active" alt="Motobomba MTK 26 - 1">
-              <img loading="lazy" src="${imgMTK26_2}" alt="Motobomba MTK 26 - 2">
-              <img loading="lazy" src="${imgMTK26_3}" alt="Motobomba MTK 26 - 3">
-              <div class="carousel-dots"></div>
-            </div>
-            <span class="kaw-prod-tag">Agrícola</span>
-            <div class="kaw-prod-name">Motobomba MTK 26</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Motor 2 tiempos / 26cc<br>Potencia compacta para trasvase de agua</div>
-            <a href="${pdfMTK26}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
-              Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-            </a>
-          </div>
-          <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgDKM26KN_1}" class="active" alt="Desbrozadora DKM26KN - 1">
-              <img loading="lazy" src="${imgDKM26KN_2}" alt="Desbrozadora DKM26KN - 2">
-              <img loading="lazy" src="${imgDKM26KN_3}" alt="Desbrozadora DKM26KN - 3">
-              <div class="carousel-dots"></div>
-            </div>
-            <span class="kaw-prod-tag">Jardín</span>
-            <div class="kaw-prod-name">Desbrozadora DKM26KN</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">1 HP / 26cc — Tipo D<br>Ligera y versátil para todo terreno</div>
-            <a href="#" class="kaw-prod-cta" style="text-decoration:none;">
-              Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-            </a>
-          </div>
-          <div class="kaw-prod-card">
-            <div class="kaw-prod-img-wrap product-carousel">
-              <img loading="lazy" src="${imgAK20LE_1}" class="active" alt="Aspersor 20LE - 1">
-              <img loading="lazy" src="${imgAK20LE_2}" alt="Aspersor 20LE - 2">
-              <div class="carousel-dots"></div>
-            </div>
-            <span class="kaw-prod-tag">Aspersión</span>
-            <div class="kaw-prod-name">Aspersor Eléctrico AK20LE</div>
-            <div class="kaw-prod-spec" style="min-height:2.8rem;">Eléctrico / 26cc<br>Sin emisiones, máximo rendimiento</div>
-            <a href="${pdfAK20LE}" target="_blank" rel="noopener" class="kaw-prod-cta" style="text-decoration:none;">
-              Ver ficha técnica <svg class="kaw-prod-cta-arrow" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-            </a>
-          </div>
+          `).join('')}
         </div>
       </section>
 
