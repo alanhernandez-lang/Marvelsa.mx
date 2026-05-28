@@ -395,7 +395,7 @@ const brandConfig = {
     ],
     distributorLink: 'https://forms.gle/cVH1y8d3zrDx7XJ47',
     distributorBody: 'Súmate a la marca que está transformando el sector con sistemas de riego innovadores, rentables y de alta durabilidad. Al convertirte en nuestro aliado, no solo vendes tecnología de punta, sino que aseguras y respaldas la inversión de tus clientes en el campo. ¿Listo para multiplicar tus ventas?',
-    prodsTitle: 'Productos destacados',
+    prodsTitle: 'Productos <em>destacados</em>',
     lightTheme: true,
     hideCats: true,
     cats: [],
