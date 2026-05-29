@@ -2410,15 +2410,17 @@ body.theme-kawashima {
 .kaw-cat-img {
   position: absolute;
   inset: 0;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  filter: brightness(0.35) saturate(0.6);
+  background-repeat: no-repeat;
+  background-color: #1a1a1a;
+  filter: brightness(0.5) saturate(0.7);
   transition: all 0.7s ease;
 }
 
 .kaw-cat-card:hover .kaw-cat-img {
-  filter: brightness(0.25) saturate(0.4);
-  transform: scale(1.08);
+  filter: brightness(0.35) saturate(0.5);
+  transform: scale(1.05);
 }
 
 .kaw-cat-overlay {
