@@ -2384,7 +2384,7 @@ body.theme-kawashima {
   height: 450px;
   overflow: hidden;
   cursor: pointer;
-  background: var(--kaw-card);
+  background: transparent;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
