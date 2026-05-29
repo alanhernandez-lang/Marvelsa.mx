@@ -2413,6 +2413,7 @@ body.theme-kawashima {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  filter: brightness(0.35) saturate(0.6);
   transition: all 0.7s ease;
   z-index: 1;
 }
@@ -2434,6 +2435,7 @@ body.theme-kawashima {
 }
 
 .kaw-cat-card:hover .kaw-cat-img {
+  filter: brightness(0.25) saturate(0.4);
   transform: scale(1.05);
 }
 
