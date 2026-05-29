@@ -2417,23 +2417,27 @@ body.theme-kawashima {
   z-index: 1;
 }
 
-.kaw-cat-img::before {
-  content: '';
+.kaw-cat-img-blur,
+.par-cat-img-blur,
+.gt-cat-img-blur,
+.ph-cat-img-blur,
+.tak-cat-img-blur,
+.duc-cat-img-blur,
+.ore-cat-img-blur {
   position: absolute;
-  inset: -30px; /* Bleed out to hide sharp blurred edges */
-  background-image: inherit;
+  inset: -30px;
   background-size: cover;
   background-position: center;
   filter: blur(20px) brightness(0.35);
-  z-index: -1;
   transition: all 0.7s ease;
+  z-index: 0;
 }
 
 .kaw-cat-card:hover .kaw-cat-img {
   transform: scale(1.05);
 }
 
-.kaw-cat-card:hover .kaw-cat-img::before {
+.kaw-cat-card:hover .kaw-cat-img-blur {
   filter: blur(20px) brightness(0.25);
   transform: scale(1.05);
 }
