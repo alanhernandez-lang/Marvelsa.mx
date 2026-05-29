@@ -163,7 +163,6 @@ const renderKawashima = () => {
       { img: imgKawJardin, name: 'JARDÍN', desc: 'Desde desbrozadoras hasta sierras telescópicas, nuestras herramientas ofrecen potencia controlada y comodidad en cada jornada.', subs: 'Desbrozadoras • Sierras • Podadoras' },
     ].map(cat => `
             <div class="kaw-cat-card">
-              <div class="kaw-cat-img-blur" style="background-image:url('${cat.img}');"></div>
               <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
               <div class="kaw-cat-overlay"></div>
               <div class="kaw-cat-content">
@@ -710,7 +709,6 @@ const renderGenericBrand = (brandId) => {
         <div class="${p}-cat-grid">
           ${cfg.cats.map(cat => `
             <div class="${p}-cat-card">
-              <div class="${p}-cat-img-blur" style="background-image:url('${cat.img}');"></div>
               <div class="${p}-cat-img" style="background-image:url('${cat.img}');"></div>
               <div class="${p}-cat-overlay"></div>
               <div class="${p}-cat-content">
