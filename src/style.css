@@ -2413,13 +2413,28 @@ body.theme-kawashima {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #1a1a1a;
-  filter: brightness(0.5) saturate(0.7);
+  transition: all 0.7s ease;
+  z-index: 1;
+}
+
+.kaw-cat-img::before {
+  content: '';
+  position: absolute;
+  inset: -30px; /* Bleed out to hide sharp blurred edges */
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(20px) brightness(0.35);
+  z-index: -1;
   transition: all 0.7s ease;
 }
 
 .kaw-cat-card:hover .kaw-cat-img {
-  filter: brightness(0.35) saturate(0.5);
+  transform: scale(1.05);
+}
+
+.kaw-cat-card:hover .kaw-cat-img::before {
+  filter: blur(20px) brightness(0.25);
   transform: scale(1.05);
 }
 
