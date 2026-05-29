@@ -166,9 +166,6 @@ const renderKawashima = () => {
               <div class="kaw-cat-img" style="background-image:url('${cat.img}');"></div>
               <div class="kaw-cat-overlay"></div>
               <div class="kaw-cat-content">
-                <div class="kaw-cat-icon">
-                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 4-2 8-2s4 2 8 2v-2c-4 0-4-2-8-2-1.13 0-1.9.16-2.53.33C13.93 11.66 17 8 17 8z"/></svg>
-                </div>
                 <div class="kaw-cat-name">${cat.name}</div>
                 <div class="kaw-cat-desc">${cat.desc}</div>
                 <span class="kaw-cat-count">${cat.subs}</span>
@@ -712,9 +709,6 @@ const renderGenericBrand = (brandId) => {
               <div class="${p}-cat-img" style="background-image:url('${cat.img}');"></div>
               <div class="${p}-cat-overlay"></div>
               <div class="${p}-cat-content">
-                <div class="${p}-cat-icon">
-                  <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 4-2 8-2s4 2 8 2v-2"/></svg>
-                </div>
                 <div class="${p}-cat-name">${cat.name}</div>
                 <div class="${p}-cat-desc">${cat.desc}</div>
                 <span class="${p}-cat-count">${cat.subs}</span>
