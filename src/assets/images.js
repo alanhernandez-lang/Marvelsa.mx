@@ -23,6 +23,7 @@ export { default as bgKawashimaFondoNew } from './images/Fondo Kawashima.jpg';
 export { default as bgParazziniFondo }    from './images/ParazziniFondo.jpg';
 export { default as bgGoldenTreeFondo }   from './images/GoldenTreeFondo.jpg';
 export { default as bgPowerHuntFondo }    from './images/PowerHuntFondo.jpg';
+export { default as bgFondoPowerHunt }   from './images/Fondo Power Hunt.png';
 export { default as bgTakashiFondo }      from './images/TakashiFondo.jpg';
 
 export { default as imgKawAgricola }      from './images/AK31-montaje_d.jpg';

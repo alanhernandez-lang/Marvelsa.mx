@@ -4,7 +4,7 @@ import { renderLeadForm } from '../components/LeadForm.js';
 import { getFooterHTML } from '../components/Footer.js';
 import {
   bannerKawashima, bannerGoldenTree, bannerPowerHunt, bannerTakashi, bannerParazzini,
-  bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo,
+  bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo, bgFondoPowerHunt,
   imgKawAgricola, imgKawBosque, imgKawJardin,
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
@@ -378,12 +378,13 @@ const brandConfig = {
     ],
   },
   powerhunt: {
-    css: 'ph', bg: bgPowerHuntFondo, banner: bannerPowerHunt,
-    badge: '⚡ Energía Industrial • México', title: 'POWER HUNT', slogan: 'Energía que Nunca se Detiene',
+    css: 'ph', bg: bgFondoPowerHunt, banner: bannerPowerHunt,
+    badge: '⚡ Maquinaria potente • México', title: 'POWER HUNT', slogan: 'Energía que Nunca se Detiene',
     accentColor: '#005BB5',
     distributorLink: 'https://forms.gle/14HdmMV9jE7ziRsU9',
-    stats: [{ n: '25+', l: 'Años de potencia' }, { n: '4K+', l: 'Equipos instalados', mid: true }, { n: '24/7', l: 'Soporte técnico' }],
-    marquee: ['Generadores', 'Plantas de Luz', 'Motobombas', 'Soldadoras', 'Compresores', 'Energía Confiable'],
+    stats: [{ n: '80+', l: 'Productos' }, { n: '100%', l: 'Refacciones disponibles', mid: true }, { n: '24/7', l: 'Soporte técnico' }],
+    marquee: ['Soldadoras', 'Compresores', 'Generadores', 'Motobombas', 'Aspersores'],
+    introTitle: 'Poder real,<br><em>listo para entrar en acción</em>',
     introCopy: 'Diseñamos herramientas pensadas para quienes valoran lo práctico: equipos accesibles, confiables y listos para entrar en acción. Sea en casa, en el jardín o en el campo, Power Hunt te acompaña con soluciones que rinden en lo cotidiano.',
     features: [
       { title: 'Equipos', label: 'Accesibles', desc: 'Calidad de alto desempeño a un precio justo, para que cualquier persona tenga la herramienta correcta en el momento correcto.', path: 'M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.5 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z' },
