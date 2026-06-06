@@ -5,6 +5,7 @@ import { getFooterHTML } from '../components/Footer.js';
 import {
   bannerKawashima, bannerGoldenTree, bannerPowerHunt, bannerTakashi, bannerParazzini,
   bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo, bgFondoPowerHunt,
+  imgHogarPowerHunt, imgAgricolaPowerHunt, imgJardinPowerHunt,
   imgKawAgricola, imgKawBosque, imgKawJardin,
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
@@ -397,15 +398,24 @@ const brandConfig = {
       { title: 'Herramientas fáciles de usar', text: 'No necesitas ser experto para usarlas. Nuestras herramientas son seguras y pensadas para que cualquiera pueda sacarles provecho desde el primer uso.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
     ],
     cats: [
-      { img: bannerPowerHunt, name: 'HOGAR', desc: 'Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • GENERADORES • MÁS' },
-      { img: bannerKawashima, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • CAMPO' },
-      { img: bannerGoldenTree, name: 'JARDÍN', desc: 'Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • MOTOSIERRAS • MANTENIMIENTO' },
+      { img: imgHogarPowerHunt, name: 'HOGAR', desc: 'Ya sea para limpiar a fondo o tener energía lista cuando se va la luz, nuestras soluciones están hechas para facilitar tu rutina.', subs: 'HIDROLAVADORAS • COMPRESORES • GENERADORES' },
+      { img: imgAgricolaPowerHunt, name: 'AGRÍCOLA', desc: 'Llevamos potencia práctica al trabajo agrícola. Productos listos para acompañarte en cada jornada, desde el riego hasta el traslado de agua.', subs: 'BOMBAS • ASPERSORES • MANGUERA' },
+      { img: imgJardinPowerHunt, name: 'JARDÍN', desc: 'Porque cuidar tu jardín también merece herramientas confiables. Equipos ligeros, funcionales y fáciles de usar.', subs: 'DESBROZADORAS • PODADORAS • MOTOSIERRAS' },
     ],
     prods: [
-      { name: 'Aspersor Mochila APH26', tag: 'Agrícola', pdf: 'https://drive.google.com/file/d/1tnCdSC-Z5bSSwGEehDqIcDmkAGWDnn4F/view' },
-      { name: 'Compresor COMPHKIT25L', tag: 'Compresor', pdf: 'https://drive.google.com/file/d/17WpnevdHCSFYwe5nG5gvYWsNXKLbBSWv/view' },
-      { name: 'Desbrozadora DELTA52', tag: 'Jardín', pdf: 'https://drive.google.com/file/d/1URELYgUdcoJ0HFLozab2AsK2kapvd1T-/view' },
-      { name: 'Manguera MPH-RT-2-100', tag: 'Riego', pdf: 'https://drive.google.com/file/d/1_GsOUq6IDVXjqSn1R2gOkeYOAHoKvc1n/view' },
+      { name: 'HUNT2',       tag: 'Motobomba', spec: 'Motobomba 7 hp 4 tiempos autocebante 2 pulg' },
+      { name: 'COMPHKIT25L', tag: 'Compresor', spec: 'Kit compresor 25L doble conexión rápida • manguera 3mts y pistola de gravedad', pdf: 'https://drive.google.com/file/d/17WpnevdHCSFYwe5nG5gvYWsNXKLbBSWv/view' },
+      { name: 'MONTANA20',   tag: 'Forestal',  spec: 'Motosierra 58 cc con 1 barra y 1 cadena de 20 pulg' },
+      { name: 'GPH1000W',    tag: 'Generador', spec: 'Generador portátil de 64 cc monofásico 1000W 110V' },
+      { name: 'COMPHKIT50L', tag: 'Compresor', spec: 'Compresor 2.5 hp 50 lts con doble conexión rápida • kit de manguera y pistola de gravedad' },
+      { name: 'ELITE52',     tag: 'Jardín',    spec: 'Desbrozador recto de 52 cc con cuernos y eje partido' },
+      { name: 'APH2L',       tag: 'Aspersión', spec: 'Aspersor Manual Power Hunt 2L' },
+    ],
+    newProds: [
+      { name: 'REDWOOD',     tag: 'Nuevo' },
+      { name: 'MPH-RT-4-050', tag: 'Riego' },
+      { name: 'HPH1200E',    tag: 'Hogar' },
+      { name: 'CP80SA',      tag: 'Compresor' },
     ],
   },
   takashi: {
@@ -639,6 +649,49 @@ const renderGenericBrand = (brandId) => {
   const cfg = brandConfig[brandId];
   const p = cfg.css;  // prefix: 'par', 'gt', 'ph', 'tak'
 
+  const buildProdCard = (prod, isNew = false) => {
+    const hasModel = /^[A-Z0-9.\-|]+$/.test(prod.name);
+    let displayTitle = prod.name;
+    let displayModel = '';
+    if (hasModel) {
+      displayModel = prod.name;
+      if (prod.spec) {
+        const parts = prod.spec.split(/•|—/);
+        displayTitle = parts[0].trim();
+        displayTitle = displayTitle.charAt(0).toUpperCase() + displayTitle.slice(1);
+      } else {
+        if (prod.tag === 'Jardín') displayTitle = 'Equipo de Jardinería';
+        else if (prod.tag === 'Forestal') displayTitle = 'Equipo Forestal';
+        else displayTitle = prod.tag || 'Equipo Especializado';
+      }
+    }
+    const specBullet = (text) => `<li style="font-size:0.82rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.5;text-align:left;"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg><span>${text}</span></li>`;
+    let specsItems = [];
+    if (prod.spec) {
+      const allParts = prod.spec.split(/•|—/).map(s => s.trim()).filter(Boolean);
+      specsItems = hasModel && allParts.length > 1 ? allParts.slice(1) : allParts;
+    }
+    if (specsItems.length === 0) specsItems = ['Alta eficiencia y potencia', 'Diseño ergonómico y duradero', 'Refacciones originales en México'];
+    const specsHTML = `<ul style="list-style:none;padding:0;margin:12px 0 0 0;display:flex;flex-direction:column;gap:6px;flex:1;">${specsItems.map(specBullet).join('')}</ul>`;
+    return `
+      <div class="${p}-prod-card" style="position:relative;">
+        ${isNew ? `<div style="position:absolute;top:12px;right:12px;z-index:2;background:${cfg.accentColor};color:white;font-size:0.6rem;font-weight:900;letter-spacing:1.5px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">NUEVO</div>` : ''}
+        <div class="prod-illustration-wrap" style="height:180px;background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;overflow:hidden;transition:all 0.4s ease;">
+          <div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}0A 0%, transparent 70%);"></div>
+          ${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px;">
+          <span class="${p}-prod-tag" style="margin-bottom:0;">${prod.tag}</span>
+          ${displayModel ? `<span style="font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-size:0.65rem;font-weight:700;color:${cfg.accentColor};background:${cfg.accentColor}12;border:1px solid ${cfg.accentColor}30;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">${displayModel}</span>` : ''}
+        </div>
+        <div class="${p}-prod-name" style="font-size:1.1rem;font-weight:800;line-height:1.3;min-height:3rem;display:flex;align-items:flex-start;text-align:left;">${displayTitle}</div>
+        ${specsHTML}
+        <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);">
+          Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </a>
+      </div>`;
+  };
+
   document.getElementById('app').innerHTML = `
     <div id="nav-container"></div>
     <main>
@@ -726,69 +779,21 @@ const renderGenericBrand = (brandId) => {
           <p class="${p}-section-sub">La herramienta correcta hace la diferencia.</p>
         </div>
         <div class="${p}-prod-grid">
-          ${cfg.prods.map(prod => {
-            const hasModel = /^[A-Z0-9.\-|]+$/.test(prod.name);
-            let displayTitle = prod.name;
-            let displayModel = '';
-            
-            if (hasModel) {
-              displayModel = prod.name;
-              if (prod.spec) {
-                const parts = prod.spec.split(/•|—/);
-                displayTitle = parts[0].trim();
-                displayTitle = displayTitle.charAt(0).toUpperCase() + displayTitle.slice(1);
-              } else {
-                if (prod.tag === 'Jardín') displayTitle = 'Equipo de Jardinería';
-                else if (prod.tag === 'Forestal') displayTitle = 'Equipo Forestal';
-                else displayTitle = prod.tag || 'Equipo Especializado';
-              }
-            }
-            
-            // Build specs list
-            const specBullet = (text) => `
-              <li style="font-size:0.82rem;color:var(--${p}-muted);display:flex;align-items:flex-start;gap:8px;line-height:1.5;text-align:left;">
-                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="${cfg.accentColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="margin-top:3px;flex-shrink:0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                <span>${text}</span>
-              </li>`;
-            
-            let specsItems = [];
-            if (prod.spec) {
-              const allParts = prod.spec.split(/•|—/).map(s => s.trim()).filter(Boolean);
-              // If hasModel, skip the first part (used as title); otherwise use all
-              specsItems = hasModel && allParts.length > 1 ? allParts.slice(1) : allParts;
-            }
-            
-            // Fallback defaults if no spec items
-            if (specsItems.length === 0) {
-              specsItems = ['Alta eficiencia y potencia', 'Diseño ergonómico y duradero', 'Refacciones originales en México'];
-            }
-            
-            const specsHTML = `
-              <ul style="list-style:none;padding:0;margin:12px 0 0 0;display:flex;flex-direction:column;gap:6px;flex:1;">
-                ${specsItems.map(specBullet).join('')}
-              </ul>
-            `;
-
-            return `
-              <div class="${p}-prod-card">
-                <div class="prod-illustration-wrap" style="height:180px;background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;overflow:hidden;transition:all 0.4s ease;">
-                  <div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}0A 0%, transparent 70%);"></div>
-                  ${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}
-                </div>
-                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px;">
-                  <span class="${p}-prod-tag" style="margin-bottom:0;">${prod.tag}</span>
-                  ${displayModel ? `<span style="font-family:'SF Mono',SFMono-Regular,Consolas,monospace;font-size:0.65rem;font-weight:700;color:${cfg.accentColor};background:${cfg.accentColor}12;border:1px solid ${cfg.accentColor}30;padding:2px 8px;border-radius:4px;letter-spacing:0.5px;">${displayModel}</span>` : ''}
-                </div>
-                <div class="${p}-prod-name" style="font-size:1.1rem;font-weight:800;line-height:1.3;min-height:3rem;display:flex;align-items:flex-start;text-align:left;">${displayTitle}</div>
-                ${specsHTML}
-                <a href="${prod.pdf || '#'}" ${prod.pdf ? 'target="_blank" rel="noopener"' : ''} class="${p}-prod-cta" style="text-decoration:none;margin-top:auto;padding-top:16px;border-top:1px solid rgba(255,255,255,0.06);">
-                  Ver ficha técnica <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
-                </a>
-              </div>
-            `;
-          }).join('')}
+          ${cfg.prods.map(prod => buildProdCard(prod)).join('')}
         </div>
       </section>
+
+      ${cfg.newProds ? `
+      <section class="${p}-products">
+        <div class="${p}-section-header">
+          <span class="${p}-section-eyebrow">Lanzamiento</span>
+          <h2 class="${p}-section-title">Productos <em>Nuevos</em></h2>
+          <p class="${p}-section-sub">Los últimos equipos en llegar a nuestra línea.</p>
+        </div>
+        <div class="${p}-prod-grid">
+          ${cfg.newProds.map(prod => buildProdCard(prod, true)).join('')}
+        </div>
+      </section>` : ''}
 
       <section style="background:var(--${p}-dark);padding:120px 0;">
         <div style="max-width:1200px;margin:0 auto;padding:0 40px;">

@@ -24,6 +24,9 @@ export { default as bgParazziniFondo }    from './images/ParazziniFondo.jpg';
 export { default as bgGoldenTreeFondo }   from './images/GoldenTreeFondo.jpg';
 export { default as bgPowerHuntFondo }    from './images/PowerHuntFondo.jpg';
 export { default as bgFondoPowerHunt }   from './images/Fondo Power Hunt.png';
+export { default as imgHogarPowerHunt }  from './images/Hogarl Power Hunt.png';
+export { default as imgAgricolaPowerHunt } from './images/Agricola Power Hunt.png';
+export { default as imgJardinPowerHunt } from './images/Jardin Power Hunt.png';
 export { default as bgTakashiFondo }      from './images/TakashiFondo.jpg';
 
 export { default as imgKawAgricola }      from './images/AK31-montaje_d.jpg';
