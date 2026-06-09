@@ -16,16 +16,16 @@ const hexToRgb = (hex) => {
 
 export const brandNewProds = {
   kawashima: [
-    { name: 'KPD43-PLUS', tag: 'Jardín', spec: 'Desbrozador 43cc • 2 tiempos • Eje recto • Arnés profesional incluido' },
-    { name: 'MAKO52-PRO', tag: 'Forestal', spec: 'Motosierra 52cc • Barra 18 pulg • Sistema anti-vibración • Arranque fácil' },
-    { name: 'AKE20L', tag: 'Aspersión', spec: 'Aspersor eléctrico 20 lts • Batería recargable • Motor silencioso • Sin gasolina' },
-    { name: 'KST26-TEL', tag: 'Jardín', spec: 'Sierra telescópica 26cc • Alcance 4 metros • Corte en altura seguro • Multiusos' },
+    { name: 'BK7.530', tag: 'Forestal', spec: 'Equipo profesional • Alta eficiencia • Rendimiento superior' },
+    { name: 'BK1440', tag: 'Agrícola', spec: 'Motor de alto desempeño • Durabilidad probada • Uso rudo' },
+    { name: 'BK2.510', tag: 'Jardín', spec: 'Diseño compacto • Fácil manejo • Mantenimiento sencillo' },
+    { name: 'AT5L', tag: 'Aspersión', spec: 'Cobertura uniforme • Ligero y ergonómico • Uso eficiente' },
   ],
   parazzini: [
-    { name: 'GP5500DI', tag: 'Energía', spec: 'Generador inverter 5500W • Arranque eléctrico • Ultra silencioso • Ahorro de combustible' },
-    { name: 'HP3000E', tag: 'Limpieza', spec: 'Hidrolavadora eléctrica 3000 PSI • Motor brushless • Uso residencial y comercial' },
-    { name: 'MC7HP', tag: 'Agrícola', spec: 'Motocultor 7 HP • 4 tiempos OHV • Ancho de trabajo 85 cm • Cuchillas reforzadas' },
-    { name: 'TL4000LED', tag: 'Construcción', spec: 'Torre de iluminación LED 4000W • Motor diésel • Mástil telescópico 9 m' },
+    { name: 'BAKARAC300-G', tag: 'Industrial', spec: 'Alta capacidad • Resistencia extrema • Uso profesional' },
+    { name: 'HULIGAN03', tag: 'Construcción', spec: 'Máximo rendimiento • Componentes reforzados • Larga vida útil' },
+    { name: 'GPIS5.5KW', tag: 'Energía', spec: 'Generador 5.5KW • Arranque confiable • Energía estable' },
+    { name: 'BSP0.550L', tag: 'Agrícola', spec: 'Precisión superior • Flujo constante • Fácil instalación' },
   ],
   goldentree: [
     { name: 'BL020-120-20-4000', tag: 'Bluedrip', spec: 'Cinta Bluedrip 5/8" • Flujo alto 1.2 lph • Espaciado @20cm • Cal 8 mil • Rollo 4,000 m' },
