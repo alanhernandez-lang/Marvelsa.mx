@@ -427,7 +427,7 @@ const brandConfig = {
     accentColor: '#FF6600',
     distributorLink: 'https://forms.gle/pUAjVxuKtu9rqK3GA',
     stats: [{ n: '50+', l: 'SKU disponibles' }, { n: '2K+', l: 'Distribuidores activos', mid: true }, { n: '100%', l: 'Refacciones garantizadas' }],
-    marquee: ['Maquinaria Agrícola', 'Alta Tecnología', 'Precisión Japonesa', 'Rendimiento Profesional', 'Campo Mexicano', 'Refacciones Disponibles'],
+    marquee: ['Motobombas', 'Desbrozadoras', 'Refacciones', 'Accesorios', 'Campo'],
     introCopy: 'Takashi es una marca de maquinaria ligera y accesible, diseñada para quienes hacen trabajos simples, pero exigen buenos resultados. Nuestras herramientas son prácticas, resistentes y listas para cuando más se necesitan.',
     features: [
       { title: 'Ligera', label: 'y Práctica', desc: 'Sin peso extra, sin complicaciones. Lista para cualquier tarea del día a día sin sacrificar rendimiento.', path: 'M13 2L3 14h9l-1 8 10-12h-9l1-8z' },
