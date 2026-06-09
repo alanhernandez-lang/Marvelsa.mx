@@ -2,6 +2,7 @@ import { brands } from '../data/brands.js';
 import { renderNavbar } from '../components/Navbar.js';
 import { renderLeadForm } from '../components/LeadForm.js';
 import { getFooterHTML } from '../components/Footer.js';
+import { buildNewProductsHTML, brandNewProds } from '../helpers/newProducts.js';
 import {
   bannerKawashima, bannerGoldenTree, bannerPowerHunt, bannerTakashi, bannerParazzini,
   bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo, bgFondoPowerHunt,
@@ -211,6 +212,8 @@ const renderKawashima = () => {
           `).join('')}
         </div>
       </section>
+
+      ${buildNewProductsHTML('kaw', '#CC1111', 'KAWASHIMA', brandNewProds.kawashima, false, getProductIllustration)}
 
       <!-- WHY KAWASHIMA -->
       <section style="background:var(--kaw-dark);padding:120px 0;">
@@ -783,17 +786,7 @@ const renderGenericBrand = (brandId) => {
         </div>
       </section>
 
-      ${cfg.newProds ? `
-      <section class="${p}-products">
-        <div class="${p}-section-header">
-          <span class="${p}-section-eyebrow">Lanzamiento</span>
-          <h2 class="${p}-section-title">Productos <em>Nuevos</em></h2>
-          <p class="${p}-section-sub">Los últimos equipos en llegar a nuestra línea.</p>
-        </div>
-        <div class="${p}-prod-grid">
-          ${cfg.newProds.map(prod => buildProdCard(prod, true)).join('')}
-        </div>
-      </section>` : ''}
+      ${buildNewProductsHTML(p, cfg.accentColor, cfg.title, brandNewProds[brandId], cfg.lightTheme, getProductIllustration)}
 
       <section style="background:var(--${p}-dark);padding:120px 0;">
         <div style="max-width:1200px;margin:0 auto;padding:0 40px;">
