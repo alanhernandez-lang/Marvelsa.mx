@@ -8549,8 +8549,38 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
 }
 
 @media (max-width: 900px) {
-  .np-grid {
-    grid-template-columns: 1fr;
+  /* Horizontal Scroll (Swipe) Layout for ALL Product Grids on Mobile */
+  .np-grid,
+  .kaw-prod-grid, .par-prod-grid, .gt-prod-grid, 
+  .ph-prod-grid, .tak-prod-grid, .duc-prod-grid, .ore-prod-grid {
+    display: flex !important;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+  }
+  
+  .np-grid::-webkit-scrollbar,
+  .kaw-prod-grid::-webkit-scrollbar, .par-prod-grid::-webkit-scrollbar, 
+  .gt-prod-grid::-webkit-scrollbar, .ph-prod-grid::-webkit-scrollbar, 
+  .tak-prod-grid::-webkit-scrollbar, .duc-prod-grid::-webkit-scrollbar, 
+  .ore-prod-grid::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/Opera */
+  }
+
+  .np-card {
+    flex: 0 0 85vw !important;
+    min-width: 300px;
+    scroll-snap-align: start;
+  }
+
+  .kaw-prod-card, .par-prod-card, .gt-prod-card, 
+  .ph-prod-card, .tak-prod-card, .duc-prod-card, .ore-prod-card {
+    flex: 0 0 80vw !important;
+    min-width: 260px;
+    scroll-snap-align: start;
   }
 }
 
