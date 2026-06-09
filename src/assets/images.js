@@ -29,7 +29,7 @@ export { default as imgAgricolaPowerHunt } from './images/Agricola Power Hunt.pn
 export { default as imgJardinPowerHunt } from './images/Jardin Power Hunt.png';
 export { default as bgTakashiFondo }      from './images/TakashiFondo.jpg';
 
-export { default as imgKawAgricola }      from './images/AK31-montaje_d.jpg';
+export { default as imgKawAgricola }      from './images/Agricola Cat.png';
 export { default as imgKawBosque }        from './images/Bosque.jpg';
 export { default as imgKawJardin }        from './images/Jardin.jpg';
 
