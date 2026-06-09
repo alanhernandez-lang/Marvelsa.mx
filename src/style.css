@@ -2410,7 +2410,7 @@ body.theme-kawashima {
 .kaw-cat-img {
   position: absolute;
   inset: 0;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: brightness(0.35) saturate(0.6);
