@@ -2381,7 +2381,7 @@ body.theme-kawashima {
 
 .kaw-cat-card {
   position: relative;
-  height: 450px;
+  aspect-ratio: 1.45;
   overflow: hidden;
   cursor: pointer;
   background: transparent;
@@ -2434,7 +2434,7 @@ body.theme-kawashima {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 50px 40px;
+  padding: 30px;
   z-index: 5;
   transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
