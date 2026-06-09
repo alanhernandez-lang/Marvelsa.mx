@@ -8531,28 +8531,17 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
 }
 
 .np-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 30px;
   padding: 0 40px 40px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
-}
-
-.np-grid::-webkit-scrollbar {
-  display: none; /* Chrome/Safari/Opera */
 }
 
 .np-card {
-  flex: 0 0 calc(50% - 15px);
-  min-width: 450px;
-  scroll-snap-align: start;
   position: relative;
   border-radius: 24px;
   padding: 2px; /* For glow border */
-  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
   animation: np-slide-up 0.8s ease forwards;
   animation-delay: var(--np-delay);
   opacity: 0;
@@ -8560,9 +8549,8 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
 }
 
 @media (max-width: 900px) {
-  .np-card {
-    flex: 0 0 85vw;
-    min-width: 300px;
+  .np-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -8574,14 +8562,16 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background: conic-gradient(from 180deg at 50% 50%, transparent 0deg, rgba(var(--np-rgb), 0.1) 180deg, var(--np-accent) 360deg);
+  background: rgba(var(--np-rgb), 0.1);
+  border: 1px solid rgba(var(--np-rgb), 0.3);
   opacity: 0;
-  transition: opacity 0.4s ease;
-  animation: np-spin 4s linear infinite;
+  transition: opacity 0.4s ease, border-color 0.4s ease;
 }
 
 .np-card:hover .np-card-glow {
   opacity: 1;
+  background: rgba(var(--np-rgb), 0.15);
+  border-color: var(--np-accent);
 }
 
 .np-card-bg {
