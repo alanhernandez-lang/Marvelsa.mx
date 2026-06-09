@@ -8592,17 +8592,17 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
   position: absolute;
   inset: 0;
   border-radius: 24px;
-  background: linear-gradient(135deg, rgba(var(--np-rgb), 0.05) 0%, rgba(var(--np-rgb), 0.25) 50%, rgba(var(--np-rgb), 0.05) 100%);
-  background-size: 200% 200%;
+  background: radial-gradient(circle at center, rgba(var(--np-rgb), 0.25) 0%, rgba(var(--np-rgb), 0.05) 100%);
   border: 1px solid rgba(var(--np-rgb), 0.3);
   opacity: 0;
-  transition: opacity 0.5s ease, border-color 0.5s ease;
+  transform: scale(0.5);
+  transition: opacity 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.5s ease;
 }
 
 .np-card:hover .np-card-glow {
   opacity: 1;
+  transform: scale(1);
   border-color: var(--np-accent);
-  animation: np-gradient-shift 3s ease infinite;
 }
 
 .np-card-bg {
