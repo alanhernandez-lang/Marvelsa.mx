@@ -8,6 +8,7 @@ import {
   bgKawashimaFondoNew, bgParazziniFondo, bgGoldenTreeFondo, bgPowerHuntFondo, bgTakashiFondo, bgFondoPowerHunt,
   imgHogarPowerHunt, imgAgricolaPowerHunt, imgJardinPowerHunt,
   imgKawAgricola, imgKawBosque, imgKawJardin,
+  imgTakBosque, imgTakAgricola, imgTakJardin,
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
   imgDKM26KN_1, imgDKM26KN_2, imgDKM26KN_3,
@@ -441,9 +442,9 @@ const brandConfig = {
       { title: 'Herramientas prácticas para trabajos reales', text: 'Takashi no es lujo innecesario, es funcionalidad pura. Diseñamos cada equipo pensando en quienes necesitan resolver tareas concretas con eficiencia, sin complicarse ni gastar de más.', icon: `<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>` },
     ],
     cats: [
-      { img: bannerTakashi, name: 'FORESTAL', desc: 'Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable, fácil de usar y siempre lista para responder.', subs: 'MOTOSIERRAS • CORTE • PODA' },
-      { img: bannerPowerHunt, name: 'AGRÍCOLA', desc: 'Takashi ofrece aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales para tareas de riego ligero o traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • RIEGO' },
-      { img: bannerKawashima, name: 'JARDÍN', desc: 'Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar, son la opción ideal para trabajos de mantenimiento con buenos resultados.', subs: 'DESBROZADORAS • MANTENIMIENTO • JARDÍN' },
+      { img: imgTakBosque, name: 'BOSQUE', desc: 'Nuestras motosierras están diseñadas para tareas de baja a media exigencia, ideales para quienes necesitan una herramienta confiable, fácil de usar y siempre lista para responder.', subs: 'MOTOSIERRAS • CORTE • PODA' },
+      { img: imgTakAgricola, name: 'AGRÍCOLA', desc: 'Takashi ofrece aspersores de mochila y motobombas pensadas para las necesidades del campo. Productos prácticos, duraderos y funcionales para tareas de riego ligero o traslado de agua.', subs: 'ASPERSORES • MOTOBOMBAS • RIEGO' },
+      { img: imgTakJardin, name: 'JARDÍN', desc: 'Con nuestras desbrozadoras mantén tu jardín o terreno limpio y en orden. Ligeras, cómodas y fáciles de usar, son la opción ideal para trabajos de mantenimiento con buenos resultados.', subs: 'DESBROZADORAS • MANTENIMIENTO • JARDÍN' },
     ],
     prods: [
       { name: 'BT6.520', tag: 'Jardín', pdf: 'https://drive.google.com/file/d/1OkK0msXI9BLhczDtKVo5XM222Osq-w-F/view' },

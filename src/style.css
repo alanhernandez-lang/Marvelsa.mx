@@ -5719,8 +5719,9 @@ body.theme-takashi {
 .tak-cat-img {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: center bottom;
+  background-repeat: no-repeat;
   filter: brightness(0.25) saturate(0.3);
   transition: all 0.7s ease;
 }
