@@ -33,9 +33,9 @@ export { default as imgKawAgricola }      from './images/Agricola Cat.png';
 export { default as imgKawBosque }        from './images/Bosque.jpg';
 export { default as imgKawJardin }        from './images/Jardin.jpg';
 
-export { default as imgTakBosque }        from './images/Bosque Takashi.png';
-export { default as imgTakAgricola }      from './images/Agricola Takashi.png';
-export { default as imgTakJardin }        from './images/Jardin Takashi.png';
+export { default as imgTakBosque }        from './images/Bosque Takashi.jpg';
+export { default as imgTakAgricola }      from './images/Agricola Takashi.jpg';
+export { default as imgTakJardin }        from './images/Jardin Takashi.jpg';
 
 export { default as imgAK26_1 }           from './images/AK26-1.jpg';
 export { default as imgAK26_2 }           from './images/AK26-2.jpg';
