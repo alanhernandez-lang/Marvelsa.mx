@@ -45,11 +45,11 @@ const makeSectionObserver = (cardSelector) => {
 
 const initProductCarousels = () => {
   document.querySelectorAll('.product-carousel').forEach(carousel => {
-    const images = carousel.querySelectorAll('img');
+    const slides = carousel.querySelectorAll('.pc-slide');
     const dotsContainer = carousel.querySelector('.carousel-dots');
-    if (images.length <= 1) return;
+    if (slides.length <= 1) return;
 
-    images.forEach((_, i) => {
+    slides.forEach((_, i) => {
       const dot = document.createElement('div');
       dot.className = `carousel-dot ${i === 0 ? 'active' : ''}`;
       dotsContainer.appendChild(dot);
@@ -61,25 +61,25 @@ const initProductCarousels = () => {
 
     const show = (next) => {
       const prev = current;
-      images[prev].classList.remove('active');
-      images[prev].classList.add('exit');
+      slides[prev].classList.remove('active');
+      slides[prev].classList.add('exit');
       dots[prev].classList.remove('active');
       current = next;
-      images[current].classList.remove('exit');
-      images[current].classList.add('active');
+      slides[current].classList.remove('exit');
+      slides[current].classList.add('active');
       dots[current].classList.add('active');
-      setTimeout(() => images[prev].classList.remove('exit'), 800);
+      setTimeout(() => slides[prev].classList.remove('exit'), 600);
     };
 
     const startInterval = () => {
       clearInterval(interval);
       interval = setInterval(() => {
         if (!document.contains(carousel)) { clearInterval(interval); return; }
-        show((current + 1) % images.length);
+        show((current + 1) % slides.length);
       }, 4000);
     };
 
-    carousel.addEventListener('click', e => { e.stopPropagation(); show((current + 1) % images.length); startInterval(); });
+    carousel.addEventListener('click', e => { e.stopPropagation(); show((current + 1) % slides.length); startInterval(); });
     startInterval();
   });
 };
@@ -201,7 +201,7 @@ const renderKawashima = () => {
               <div class="kaw-prod-img-wrap" style="height:220px;margin-bottom:25px;border-radius:12px;overflow:hidden;${prod.imgs ? 'background:#fff;' : 'background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;'}">
                 ${prod.imgs ? `
                 <div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">
-                  ${prod.imgs.map((src, i) => `<img src="${src}" alt="${prod.name}" class="${i === 0 ? 'active' : ''}">`).join('')}
+                  ${prod.imgs.map((src, i) => `<div class="pc-slide${i === 0 ? ' active' : ''}"><img src="${src}" alt="${prod.name}"></div>`).join('')}
                   <div class="carousel-dots"></div>
                 </div>` : getProductIllustration('kaw', '#CC1111', prod.tag, prod.name)}
               </div>
