@@ -37,6 +37,10 @@ export { default as imgTakBosque }        from './images/Bosque Takashi.jpg';
 export { default as imgTakAgricola }      from './images/Agricola Takashi.jpg';
 export { default as imgTakJardin }        from './images/Jardin Takashi.jpg';
 
+export { default as imgAKH20L_A }         from './images/AKH20L_A.png';
+export { default as imgAKH20L_B }         from './images/AKH20L_B.png';
+export { default as imgAKH20L_C }         from './images/AKH20L_C.png';
+
 export { default as imgAK26_1 }           from './images/AK26-1.jpg';
 export { default as imgAK26_2 }           from './images/AK26-2.jpg';
 export { default as imgAK26_3 }           from './images/AK26-3.jpg';

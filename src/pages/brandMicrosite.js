@@ -9,6 +9,7 @@ import {
   imgHogarPowerHunt, imgAgricolaPowerHunt, imgJardinPowerHunt,
   imgKawAgricola, imgKawBosque, imgKawJardin,
   imgTakBosque, imgTakAgricola, imgTakJardin,
+  imgAKH20L_A, imgAKH20L_B, imgAKH20L_C,
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
   imgDKM26KN_1, imgDKM26KN_2, imgDKM26KN_3,
@@ -187,7 +188,7 @@ const renderKawashima = () => {
         </div>
         <div class="kaw-prod-grid">
           ${[
-            { sku: 'AKH20L',     name: 'Aspersor híbrido 20 lts',           tag: 'Aspersión', spec: 'Motor híbrido / 20 lts<br>Eficiencia y versatilidad en campo abierto' },
+            { sku: 'AKH20L',     name: 'Aspersor híbrido 20 lts',           tag: 'Aspersión', spec: 'Motor híbrido / 20 lts<br>Eficiencia y versatilidad en campo abierto', imgs: [imgAKH20L_A, imgAKH20L_B, imgAKH20L_C] },
             { sku: 'KPD52TOP',   name: 'Desbrozador PRO 52cc',              tag: 'Jardín',    spec: '52cc / 2 tiempos<br>Potencia profesional para terrenos difíciles' },
             { sku: 'MAKO65',     name: 'Motosierra Profesional 65cc',       tag: 'Forestal',  spec: '65cc / 2 barras y cadenas de 20 pulg.<br>Máxima potencia para trabajo forestal' },
             { sku: 'AK5L',       name: 'Aspersor manual 5L',                tag: 'Aspersión', spec: 'Manual / 5 litros<br>Compacto y fácil de operar' },
@@ -198,7 +199,11 @@ const renderKawashima = () => {
           ].map(prod => `
             <div class="kaw-prod-card">
               <div class="kaw-prod-img-wrap" style="height:200px;display:flex;align-items:center;justify-content:center;margin-bottom:25px;background:rgba(255,255,255,0.06);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
-                ${getProductIllustration('kaw', '#CC1111', prod.tag, prod.name)}
+                ${prod.imgs ? `
+                <div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">
+                  ${prod.imgs.map((src, i) => `<img src="${src}" alt="${prod.name}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8px;transition:opacity 0.4s;opacity:${i === 0 ? 1 : 0};">`).join('')}
+                  <div class="carousel-dots" style="position:absolute;bottom:6px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2;"></div>
+                </div>` : getProductIllustration('kaw', '#CC1111', prod.tag, prod.name)}
               </div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px;">
                 <span class="kaw-prod-tag" style="margin-bottom:0;">${prod.tag}</span>
