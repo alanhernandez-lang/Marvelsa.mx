@@ -202,7 +202,7 @@ const renderKawashima = () => {
                 ${prod.imgs ? `
                 <div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">
                   ${prod.imgs.map((src, i) => `<img src="${src}" alt="${prod.name}" class="${i === 0 ? 'active' : ''}">`).join('')}
-                  <div class="carousel-dots" style="position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;"></div>
+                  <div class="carousel-dots"></div>
                 </div>` : getProductIllustration('kaw', '#CC1111', prod.tag, prod.name)}
               </div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px;">

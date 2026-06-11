@@ -2251,12 +2251,13 @@ body.theme-kawashima {
 
 .product-carousel img {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center center;
-  padding: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: calc(100% - 32px);
+  max-height: calc(100% - 32px);
+  width: auto;
+  height: auto;
   opacity: 0;
   transition: opacity 0.5s ease;
   pointer-events: none;
@@ -2615,9 +2616,10 @@ body.theme-kawashima {
 .carousel-dots {
   position: absolute;
   bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  right: 0;
   display: flex;
+  justify-content: center;
   gap: 6px;
   z-index: 5;
 }
