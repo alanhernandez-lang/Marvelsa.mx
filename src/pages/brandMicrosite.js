@@ -198,11 +198,11 @@ const renderKawashima = () => {
             { sku: 'WIND43',     name: 'Soplador de mochila 43cc',          tag: 'Jardín',    spec: '43cc / Mochila ergonómica<br>Potencia y comodidad para limpieza de terrenos' },
           ].map(prod => `
             <div class="kaw-prod-card">
-              <div class="kaw-prod-img-wrap" style="height:200px;display:flex;align-items:center;justify-content:center;margin-bottom:25px;background:rgba(255,255,255,0.06);border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.08);">
+              <div class="kaw-prod-img-wrap" style="height:220px;margin-bottom:25px;border-radius:12px;overflow:hidden;${prod.imgs ? 'background:#fff;' : 'background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;'}">
                 ${prod.imgs ? `
                 <div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">
-                  ${prod.imgs.map((src, i) => `<img src="${src}" alt="${prod.name}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:8px;transition:opacity 0.4s;opacity:${i === 0 ? 1 : 0};">`).join('')}
-                  <div class="carousel-dots" style="position:absolute;bottom:6px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2;"></div>
+                  ${prod.imgs.map((src, i) => `<img src="${src}" alt="${prod.name}" class="${i === 0 ? 'active' : ''}">`).join('')}
+                  <div class="carousel-dots" style="position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;"></div>
                 </div>` : getProductIllustration('kaw', '#CC1111', prod.tag, prod.name)}
               </div>
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px;">

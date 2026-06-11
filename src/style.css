@@ -2247,7 +2247,6 @@ body.theme-kawashima {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  perspective: 1000px;
 }
 
 .product-carousel img {
@@ -2257,21 +2256,19 @@ body.theme-kawashima {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  padding: 12px;
   opacity: 0;
-  transform: translateX(50px) scale(0.9) rotateY(15deg);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s ease;
   pointer-events: none;
 }
 
 .product-carousel img.active {
   opacity: 1;
-  transform: translateX(0) scale(1) rotateY(0);
   pointer-events: auto;
 }
 
 .product-carousel img.exit {
   opacity: 0;
-  transform: translateX(-50px) scale(0.9) rotateY(-15deg);
 }
 
 .kaw-feature-item {
