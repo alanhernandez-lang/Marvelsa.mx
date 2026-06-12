@@ -14,7 +14,7 @@ import {
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
   imgDKM26KN_1, imgDKM26KN_2, imgDKM26KN_3,
   imgKPD52TOP_A, imgKPD52TOP_B, imgKPD52TOP_C,
-  imgMAKO65_A, imgMAKO65_B,
+  imgMAKO65_A,
   imgAK5L_A, imgAK5L_B,
   imgASK772TPRO_A, imgASK772TPRO_B, imgASK772TPRO_C,
   imgMKD5220_A, imgMKD5220_B, imgMKD5220_C,
@@ -197,7 +197,7 @@ const renderKawashima = () => {
           ${[
             { sku: 'AKH20L',     name: 'Aspersor híbrido 20 lts',           tag: 'Aspersión', spec: 'Motor híbrido / 20 lts<br>Eficiencia y versatilidad en campo abierto', imgs: [imgAKH20L_A, imgAKH20L_B, imgAKH20L_C] },
             { sku: 'KPD52TOP',   name: 'Desbrozador PRO 52cc',              tag: 'Jardín',    spec: '52cc / 2 tiempos<br>Potencia profesional para terrenos difíciles',                                           imgs: [imgKPD52TOP_A, imgKPD52TOP_B, imgKPD52TOP_C] },
-            { sku: 'MAKO65',     name: 'Motosierra Profesional 65cc',       tag: 'Forestal',  spec: '65cc / 2 barras y cadenas de 20 pulg.<br>Máxima potencia para trabajo forestal',                    imgs: [imgMAKO65_A, imgMAKO65_B] },
+            { sku: 'MAKO65',     name: 'Motosierra Profesional 65cc',       tag: 'Forestal',  spec: '65cc / 2 barras y cadenas de 20 pulg.<br>Máxima potencia para trabajo forestal',                    imgs: [imgMAKO65_A] },
             { sku: 'AK5L',       name: 'Aspersor manual 5L',                tag: 'Aspersión', spec: 'Manual / 5 litros<br>Compacto y fácil de operar',                                                    imgs: [imgAK5L_A, imgAK5L_B] },
             { sku: 'ASK772TPRO', name: 'Pulverizador PRO 77cc 17 Lts',      tag: 'Agrícola',  spec: '77cc / 17 lts<br>Máxima capacidad para aplicación de líquidos',          imgs: [imgASK772TPRO_A, imgASK772TPRO_B, imgASK772TPRO_C] },
             { sku: 'MKD5220',    name: 'Motosierra Dakota 52cc',            tag: 'Forestal',  spec: '52cc / barra 20 pulg.<br>Kawashima Dakota para cortes profesionales',     imgs: [imgMKD5220_A, imgMKD5220_B, imgMKD5220_C] },
