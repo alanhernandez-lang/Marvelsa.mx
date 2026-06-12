@@ -204,9 +204,6 @@ const renderKawashima = () => {
             { sku: 'MKD5220',    name: 'Motosierra Dakota 52cc',            tag: 'Forestal',  spec: '52cc / barra 20 pulg.<br>Kawashima Dakota para cortes profesionales',     imgs: [imgMKD5220_A, imgMKD5220_B, imgMKD5220_C] },
             { sku: 'AK-35GX',    name: 'Aspersor motorizado profesional',   tag: 'Aspersión', spec: 'Motor a gasolina / Alta potencia<br>Diseñado para grandes superficies agrícolas', imgs: [imgAK35GX_A, imgAK35GX_B, imgAK35GX_C] },
             { sku: 'WIND43',     name: 'Soplador de mochila 43cc',          tag: 'Jardín',    spec: '43cc / Mochila ergonómica<br>Potencia y comodidad para limpieza de terrenos',  imgs: [imgWIND43_A] },
-            { sku: 'BK7.530',   name: 'Motobomba Autocebante 3" 7.5 HP',   tag: 'Bombeo',    spec: '7.5 HP / 3 pulg. / Aluminio<br>25 m altura · 60 m³/h',                          imgs: [imgBK7530_A] },
-            { sku: 'BK1440',    name: 'Motobomba Autocebante 4" 14 HP',    tag: 'Bombeo',    spec: '14 HP / 4 pulg. / Aluminio<br>27 m altura · 85 m³/h',                           imgs: [imgBK1440_A] },
-            { sku: 'BK2.510',   name: 'Motobomba Portátil 1" 2.5 HP',      tag: 'Bombeo',    spec: '2.5 HP / 1 pulg. / Aluminio<br>26 m altura · 12 m³/h',                          imgs: [imgBK2510_A] },
           ].map(prod => `
             <div class="kaw-prod-card">
               <div class="kaw-prod-img-wrap" style="height:220px;margin-bottom:25px;border-radius:12px;overflow:hidden;${prod.imgs ? 'background:#f0f0ee;' : 'background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;'}">
@@ -230,7 +227,12 @@ const renderKawashima = () => {
         </div>
       </section>
 
-      ${buildNewProductsHTML('kaw', '#CC1111', 'KAWASHIMA', brandNewProds.kawashima, false, getProductIllustration)}
+      ${buildNewProductsHTML('kaw', '#CC1111', 'KAWASHIMA', brandNewProds.kawashima.map(p => {
+        if (p.name === 'BK7.530') return { ...p, img: imgBK7530_A };
+        if (p.name === 'BK1440')  return { ...p, img: imgBK1440_A };
+        if (p.name === 'BK2.510') return { ...p, img: imgBK2510_A };
+        return p;
+      }), false, getProductIllustration)}
 
       <!-- WHY KAWASHIMA -->
       <section style="background:var(--kaw-dark);padding:120px 0;">

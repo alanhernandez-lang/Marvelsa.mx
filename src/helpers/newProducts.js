@@ -16,10 +16,10 @@ const hexToRgb = (hex) => {
 
 export const brandNewProds = {
   kawashima: [
-    { name: 'BK7.530', tag: 'Forestal', spec: 'Equipo profesional • Alta eficiencia • Rendimiento superior' },
-    { name: 'BK1440', tag: 'Agrícola', spec: 'Motor de alto desempeño • Durabilidad probada • Uso rudo' },
-    { name: 'BK2.510', tag: 'Jardín', spec: 'Diseño compacto • Fácil manejo • Mantenimiento sencillo' },
-    { name: 'AT5L', tag: 'Aspersión', spec: 'Cobertura uniforme • Ligero y ergonómico • Uso eficiente' },
+    { name: 'BK7.530', tag: 'Bombeo', spec: 'Motobomba autocebante 3" • 7.5 HP • 25 m altura • 60 m³/h' },
+    { name: 'BK1440',  tag: 'Bombeo', spec: 'Motobomba autocebante 4" • 14 HP • 27 m altura • 85 m³/h' },
+    { name: 'BK2.510', tag: 'Bombeo', spec: 'Motobomba portátil 1" • 2.5 HP • 26 m altura • 12 m³/h' },
+    { name: 'AT5L',    tag: 'Aspersión', spec: 'Cobertura uniforme • Ligero y ergonómico • Uso eficiente' },
   ],
   parazzini: [
     { name: 'BAKARAC300-G', tag: 'Industrial', spec: 'Alta capacidad • Resistencia extrema • Uso profesional' },
@@ -90,8 +90,10 @@ export const buildNewProductsHTML = (p, accentColor, brandTitle, newProds, isLig
         <div class="np-card-bg"></div>
         <div class="np-card-content">
           <div class="np-badge-nuevo">✦ NUEVO</div>
-          <div class="np-card-visual">
-            ${illustrationFn(p, accentColor, prod.tag, prod.name)}
+          <div class="np-card-visual" style="${prod.img ? 'background:#f0f0ee;border-radius:8px;overflow:hidden;' : ''}">
+            ${prod.img
+              ? `<img src="${prod.img}" alt="${prod.name}" style="width:100%;height:100%;object-fit:cover;display:block;">`
+              : illustrationFn(p, accentColor, prod.tag, prod.name)}
           </div>
           <div class="np-card-info">
             <div class="np-card-tag-row">
