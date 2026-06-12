@@ -69,7 +69,7 @@ export { default as imgASK772TPRO_C }     from './images/ASK772TPRO_C.png';
 export { default as imgMKD5220_A }        from './images/MKD5220_A.png';
 export { default as imgMKD5220_B }        from './images/MKD5220_B.png';
 export { default as imgMKD5220_C }        from './images/MKD5220_C.png';
-export { default as imgAK35GX_A }         from './images/AK-35GX _A.png';
+export { default as imgAK35GX_A }         from './images/AK-35GX_A.png';
 export { default as imgAK35GX_B }         from './images/AK-35GX _B.png';
 export { default as imgAK35GX_C }         from './images/AK-35GX_C.png';
 export { default as imgWIND43_A }         from './images/WIND43_A.png';
