@@ -77,3 +77,4 @@ export { default as imgWIND43_A }         from './images/WIND43_A.png';
 export { default as imgBK7530_A }         from './images/BK7.530_A.png';
 export { default as imgBK1440_A }         from './images/BK1440_A.png';
 export { default as imgBK2510_A }         from './images/BK2.510_A.png';
+export { default as imgAKT5L_A }          from './images/AKT5L_A.png';

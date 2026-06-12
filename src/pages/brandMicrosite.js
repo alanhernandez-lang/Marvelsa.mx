@@ -20,7 +20,7 @@ import {
   imgMKD5220_A, imgMKD5220_B, imgMKD5220_C,
   imgAK35GX_A, imgAK35GX_B, imgAK35GX_C,
   imgWIND43_A,
-  imgBK7530_A, imgBK1440_A, imgBK2510_A,
+  imgBK7530_A, imgBK1440_A, imgBK2510_A, imgAKT5L_A,
 } from '../assets/images.js';
 
 /* ─── shared helpers ─── */
@@ -231,6 +231,7 @@ const renderKawashima = () => {
         if (p.name === 'BK7.530') return { ...p, img: imgBK7530_A };
         if (p.name === 'BK1440')  return { ...p, img: imgBK1440_A };
         if (p.name === 'BK2.510') return { ...p, img: imgBK2510_A };
+        if (p.name === 'AT5L')    return { ...p, img: imgAKT5L_A };
         return p;
       }), false, getProductIllustration)}
 
