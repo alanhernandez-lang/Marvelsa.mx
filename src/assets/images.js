@@ -54,3 +54,11 @@ export { default as pdfAK20LE }           from './pdfs/ka_2025_ficha_comercial_A
 export { default as imgDKM26KN_1 }        from './images/DKM26KN_01.jpg';
 export { default as imgDKM26KN_2 }        from './images/DKM26KN_02.jpg';
 export { default as imgDKM26KN_3 }        from './images/DKM26KN_03.jpg';
+
+export { default as imgKPD52TOP_A }       from './images/KPD52TOP_A.png';
+export { default as imgKPD52TOP_B }       from './images/KPD52TOP_B.png';
+export { default as imgKPD52TOP_C }       from './images/KPD52TOP_C.png';
+export { default as imgMAKO65_A }         from './images/MAKO65_A.png';
+export { default as imgMAKO65_B }         from './images/MAKO65_B.png';
+export { default as imgAK5L_A }           from './images/AK5L_A.png';
+export { default as imgAK5L_B }           from './images/AK5L.B.png';

@@ -13,6 +13,9 @@ import {
   imgAK26_1, imgAK26_2, imgAK26_3, imgAK20LE_1, imgAK20LE_2,
   imgMTK26_1, imgMTK26_2, imgMTK26_3, pdfMTK26, pdfAK20LE,
   imgDKM26KN_1, imgDKM26KN_2, imgDKM26KN_3,
+  imgKPD52TOP_A, imgKPD52TOP_B, imgKPD52TOP_C,
+  imgMAKO65_A, imgMAKO65_B,
+  imgAK5L_A, imgAK5L_B,
 } from '../assets/images.js';
 
 /* ─── shared helpers ─── */
@@ -189,9 +192,9 @@ const renderKawashima = () => {
         <div class="kaw-prod-grid">
           ${[
             { sku: 'AKH20L',     name: 'Aspersor híbrido 20 lts',           tag: 'Aspersión', spec: 'Motor híbrido / 20 lts<br>Eficiencia y versatilidad en campo abierto', imgs: [imgAKH20L_A, imgAKH20L_B, imgAKH20L_C] },
-            { sku: 'KPD52TOP',   name: 'Desbrozador PRO 52cc',              tag: 'Jardín',    spec: '52cc / 2 tiempos<br>Potencia profesional para terrenos difíciles' },
-            { sku: 'MAKO65',     name: 'Motosierra Profesional 65cc',       tag: 'Forestal',  spec: '65cc / 2 barras y cadenas de 20 pulg.<br>Máxima potencia para trabajo forestal' },
-            { sku: 'AK5L',       name: 'Aspersor manual 5L',                tag: 'Aspersión', spec: 'Manual / 5 litros<br>Compacto y fácil de operar' },
+            { sku: 'KPD52TOP',   name: 'Desbrozador PRO 52cc',              tag: 'Jardín',    spec: '52cc / 2 tiempos<br>Potencia profesional para terrenos difíciles',                                           imgs: [imgKPD52TOP_A, imgKPD52TOP_B, imgKPD52TOP_C] },
+            { sku: 'MAKO65',     name: 'Motosierra Profesional 65cc',       tag: 'Forestal',  spec: '65cc / 2 barras y cadenas de 20 pulg.<br>Máxima potencia para trabajo forestal',                    imgs: [imgMAKO65_A, imgMAKO65_B] },
+            { sku: 'AK5L',       name: 'Aspersor manual 5L',                tag: 'Aspersión', spec: 'Manual / 5 litros<br>Compacto y fácil de operar',                                                    imgs: [imgAK5L_A, imgAK5L_B] },
             { sku: 'ASK772TPRO', name: 'Pulverizador PRO 77cc 17 Lts',      tag: 'Agrícola',  spec: '77cc / 17 lts<br>Máxima capacidad para aplicación de líquidos' },
             { sku: 'MKD5220',    name: 'Motosierra Dakota 52cc',            tag: 'Forestal',  spec: '52cc / barra 20 pulg.<br>Kawashima Dakota para cortes profesionales' },
             { sku: 'AK-35GX',    name: 'Aspersor motorizado profesional',   tag: 'Aspersión', spec: 'Motor a gasolina / Alta potencia<br>Diseñado para grandes superficies agrícolas' },
