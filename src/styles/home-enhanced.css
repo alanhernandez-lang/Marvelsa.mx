@@ -1181,3 +1181,295 @@ section:has(> .glass-panel-premium > iframe) > div.reveal-up:hover {
     margin: 0 auto;
   }
 }
+
+
+/* =================================================
+   ─── HOME PAGE — REDESIGN 2.0 ───────────────────
+   Sección de estadísticas, marcas oscuras y mejoras
+   ================================================= */
+
+/* ── IMPACT STRIP ──────────────────────────────── */
+.mvh-impact-strip {
+  background: linear-gradient(135deg, #021414 0%, #031e1e 50%, #020f0f 100%);
+  border-top: 1px solid rgba(0,200,200,0.12);
+  border-bottom: 1px solid rgba(0,200,200,0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.mvh-impact-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,200,200,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,200,200,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.mvh-impact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.mvh-istat {
+  text-align: center;
+  padding: 36px 48px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.mvh-istat-n {
+  display: block;
+  font-size: clamp(2.5rem, 4.5vw, 3.8rem);
+  font-weight: 900;
+  color: white;
+  letter-spacing: -2px;
+  line-height: 1;
+  text-shadow: 0 0 40px rgba(0,200,200,0.3);
+}
+
+.mvh-istat-l {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: rgba(0,200,200,0.65);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-top: 10px;
+}
+
+.mvh-istat-div {
+  width: 1px;
+  height: 48px;
+  background: rgba(255,255,255,0.07);
+  flex-shrink: 0;
+}
+
+/* ── INTRO IMG WRAP ────────────────────────────── */
+.mvh-intro-img-wrap {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* ── FEATURES — force 4 columns on desktop ─────── */
+.mvh-features .mvh-feat-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 24px !important;
+}
+
+/* ── BRANDS UNIVERSE — dark cinematic section ──── */
+.mvh-brands-universe {
+  position: relative;
+  overflow: hidden;
+  background: #050d0d;
+  padding: 120px 0 140px;
+}
+
+.mvh-brands-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,200,200,0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,200,200,0.028) 1px, transparent 1px);
+  background-size: 70px 70px;
+  pointer-events: none;
+}
+
+.mvh-brands-bg-glow {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(0,140,140,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.mvh-brands-content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Eyebrow override for dark backgrounds */
+.mvh-eyebrow-light {
+  color: rgba(0,200,200,0.85) !important;
+}
+
+.mvh-eyebrow-light::before {
+  background: linear-gradient(90deg, rgba(0,200,200,0.85), transparent) !important;
+}
+
+/* Brand banner cards float on dark — give them more shadow */
+.mvh-brands-universe .brand-banner {
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5) !important;
+  border: 1px solid rgba(255,255,255,0.06) !important;
+}
+
+.mvh-brands-universe .brand-banner:hover {
+  transform: translateY(-12px) !important;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.6), 0 0 40px rgba(0,180,180,0.12) !important;
+  border-color: rgba(0,200,200,0.2) !important;
+}
+
+/* Gradient fade at top edge of brands section */
+.mvh-brands-universe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, var(--bg-body), transparent);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Gradient fade at bottom edge */
+.mvh-brands-universe::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, var(--bg-body), transparent);
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* ── BLOG — refined body text ───────────────────── */
+.mvh-blog-body p {
+  color: rgba(0,0,0,0.55);
+  font-size: 0.88rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── CTA — cinematic full card ──────────────────── */
+.mvh-cta-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  padding: 110px 60px;
+  margin: 0 20px;
+  background:
+    radial-gradient(ellipse at 15% 25%, rgba(0,180,180,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 75%, rgba(197,160,45,0.1) 0%, transparent 50%),
+    linear-gradient(135deg, #02201f 0%, #031a1a 50%, #020e0e 100%);
+  text-align: center;
+  box-shadow: 0 40px 100px -30px rgba(0,94,94,0.4);
+  border: 1px solid rgba(0,200,200,0.1);
+}
+
+.mvh-cta-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 45px 45px;
+  mask-image: radial-gradient(ellipse at center, black 25%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 25%, transparent 70%);
+  pointer-events: none;
+}
+
+.mvh-cta-glow {
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0,180,180,0.15), transparent 65%);
+  pointer-events: none;
+}
+
+/* Override eyebrow ::before for dark CTA */
+.mvh-cta-card .mvh-eyebrow::before {
+  background: linear-gradient(90deg, rgba(0,200,200,0.8), transparent) !important;
+}
+
+/* ── MOBILE RESPONSIVE ──────────────────────────── */
+@media (max-width: 1024px) {
+  .mvh-features .mvh-feat-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mvh-impact-inner {
+    padding: 0 20px;
+    gap: 0;
+  }
+
+  .mvh-istat {
+    padding: 28px 20px;
+    min-width: 120px;
+  }
+
+  .mvh-istat-n {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+  }
+
+  .mvh-istat-div {
+    height: 36px;
+  }
+
+  .mvh-brands-content {
+    padding: 0 20px;
+  }
+
+  .mvh-brands-universe {
+    padding: 80px 0 100px;
+  }
+
+  .mvh-features .mvh-feat-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+
+  .mvh-cta-card {
+    padding: 70px 28px;
+    border-radius: 28px;
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mvh-impact-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .mvh-istat-div {
+    display: none;
+  }
+
+  .mvh-istat {
+    padding: 24px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mvh-istat:nth-child(odd) {
+    border-right: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .mvh-features .mvh-feat-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
