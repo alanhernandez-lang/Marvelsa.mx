@@ -62,3 +62,14 @@ export { default as imgMAKO65_A }         from './images/MAKO65_A.png';
 export { default as imgMAKO65_B }         from './images/MAKO65_B.png';
 export { default as imgAK5L_A }           from './images/AK5L_A.png';
 export { default as imgAK5L_B }           from './images/AK5L.B.png';
+
+export { default as imgASK772TPRO_A }     from './images/ASK772TPRO_A.png';
+export { default as imgASK772TPRO_B }     from './images/ASK772TPRO_B.png';
+export { default as imgASK772TPRO_C }     from './images/ASK772TPRO_C.png';
+export { default as imgMKD5220_A }        from './images/MKD5220_A.png';
+export { default as imgMKD5220_B }        from './images/MKD5220_B.png';
+export { default as imgMKD5220_C }        from './images/MKD5220_C.png';
+export { default as imgAK35GX_A }         from './images/AK-35GX _A.png';
+export { default as imgAK35GX_B }         from './images/AK-35GX _B.png';
+export { default as imgAK35GX_C }         from './images/AK-35GX_C.png';
+export { default as imgWIND43_A }         from './images/WIND43_A.png';
