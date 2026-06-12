@@ -19,7 +19,7 @@ export const brandNewProds = {
     { name: 'BK7.530', tag: 'Bombeo', spec: 'Motobomba autocebante 3" • 7.5 HP • 25 m altura • 60 m³/h' },
     { name: 'BK1440',  tag: 'Bombeo', spec: 'Motobomba autocebante 4" • 14 HP • 27 m altura • 85 m³/h' },
     { name: 'BK2.510', tag: 'Bombeo', spec: 'Motobomba portátil 1" • 2.5 HP • 26 m altura • 12 m³/h' },
-    { name: 'AT5L',    tag: 'Aspersión', spec: 'Cobertura uniforme • Ligero y ergonómico • Uso eficiente' },
+    { name: 'AKT5L',   tag: 'Fumigación', spec: 'Aspersor con tanque transparente • 5 litros • Ligero y ergonómico' },
   ],
   parazzini: [
     { name: 'BAKARAC300-G', tag: 'Industrial', spec: 'Alta capacidad • Resistencia extrema • Uso profesional' },

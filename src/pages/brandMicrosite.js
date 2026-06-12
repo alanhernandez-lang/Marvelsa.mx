@@ -231,7 +231,7 @@ const renderKawashima = () => {
         if (p.name === 'BK7.530') return { ...p, img: imgBK7530_A };
         if (p.name === 'BK1440')  return { ...p, img: imgBK1440_A };
         if (p.name === 'BK2.510') return { ...p, img: imgBK2510_A };
-        if (p.name === 'AT5L')    return { ...p, img: imgAKT5L_A };
+        if (p.name === 'AKT5L')   return { ...p, img: imgAKT5L_A };
         return p;
       }), false, getProductIllustration)}
 
