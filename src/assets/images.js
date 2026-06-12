@@ -73,3 +73,7 @@ export { default as imgAK35GX_A }         from './images/AK-35GX_A.png';
 export { default as imgAK35GX_B }         from './images/AK-35GX _B.png';
 export { default as imgAK35GX_C }         from './images/AK-35GX_C.png';
 export { default as imgWIND43_A }         from './images/WIND43_A.png';
+
+export { default as imgBK7530_A }         from './images/BK7.530_A.png';
+export { default as imgBK1440_A }         from './images/BK1440_A.png';
+export { default as imgBK2510_A }         from './images/BK2.510_A.png';
