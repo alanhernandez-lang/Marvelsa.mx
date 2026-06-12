@@ -205,7 +205,7 @@ const renderKawashima = () => {
             { sku: 'WIND43',     name: 'Soplador de mochila 43cc',          tag: 'Jardín',    spec: '43cc / Mochila ergonómica<br>Potencia y comodidad para limpieza de terrenos',  imgs: [imgWIND43_A] },
           ].map(prod => `
             <div class="kaw-prod-card">
-              <div class="kaw-prod-img-wrap" style="height:220px;margin-bottom:25px;border-radius:12px;overflow:hidden;${prod.imgs ? 'background:#f0f0ee;' : 'background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;'}">
+              <div class="kaw-prod-img-wrap" style="height:220px;margin-bottom:25px;border-radius:12px;overflow:hidden;${prod.imgs ? 'background:#1a1a1a;' : 'background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:center;'}">
                 ${prod.imgs ? `
                 <div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">
                   ${prod.imgs.map((src, i) => `<div class="pc-slide${i === 0 ? ' active' : ''}"><img src="${src}" alt="${prod.name}"></div>`).join('')}

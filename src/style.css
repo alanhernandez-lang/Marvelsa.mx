@@ -2275,6 +2275,7 @@ body.theme-kawashima {
   height: 100%;
   object-fit: cover;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 .kaw-feature-item {
