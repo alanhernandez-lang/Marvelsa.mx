@@ -8391,16 +8391,30 @@ body.theme-oregon .cta-link { background: linear-gradient(135deg, var(--ore-oran
 }
 
 /* ---- Illustration wrapper hover ---- */
-.par-prod-card:hover .prod-illustration-wrap,
-.ph-prod-card:hover .prod-illustration-wrap,
-.tak-prod-card:hover .prod-illustration-wrap,
-.duc-prod-card:hover .prod-illustration-wrap,
-.ore-prod-card:hover .prod-illustration-wrap {
+.par-prod-card:hover .prod-illustration-wrap:not(.has-imgs),
+.ph-prod-card:hover .prod-illustration-wrap:not(.has-imgs),
+.tak-prod-card:hover .prod-illustration-wrap:not(.has-imgs),
+.duc-prod-card:hover .prod-illustration-wrap:not(.has-imgs),
+.ore-prod-card:hover .prod-illustration-wrap:not(.has-imgs) {
   background: rgba(0, 0, 0, 0.35) !important;
 }
 
-.gt-prod-card:hover .prod-illustration-wrap {
+.gt-prod-card:hover .prod-illustration-wrap:not(.has-imgs) {
   background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* ---- Image zoom on hover (same as Kawashima) ---- */
+.prod-illustration-wrap.has-imgs .pc-slide img {
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.par-prod-card:hover .prod-illustration-wrap.has-imgs .pc-slide.active img,
+.gt-prod-card:hover .prod-illustration-wrap.has-imgs .pc-slide.active img,
+.ph-prod-card:hover .prod-illustration-wrap.has-imgs .pc-slide.active img,
+.tak-prod-card:hover .prod-illustration-wrap.has-imgs .pc-slide.active img,
+.duc-prod-card:hover .prod-illustration-wrap.has-imgs .pc-slide.active img,
+.ore-prod-card:hover .prod-illustration-wrap.has-imgs .pc-slide.active img {
+  transform: scale(1.08) translateY(-4px);
 }
 
 /* ---- CTA anchored to bottom ---- */
