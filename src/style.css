@@ -1,16 +1,18 @@
 /* Main base styles update for the Hub */
 /* --- PILL NAVBAR STYLES & ANIMATIONS --- */
 .pill-navbar {
-  position: fixed;
-  top: 15px;
+  position: sticky;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 12px 40px;
   pointer-events: none;
+  background: var(--bg-body, #f4f4f2);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
 }
 
 .pill-navbar>* {
@@ -217,9 +219,8 @@
   font-size: 0.8rem;
 }
 
-/* Spacer for fixed navbar */
 body {
-  padding-top: 80px;
+  padding-top: 0;
 }
 
 #app {
