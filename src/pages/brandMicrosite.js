@@ -866,6 +866,7 @@ const renderGenericBrand = (brandId) => {
   makeParticles(`${p}-particles`, `rgba(${p === 'par' ? '26,122,74' : p === 'gt' ? '200,155,42' : p === 'ph' ? '0,91,181' : '255,102,0'},1)`);
   const obs = makeSectionObserver(`.${p}-cat-card, .${p}-prod-card, .${p}-feature-item`);
   document.querySelectorAll(`.${p}-categories, .${p}-products, .${p}-intro`).forEach(s => obs.observe(s));
+  initProductCarousels();
 };
 
 /* ─── PUBLIC ENTRY POINT ─── */
