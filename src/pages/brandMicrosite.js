@@ -21,6 +21,10 @@ import {
   imgAK35GX_A, imgAK35GX_B, imgAK35GX_C,
   imgWIND43_A,
   imgBK7530_A, imgBK1440_A, imgBK2510_A, imgAKT5L_A,
+  imgREVOLVER1G_A, imgREVOLVER1G_B, imgREVOLVER1G_C,
+  imgGP10000GAS_A, imgGP10000GAS_B,
+  imgHP55N_A, imgHP55N_B, imgHP55N_C,
+  imgGP3000M_A, imgBP2510_A, imgBP720_A,
 } from '../assets/images.js';
 
 /* ─── shared helpers ─── */
@@ -340,12 +344,12 @@ const brandConfig = {
       { img: bannerPowerHunt, name: 'HOGAR', desc: 'Soluciones confiables para mantener tu hogar funcionando con eficiencia. Desde bombas presurizadoras hasta potentes hidrolavadoras que combinan rendimiento, facilidad de uso y durabilidad. Perfectas para quienes buscan resultados profesionales también en casa.', subs: 'HIDROLAVADORAS • BOMBAS PRESURIZADORAS' },
     ],
     prods: [
-      { name: 'REVOLVER1G', tag: 'Construcción', spec: 'Revolvedora a gasolina de 1/2 saco • Volumen de olla 140 litros • Motor 4 tiempos' },
-      { name: 'GP10000GAS', tag: 'Energía',       spec: 'Generador estacionario a gas LP y GN • Potencia 10 kW • Monofásico' },
-      { name: 'HP5.5N',     tag: 'Limpieza',      spec: 'Hidrolavadora a gasolina • Motor 5.5 HP • Alta presión para limpieza profesional' },
-      { name: 'GP3000M',    tag: 'Energía',       spec: 'Generador portátil 3000W • Motor 6.5 HP 4 tiempos • Arranque manual' },
-      { name: 'BP2.510',    tag: 'Bombeo',        spec: 'Motobomba autocebante 1 pulg • Motor 2.5 HP OHV 4 tiempos • Uso agrícola' },
-      { name: 'BP720',      tag: 'Bombeo',        spec: 'Motobomba autocebante 2 pulg • Motor 7 HP 4 tiempos OHV • Alto caudal' },
+      { name: 'REVOLVER1G', tag: 'Construcción', spec: 'Revolvedora a gasolina de 1/2 saco • Volumen de olla 140 litros • Motor 4 tiempos', imgs: [imgREVOLVER1G_A, imgREVOLVER1G_B, imgREVOLVER1G_C] },
+      { name: 'GP10000GAS', tag: 'Energía',       spec: 'Generador estacionario a gas LP y GN • Potencia 10 kW • Monofásico',              imgs: [imgGP10000GAS_A, imgGP10000GAS_B] },
+      { name: 'HP5.5N',     tag: 'Limpieza',      spec: 'Hidrolavadora a gasolina • Motor 5.5 HP • Alta presión para limpieza profesional', imgs: [imgHP55N_A, imgHP55N_B, imgHP55N_C] },
+      { name: 'GP3000M',    tag: 'Energía',       spec: 'Generador portátil 3000W • Motor 6.5 HP 4 tiempos • Arranque manual',              imgs: [imgGP3000M_A] },
+      { name: 'BP2.510',    tag: 'Bombeo',        spec: 'Motobomba autocebante 1 pulg • Motor 2.5 HP OHV 4 tiempos • Uso agrícola',         imgs: [imgBP2510_A] },
+      { name: 'BP720',      tag: 'Bombeo',        spec: 'Motobomba autocebante 2 pulg • Motor 7 HP 4 tiempos OHV • Alto caudal',             imgs: [imgBP720_A] },
     ],
     distributorLink: 'https://forms.gle/vXg39DUZdyiDzJH58',
     whyCards: [
@@ -700,9 +704,10 @@ const renderGenericBrand = (brandId) => {
     return `
       <div class="${p}-prod-card" style="position:relative;">
         ${isNew ? `<div style="position:absolute;top:12px;right:12px;z-index:2;background:${cfg.accentColor};color:white;font-size:0.6rem;font-weight:900;letter-spacing:1.5px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">NUEVO</div>` : ''}
-        <div class="prod-illustration-wrap" style="height:180px;background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;border-radius:14px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;overflow:hidden;transition:all 0.4s ease;">
-          <div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}0A 0%, transparent 70%);"></div>
-          ${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}
+        <div class="prod-illustration-wrap" style="height:180px;${prod.imgs ? 'background:#f0f0ee;' : `background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;display:flex;align-items:center;justify-content:center;padding:20px;`}border-radius:14px;margin-bottom:18px;position:relative;overflow:hidden;transition:all 0.4s ease;">
+          ${prod.imgs
+            ? `<div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">${prod.imgs.map((src, i) => `<div class="pc-slide${i === 0 ? ' active' : ''}"><img src="${src}" alt="${prod.name}"></div>`).join('')}<div class="carousel-dots"></div></div>`
+            : `<div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}0A 0%, transparent 70%);"></div>${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}`}
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px;">
           <span class="${p}-prod-tag" style="margin-bottom:0;">${prod.tag}</span>

@@ -78,3 +78,15 @@ export { default as imgBK7530_A }         from './images/BK7.530_A.png';
 export { default as imgBK1440_A }         from './images/BK1440_A.png';
 export { default as imgBK2510_A }         from './images/BK2.510_A.png';
 export { default as imgAKT5L_A }          from './images/AKT5L_A.png';
+
+export { default as imgREVOLVER1G_A }     from './images/REVOLVER1G_A.png';
+export { default as imgREVOLVER1G_B }     from './images/REVOLVER1G_B.png';
+export { default as imgREVOLVER1G_C }     from './images/REVOLVER1G_C.png';
+export { default as imgGP10000GAS_A }     from './images/GP10000GAS_A.png';
+export { default as imgGP10000GAS_B }     from './images/GP10000GAS_B.png';
+export { default as imgHP55N_A }          from './images/HP5.5N_A.png';
+export { default as imgHP55N_B }          from './images/HP5.5N_B.png';
+export { default as imgHP55N_C }          from './images/HP5.5N_C.png';
+export { default as imgGP3000M_A }        from './images/GP3000M_A.png';
+export { default as imgBP2510_A }         from './images/BP2.510_A.png';
+export { default as imgBP720_A }          from './images/BP720_A.png';
