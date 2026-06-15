@@ -22,10 +22,10 @@ export const brandNewProds = {
     { name: 'AKT5L',   tag: 'Fumigación', spec: 'Aspersor con tanque transparente • 5 litros • Ligero y ergonómico' },
   ],
   parazzini: [
-    { name: 'BAKARAC300-G', tag: 'Industrial', spec: 'Alta capacidad • Resistencia extrema • Uso profesional' },
-    { name: 'HULIGAN03', tag: 'Construcción', spec: 'Máximo rendimiento • Componentes reforzados • Larga vida útil' },
-    { name: 'GPIS5.5KW', tag: 'Energía', spec: 'Generador 5.5KW • Arranque confiable • Energía estable' },
-    { name: 'BSP0.550L', tag: 'Agrícola', spec: 'Precisión superior • Flujo constante • Fácil instalación' },
+    { name: 'BAKARAC300-G', tag: 'Industrial', spec: 'Generador Inverter Parazzini Bakarac 7kw motor a gasolina • Alta capacidad • Uso profesional' },
+    { name: 'HULIGAN03',    tag: 'Construcción', spec: 'Motocultor engranaje 7.5 HP chasis reforzado uso rudo • Componentes reforzados • Larga vida útil' },
+    { name: 'GPIS5.5KW',   tag: 'Energía',      spec: 'Generador inverter 5.5 kW dual fuel alta potencia • Arranque confiable • Energía estable' },
+    { name: 'BSP0.550L',   tag: 'Bombeo',       spec: 'Bomba sumergible para agua limpia 0.5HP 50lpm • Flujo constante • Fácil instalación' },
   ],
   goldentree: [
     { name: 'BL020-120-20-4000', tag: 'Bluedrip', spec: 'Cinta Bluedrip 5/8" • Flujo alto 1.2 lph • Espaciado @20cm • Cal 8 mil • Rollo 4,000 m' },
