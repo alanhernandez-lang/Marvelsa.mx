@@ -704,7 +704,7 @@ const renderGenericBrand = (brandId) => {
     return `
       <div class="${p}-prod-card" style="position:relative;">
         ${isNew ? `<div style="position:absolute;top:12px;right:12px;z-index:2;background:${cfg.accentColor};color:white;font-size:0.6rem;font-weight:900;letter-spacing:1.5px;padding:3px 10px;border-radius:4px;text-transform:uppercase;">NUEVO</div>` : ''}
-        <div class="prod-illustration-wrap" style="height:180px;${prod.imgs ? 'background:#f0f0ee;' : `background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;display:flex;align-items:center;justify-content:center;padding:20px;`}border-radius:14px;margin-bottom:18px;position:relative;overflow:hidden;transition:all 0.4s ease;">
+        <div class="prod-illustration-wrap" style="height:220px;${prod.imgs ? 'background:#f0f0ee;' : `background:rgba(0,0,0,0.25);border:1px solid ${cfg.accentColor}20;display:flex;align-items:center;justify-content:center;padding:20px;`}border-radius:14px;margin-bottom:18px;position:relative;overflow:hidden;transition:all 0.4s ease;">
           ${prod.imgs
             ? `<div class="product-carousel" style="width:100%;height:100%;position:relative;cursor:pointer;">${prod.imgs.map((src, i) => `<div class="pc-slide${i === 0 ? ' active' : ''}"><img src="${src}" alt="${prod.name}"></div>`).join('')}<div class="carousel-dots"></div></div>`
             : `<div style="position:absolute;inset:0;background:radial-gradient(circle at center, ${cfg.accentColor}0A 0%, transparent 70%);"></div>${getProductIllustration(p, cfg.accentColor, prod.tag, prod.name)}`}
