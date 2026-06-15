@@ -25,6 +25,7 @@ import {
   imgGP10000GAS_A, imgGP10000GAS_B,
   imgHP55N_A, imgHP55N_B, imgHP55N_C,
   imgGP3000M_A, imgBP2510_A, imgBP720_A,
+  imgBAKARAC300G_A, imgHULIGAN03_A, imgGPIS55KW_A, imgBSP0550L_A,
 } from '../assets/images.js';
 
 /* ─── shared helpers ─── */
@@ -818,7 +819,15 @@ const renderGenericBrand = (brandId) => {
         </div>
       </section>
 
-      ${buildNewProductsHTML(p, cfg.accentColor, cfg.title, brandNewProds[brandId], cfg.lightTheme, getProductIllustration)}
+      ${buildNewProductsHTML(p, cfg.accentColor, cfg.title, (brandNewProds[brandId] || []).map(prod => {
+        if (brandId === 'parazzini') {
+          if (prod.name === 'BAKARAC300-G') return { ...prod, img: imgBAKARAC300G_A };
+          if (prod.name === 'HULIGAN03')    return { ...prod, img: imgHULIGAN03_A };
+          if (prod.name === 'GPIS5.5KW')   return { ...prod, img: imgGPIS55KW_A };
+          if (prod.name === 'BSP0.550L')   return { ...prod, img: imgBSP0550L_A };
+        }
+        return prod;
+      }), cfg.lightTheme, getProductIllustration)}
 
       <section style="background:var(--${p}-dark);padding:120px 0;">
         <div style="max-width:1200px;margin:0 auto;padding:0 40px;">

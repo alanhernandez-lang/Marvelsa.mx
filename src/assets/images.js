@@ -90,3 +90,8 @@ export { default as imgHP55N_C }          from './images/HP5.5N_C.png';
 export { default as imgGP3000M_A }        from './images/GP3000M_A.png';
 export { default as imgBP2510_A }         from './images/BP2.510_A.png';
 export { default as imgBP720_A }          from './images/BP720_A.png';
+
+export { default as imgBAKARAC300G_A }    from './images/BAKARAC300-G _A.png';
+export { default as imgHULIGAN03_A }      from './images/HULIGAN03_A.png';
+export { default as imgGPIS55KW_A }       from './images/GPIS5.5KW_A.png';
+export { default as imgBSP0550L_A }       from './images/BSP0.550L_A.png';
